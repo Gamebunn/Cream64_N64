@@ -1355,6 +1355,19 @@ u32 interact_bounce_top(struct MarioState *m, UNUSED u32 interactType, struct Ob
         queue_rumble_data(5, 80);
 #endif
         attack_object(obj, interaction);
+                        if (obj->behavior != segmented_to_virtual(bhvBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvBooWithCage)
+            &&     obj->behavior != segmented_to_virtual(bhvMerryGoRoundBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvMerryGoRoundBigBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvGhostHuntBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvGhostHuntBigBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvBalconyBigBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvEyerokBoss)
+            &&     obj->behavior != segmented_to_virtual(bhvEyerokHand)            
+            &&     obj->behavior != segmented_to_virtual(bhvWigglerBody)
+            &&     obj->behavior != segmented_to_virtual(bhvWigglerHead)) {
+                            spawn_object(obj, MODEL_EXPLOSION, bhvExplosionNoDmg);
+        }
         bounce_back_from_attack(m, interaction);
 
         if (interaction & INT_HIT_FROM_ABOVE) {

@@ -221,8 +221,8 @@ s32 act_start_sleeping(struct MarioState *m) {
             break;
     }
 
-    play_anim_sound(m, ACT_STATE_START_SLEEPING_SCRATCH, 41, SOUND_ACTION_PAT_BACK);
-    play_anim_sound(m, ACT_STATE_START_SLEEPING_SCRATCH, 49, SOUND_ACTION_PAT_BACK);
+    //play_anim_sound(m, ACT_STATE_START_SLEEPING_SCRATCH, 41, SOUND_ACTION_PAT_BACK);
+    //play_anim_sound(m, ACT_STATE_START_SLEEPING_SCRATCH, 49, SOUND_ACTION_PAT_BACK);
     play_anim_sound(m, ACT_STATE_START_SLEEPING_SITTING, 15, m->terrainSoundAddend + SOUND_ACTION_TERRAIN_BODY_HIT_GROUND);
 
     if (is_anim_at_end(m)) {

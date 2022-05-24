@@ -294,4 +294,16 @@ extern const Gfx wooden_signpost_seg3_dl_0302DCD0[];
 extern const Gfx wooden_signpost_seg3_dl_0302DD08[];
 extern const Collision wooden_signpost_seg3_collision_0302DD80[];
 
+#include "transparent_star/geo_header.h"
+
+#include "star/geo_header.h"
+
+#include "wooden_signpost/geo_header.h"
+
+#include "bait_fish/geo_header.h"
+
+#include "bowser_key_cutscene/geo_header.h"
+
+#include "bowser_key/geo_header.h"
+
 #endif

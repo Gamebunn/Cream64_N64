@@ -9,10 +9,10 @@
  * You may also need to change sLevelsWithRooms in object_helpers.c
  * TODO: separate this into separate defines, behavior params, or make these mechanics otherwise dynamic
 */
-// #define ENABLE_VANILLA_LEVEL_SPECIFIC_CHECKS
+#define ENABLE_VANILLA_LEVEL_SPECIFIC_CHECKS
 
 // Disable lives and hide the lives counter
-#define DISABLE_LIVES
+// #define DISABLE_LIVES
 
 // Save number of lives to the save file (Does nothing if DISABLE_LIVES is enabled)
 #define SAVE_NUM_LIVES
@@ -43,7 +43,7 @@
 // #define GLOBAL_STAR_IDS
 
 // Number of possible unique model ID's (keep it higher than 256)
-#define MODEL_ID_COUNT 256
+#define MODEL_ID_COUNT 512
 
 // Number of supported areas per level.
 #define AREA_COUNT 8

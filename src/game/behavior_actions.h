@@ -550,6 +550,12 @@ void bhv_dust_smoke_loop(void);
 void bhv_yoshi_loop(void);
 void bhv_volcano_trap_loop(void);
 
+void bhv_explosion_nd_init(void);
+void bhv_explosion_nd_loop(void);
+void bhv_cheese_follow_init(void);
+void bhv_cheese_act_follow_mario(void);
+void bhv_tank_fish_group2_loop(void);
+
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);
 
 // Bowser
@@ -573,5 +579,11 @@ Gfx *geo_scale_bowser_key(s32 callContext, struct GraphNode *node, UNUSED Mat4 m
 // Water splash
 extern struct WaterDropletParams gShallowWaterSplashDropletParams;
 extern struct WaterDropletParams gShallowWaterWaveDropletParams;
+
+// Story NPCs
+Gfx *geo_switch_amy_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
+Gfx *geo_switch_tails_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
+Gfx *geo_switch_blaze_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
+Gfx *geo_switch_marine_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 
 #endif // BEHAVIOR_ACTIONS_H

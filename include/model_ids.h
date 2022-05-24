@@ -6,7 +6,62 @@
 /* Global models that are loaded for every level */
 
 #define MODEL_MARIO                            0x01        // mario_geo
-#define MODEL_LUIGI                            0x02        // unused
+#define MODEL_CHEESE_FOLLOW                    0x02        // cheese_follow_geo
+
+// Cream Alts
+
+#define MODEL_MARIO_RIDERS                0x1FF        // mario_riders_geo
+#define MODEL_MARIO_WINTER                0x1FE        // mario_winter_geo
+#define MODEL_MARIO_SPRING                0x1FD        // mario_spring_geo
+#define MODEL_MARIO_UNICORN               0x1FC        // mario_unicorn_geo
+#define MODEL_MARIO_YUKATA                0x1FB        // mario_yukata_geo
+#define MODEL_MARIO_VANILLA               0x1FA        // mario_vanilla_geo
+#define MODEL_MARIO_BEAN                  0x1F9        // mario_bean_geo
+#define MODEL_MARIO_MARIO                 0x1F8        // mario_mario_geo
+#define MODEL_MARIO_LUFFY                 0x1F7        // mario_luffy_geo
+#define MODEL_MARIO_ICHIBAN               0x1F6        // mario_ichiban_geo
+
+#define MODEL_MARIO_GOKU                  0x1F5        // mario_goku_geo
+#define MODEL_MARIO_CINNIA                0x1F4        // mario_cinnia_geo
+#define MODEL_MARIO_CHEF                  0x1F3        // mario_chef_geo
+#define MODEL_MARIO_VAL                   0x1F2        // mario_val_geo
+#define MODEL_MARIO_ROGER                 0x1F1        // mario_roger_geo
+
+#define MODEL_MARIO_KATALINA              0x1F0        // mario_katalina_geo
+#define MODEL_MARIO_KITTEN                0x1EF        // mario_kitten_geo
+#define MODEL_MARIO_LAYLA                 0x1EE        // mario_layla_geo
+#define MODEL_MARIO_CREAMOCCHIA           0x1ED        // mario_creamocchia_geo
+
+
+
+// Cheese Alts
+
+#define MODEL_CHEESE_FOLLOW_CHOCOLA       0x1E1        // cheese_follow_chocola_geo
+
+// Vanilla Alts
+
+#define MODEL_PEACH_MARK                  0x1D1        // peach_mark_geo
+
+// Additional NPCs
+
+#define MODEL_LAYLA                       0x1C7        // layla_geo
+#define MODEL_KITTEN                      0x1C6        // kitten_geo
+#define MODEL_AMY                         0x1C5        // amy_geo
+#define MODEL_WISP1                       0x1C4        // wisp1_geo
+#define MODEL_WISP2                       0x1C3        // wisp2_geo
+#define MODEL_BLAZE                       0x1C2        // blaze_geo
+#define MODEL_MARINE                      0x1C1        // marine_geo
+#define MODEL_TAILS                       0x1C0        // tails_geo
+
+#define MODEL_POCKY                       0x1C0        // pocky_geo
+#define MODEL_SWEET                       0x1BF        // sweet_geo
+#define MODEL_ATLAS                       0x1BE        // atlas_geo
+
+#define MODEL_FLOOMBA                     0x1BD        // floomba_geo
+
+// Fish Models
+
+#define MODEL_FISH_BAIT                   0x19A        // bait_fish_geo
 
 /* Various static level geometry, the geo layout differs but terrain object presets treat them the same.*/
 
@@ -336,6 +391,7 @@
 #define MODEL_SUSHI                       0x56        // sushi_geo
 #define MODEL_DL_WHIRLPOOL                0x57        // whirlpool_seg5_dl_05013CB8
 #define MODEL_CLAM_SHELL                  0x58        // clam_shell_geo
+#define MODEL_SUSHI_MARINE                0x59        // sushi_marine_geo
 
 // group 5
 #define MODEL_POKEY_HEAD                  0x54        // pokey_head_geo
@@ -356,6 +412,7 @@
 #define MODEL_MR_BLIZZARD_HIDDEN          0x55        // mr_blizzard_hidden_geo
 #define MODEL_MR_BLIZZARD                 0x56        // mr_blizzard_geo
 #define MODEL_PENGUIN                     0x57        // penguin_geo
+#define MODEL_PENGUIN_CHAO                0x58        // penguin_chao_geo
 
 // group 8
 #define MODEL_CAP_SWITCH_EXCLAMATION      0x54        // cap_switch_exclamation_seg5_dl_05002E00
@@ -370,10 +427,14 @@
 #define MODEL_BOOKEND_PART                0x58        // bookend_part_geo
 #define MODEL_BOOKEND                     0x59        // bookend_geo
 #define MODEL_HAUNTED_CAGE                0x5A        // haunted_cage_geo
+#define MODEL_KINGBOO                     0x5B        // kingboo_geo
 
 // group 10
 #define MODEL_BIRDS                       0x54        // birds_geo
 #define MODEL_YOSHI                       0x55        // yoshi_geo
+
+#define MODEL_CHEESE_ED                   0x56        // cheese_ed
+#define MODEL_CHOCOLA_ED                  0x57        // chocola_ed
 
 // group 11
 #define MODEL_ENEMY_LAKITU                0x54        // enemy_lakitu_geo
@@ -417,6 +478,11 @@
 #define MODEL_MIPS                        0x64        // mips_geo
 #define MODEL_BOO_CASTLE                  0x65        // boo_castle_geo
 #define MODEL_LAKITU                      0x66        // lakitu_geo
+
+#define MODEL_CHOCOLA                     0x67        // chocola_geo
+#define MODEL_SILVER                      0x68        // silver_geo
+#define MODEL_KATALINA                    0x69        // katalina_geo
+
 
 // group 16
 #define MODEL_CHILL_BULLY                 0x64        // chilly_chief_geo

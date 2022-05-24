@@ -1641,36 +1641,13 @@ already defeated, select\n\
 the Stars you recovered\n\
 from them."))
 
-DEFINE_DIALOG(DIALOG_136, 1, 6, 30, 200, _("\
-Wow! You've already\n\
-recovered that many\n\
-Stars? Way to go, Mario!\n\
-I'll bet you'll have us out\n\
-of here in no time!\n\
-\n\
-Be careful, though.\n\
-Bowser and his band\n\
-wrote the book on 『bad.』\n\
-Take my advice: When you\n\
-need to recover from\n\
-injuries, collect coins.\n\
-Yellow Coins refill one\n\
-piece of the Power Meter,\n\
-Red Coins refill two\n\
-pieces, and Blue Coins\n\
-refill five.\n\
-\n\
-To make Blue Coins\n\
-appear, pound on Blue\n\
-Coin Blocks.\n\
+DEFINE_DIALOG(DIALOG_136, 1, 3, 30, 200, _("\
+Chaaaao....\n\
 \n\
 \n\
-\n\
-Also, if you fall from\n\
-high places, you'll\n\
-minimize damage if you\n\
-Pound the Ground as you\n\
-land."))
+(Henlo miss crem. \n\
+Habby... birth... \n\
+love u)"))
 
 DEFINE_DIALOG(DIALOG_137, 1, 6, 30, 200, _("\
 Thanks, Mario! The castle\n\
@@ -2097,3 +2074,536 @@ Arrgghh!\n\
 Anyone entering this cave\n\
 without permission will\n\
 meet certain disaster."))
+
+DEFINE_DIALOG(MWISP_CASTLE, 1, 4, 30, 200, _("\
+Hello there, Miss. I'm a\n\
+Magenta Wisp sent here as\n\
+a guide for the ones above.\n\
+\n\
+My fellow brethren are all\n\
+located in all the main \n\
+stages of this castle. \n\
+\n\
+We will give you the names\n\
+of the song in the level \n\
+as well as creator credits\n\
+if it's certain midis. \n\
+There's also the few \n\
+White Wisp next to certain\n\
+individuals.\n\
+\n\
+They'll help to explain\n\
+the strange fellows they're\n\
+next to and why they're\n\
+here.\n\
+There's another Magenta \n\
+Wisp in the basement that\n\
+will actually give you the\n\
+song info of the castle.\n\
+I'm just here to give you \n\
+an idea. Keep an eye out,\n\
+Miss!"))
+
+//Music Credits, Castle
+DEFINE_DIALOG(MWISP_CASTLE2, 1, 6, 30, 200, _("\
+Music used:\n\
+Title Music:\n\
+-Sonic Advance 2-\n\
+Leaf Forest Prototype\n\
+-- Gameboy Advance\n\
+Ori. Midi by: King Meteor\n\
+File Select:\n\
+-Sonic Jam-\n\
+Museum Theme\n\
+-- Saturn\n\
+Ori. Midi by: \n\
+-Name Unknown-\n\
+Castle Hub:\n\
+-Sonic Advance-\n\
+Ice Mountain Act 1\n\
+-- Gameboy Advance\n\
+Composed by: MrGreenThunder\n\
+\n\
+Boss Battle: \n\
+-Sonic Mania-\n\
+Eggman 1 ~ Ruby Delusions\n\
+-- Various Platforms\n\
+\n\
+\n\
+Endless Stairs: \n\
+-Sonic 2-\n\
+Death Egg Zone\n\
+-- Genesis-Megadrive\n\
+Ori. Midi by: \n\
+Hunt 'Sage' Bridges\n\
+Vanish/Wing Locket:\n\
+-Sonic 3 and Knuckles-\n\
+Unused Song\n\
+Ori. Midi from:\n\
+Sonic and Knuckles \n\
+Collection (PC)\n\
+Metal Locket:\n\
+-Sonic 3 and Knuckles-\n\
+Chrome Gadget Zone\n\
+--Genesis-MegaDrive\n\
+Ori. Midi by:\n\
+-Name Unknown-\n\
+Star Spawn:\n\
+-Sonic Advance-\n\
+Chaos Emerald\n\
+--Gameboy Advance\n\
+Ori. Midi by: Steve1\n\
+\n\
+Star Get:\n\
+-Sonic Advance-\n\
+Act 1 Complete\n\
+--Gameboy Advance\n\
+Ori. Midi by: MaliceX"))
+
+//Music Credits, Bob
+DEFINE_DIALOG(MWISP_BOB, 1, 4, 30, 200, _("\
+Music used:\n\
+-NiGHTS Journey of Dreams-\n\
+Eloquent Echo: Fluffy Catch\n\
+-- Wii"))
+
+//Music Credits, Wf
+DEFINE_DIALOG(MWISP_WF, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic Adventure-\n\
+The Air - Windy Valley 3\n\
+-- Dreamcast"))
+
+//Music Credits, Jrb
+DEFINE_DIALOG(MWISP_JRB, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic CD (EU-JP)-\n\
+Tidal Tempest - Present\n\
+-- SEGA CD"))
+
+//Music Credits, Ccm
+DEFINE_DIALOG(MWISP_CCM, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic Lost World-\n\
+Snowball Waltz\n\
+-- Wii U"))
+
+//Music Credits, bbh
+DEFINE_DIALOG(MWISP_BBH, 1, 5, 30, 200, _("\
+Music used:\n\
+Main Area: \n\
+-Billy Hatcher 'n the Giant Egg-\n\
+Odd March\n\
+-- Nintendo GameCube\n\
+Merry-Go-Round:\n\
+-Knuckles' Chaotix-\n\
+Child's Song\n\
+-- 32X"))
+
+//Music Credits, hmc
+DEFINE_DIALOG(MWISP_HMC, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic Adventure-\n\
+Dilapidated Way - Casinopolis\n\
+-- Dreamcast"))
+
+//Music Credits, lll
+DEFINE_DIALOG(MWISP_LLL, 1, 5, 30, 200, _("\
+Music used:\n\
+Main Area: \n\
+-Sonic 3D Blast-\n\
+Volcano Valley Act 1\n\
+-- Genesis\n\
+Volcano:\n\
+-Sonic Adventure-\n\
+Red Hot Skull - Red Mountain\n\
+-- Dreamcast"))
+
+//Music Credits, ssl
+DEFINE_DIALOG(MWISP_SSL, 1, 5, 30, 200, _("\
+Music used:\n\
+Main Area: \n\
+-Sonic Lost World-\n\
+Desert Ruins - Zone 4\n\
+-- Wii U\n\
+Pyramid:\n\
+-Sonic Adventure 2-\n\
+Keys the Ruins - Pyramid Cave\n\
+-- Dreamcast"))
+
+//Music Credits, ddd
+DEFINE_DIALOG(MWISP_DDD, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic Lost World-\n\
+Sea Bottom Segue\n\
+-- Wii U"))
+
+//Music Credits, sl
+DEFINE_DIALOG(MWISP_SL, 1, 6, 30, 200, _("\
+Music used:\n\
+-Sonic Advance 2-\n\
+Ice Paradise Act 1\n\
+-- Gameboy Advance\n\
+Remastered by:\n\
+SuperChaosControl\n\
+Igloo:\n\
+-Sonic Adventure-\n\
+Limestone Cave - Icecap\n\
+-- Dreamcast"))
+
+//Music Credits, wdw
+DEFINE_DIALOG(MWISP_WDW, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic Adventure-\n\
+Tricky Maze - Lost World 1\n\
+-- SEGA Dreamcast"))
+
+//Music Credits, ttm
+DEFINE_DIALOG(MWISP_TTM, 1, 5, 30, 200, _("\
+Music used:\n\
+Main Area: \n\
+-Sonic Adventure-\n\
+Symbol of Thrill - Red Mountain\n\
+-- Dreamcast\n\
+Secret Slide:\n\
+-M n'S 2014 Winter Olympics-\n\
+Slide\n\
+-- Wii U"))
+
+//Music Credits, thi
+DEFINE_DIALOG(MWISP_THI, 1, 5, 30, 200, _("\
+Music used:\n\
+Main Area: \n\
+-Sonic Lost World-\n\
+Juice Archipelago\n\
+-- Wii U\n\
+Inside Mountain:\n\
+-Sonic Mania-\n\
+Lava Reef Zone Act 2\n\
+-- Various Platforms"))
+
+//Music Credits, ttc
+DEFINE_DIALOG(MWISP_TTC, 1, 5, 30, 200, _("\
+Music used:\n\
+-Sonic Unleashed-\n\
+Rooftop Run - Night\n\
+-- 360-PS3"))
+
+//Music Credits, rr
+DEFINE_DIALOG(MWISP_RR, 1, 5, 30, 200, _("\
+Music used:\n\
+-Sonic Runners-\n\
+End of the Summer\n\
+-- Mobile"))
+
+//Music Credits, bowser 1
+DEFINE_DIALOG(MWISP_BITDW, 1, 5, 30, 200, _("\
+Music used:\n\
+Stage: \n\
+-Sonic Unleashed-\n\
+Eggmanland - Day\n\
+-- PS3-XBOX 360\n\
+Fight:\n\
+-Sonic Adventure-\n\
+Theme of Dr.EGGMAN\n\
+-- Dreamcast"))
+
+//Music Credits, bowser 2
+DEFINE_DIALOG(MWISP_BITFS, 1, 5, 30, 200, _("\
+Music used:\n\
+Stage: \n\
+-Sonic 3D Blast (Sat)-\n\
+Volcano Valley Act 1\n\
+-- Genesis-Megadrive-Saturn\n\
+Fight:\n\
+-Sonic Heroes-\n\
+Egg Emperor\n\
+-- Various Platforms"))
+
+//Music Credits, bowser 3
+DEFINE_DIALOG(MWISP_BITS, 1, 5, 30, 200, _("\
+Music used:\n\
+Stage: \n\
+-Sonic Mania-\n\
+Titanic Monarch Zone Act 2\n\
+-- Various Platform\n\
+Fight:\n\
+-Sonic Mania-\n\
+Final Boss ~ Ruby Illusions\n\
+-- Various Platforms"))
+
+//Character Credits, Bob
+DEFINE_DIALOG(WWISP_LAYLA_KITTEN, 1, 5, 30, 200, _("\
+Get ready cause this \n\
+is a long two-fer!\n\
+Here we goooooo\n\
+\n\
+\n\
+WHO IS!!\n\
+-Kitten Lynn-\n\
+Age: 8\n\
+creator:\n\
+Fudger-Nutter\n\
+An orphan wanting to have\n\
+fun, even if it means the\n\
+expense of her foster\n\
+father, Jack. \n\
+\n\
+While Jack is her primary\n\
+caretaker, she lives in a \n\
+small town that treats her\n\
+like their own daughter. \n\
+\n\
+While still a pain, she\n\
+does start to develop\n\
+some skills thanks to her\n\
+new 'family' and learns \n\
+to settle down...barely.\n\
+She meets Mark by chance \n\
+while he was exploring \n\
+outside her home. Seems\n\
+like he was able to deal\n\
+with her rowdiness.\n\
+Occasionally, he'll \n\
+bring her to meet Cream\n\
+and Vanilla and have little\n\
+playdates, much to \n\
+Vanilla's horror.\n\
+She does have a tendacy to\n\
+follow Tails, whether he \n\
+likes it or not. She's a\n\
+wiley cat, but deep down\n\
+she means well. \n\
+When she eventually meets\n\
+Layla, the two become\n\
+inseparable. A couple\n\
+of crazy kids having\n\
+fun.\n\
+The bond between the 4\n\
+children ends up being \n\
+a huge headache for Mark, \n\
+Vanilla and Jack...\n\
+Vanilla mostly. \n\
+Dev Talk: Her creator has \n\
+done a lot for me for so\n\
+long, I've wanted to repay\n\
+her with something big.\n\
+\n\
+WHO IS!!!\n\
+-Layla the Fox-\n\
+Age: 10\n\
+Creator: \n\
+Magical Poptarts\n\
+A young girl who was found \n\
+in the woods one day by \n\
+Katalina and Mark. She doesn't \n\
+talk much about her family \n\
+- if she has any. \n\
+Despite being alone in\n\
+the woods, she seems to\n\
+have a knack to survive\n\
+the worst. \n\
+\n\
+Hell, when they found her\n\
+initially, she was seen\n\
+eating a flicky. Mark was\n\
+very impressed while \n\
+Katalina was spooked.\n\
+Starts to cling around Mark\n\
+and is often mistaken for\n\
+his daughter. Still, he does\n\
+treat her like one, when\n\
+she isn't being a hassle. \n\
+Has a very cutesy and \n\
+childish way of speaking. \n\
+Much like Kitten, finds joy\n\
+in messing with Mark by \n\
+calling him 'Markie'.\n\
+Also seems to have a \n\
+very odd and unbalanced\n\
+skillset. I mean what 10\n\
+year old knows how to work\n\
+a cannon but can't read???\n\
+When she eventually meets\n\
+Kitten, the two become\n\
+inseparable. A couple\n\
+of crazy kids having\n\
+fun.\n\
+The bond between the \n\
+four children ends being \n\
+a huge headache for Mark, \n\
+Vanilla and Jack...\n\
+Vanilla mostly. \n\
+Dev Talk: Look, the creator of\n\
+her almost destroyed her voice\n\
+doing the extra Cream voices so\n\
+it's the least I can do.\n\
+\n\
+Also truth be told, I have a\n\
+very soft spot for these two \n\
+characters. So....creator's\n\
+bias strikes again. "))
+
+//castle, katalina
+DEFINE_DIALOG(WWISP_KATALINA, 1, 6, 30, 200, _("\
+WHO IS!!!\n\
+-Katalina Tannon-\n\
+Age: 7\n\
+Creator:\n\
+Gamebun\n\
+\n\
+An orphan found by Mark\n\
+in a bunker during a travel\n\
+up north of the Sonic World.\n\
+She says her parents left \n\
+her here to protect her.\n\
+\n\
+After...well an unfortunate \n\
+discovery of her parents \n\
+whereabouts, Mark decides to \n\
+take her along with her back\n\
+home to the Rabbits as his\n\
+new adopted daughter.\n\
+Though still paranoid of what \n\
+had happened, he usually leaves\n\
+her with Vanilla, and has now \n\
+formed a bond with the Rabbit \n\
+family, even going as far as\n\
+calling Vanilla, 'Mama'.\n\
+Cream and she also share a \n\
+bond, with Katalina calling\n\
+her' Lil' Sis'. Despite this, \n\
+Cream is still the braver \n\
+of the two.\n\
+\n\
+Katalina, or as Mark calls her\n\
+'Katty', currently resides with\n\
+the Rabbits, with her new Papa \n\
+making sure she lives a happy \n\
+and safe new life. \n\
+\n\
+Though after seeing Mark and\n\
+Cream fight off bad guys, she\n\
+wants to toughen up and be a\n\
+hero just like her new papa!\n\
+\n\
+\n\
+The blue rose she holds is \n\
+actually a gift from Mark. Says\n\
+he got it from a pretty little\n\
+town in the mountains.\n\
+\n\
+\n\
+Dev Talk: She's in due to creator\n\
+bias but I just love the little \n\
+blue bun. Still hoping to fix up\n\
+some stuff with her in the \n\
+future."))
+
+//castle, mark
+DEFINE_DIALOG(WWISP_MARK, 1, 6, 30, 200, _("\
+WHO IS!!!\n\
+-Mark Tannon-\n\
+Age: 26\n\
+Creator:\n\
+Gamebun\n\
+\n\
+A human from another world who,\n\
+after an incident involving his\n\
+own set of Stars, ended up in the \n\
+Sonic World barely alive. He was \n\
+given a fox body upon his arrival\n\
+for strange reasons. \n\
+He would end up being found and\n\
+saved by Cream and Vanilla, \n\
+living with them till he felt\n\
+ready to go out and find the\n\
+stars that brought him here \n\
+in the first place.\n\
+In his travels, he would run into \n\
+Katalina, a snowbunny from the\n\
+north, Layla, a strange feral fox \n\
+in the forest and Kitten, a....\n\
+well she just be weird.\n\
+\n\
+He's accepted Katalina but the\n\
+others, they just kind of cling \n\
+to him whether he likes it or not.\n\
+Still, he protects them much the \n\
+same as he does his actual  \n\
+adopted daughter.\n\
+When not adventuring, he heads\n\
+back to the Rabbit household to\n\
+wind down, still hoping to find \n\
+his Stars and return home, now \n\
+as a Father as well.\n\
+\n\
+Dev Talk: He gets special cues for \n\
+being my oldest character and \n\
+this being his most recent revamp.\n\
+Still, wanted to keep him as as \n\
+far from the actual game stuff.\n\
+\n\
+Needless to say I failed huh? \n\
+Also if you see this but don't \n\
+see him, means you prolly found a \n\
+way up here without getting all \n\
+120 Star Rings huh?"))
+
+//Blaze, JRB
+DEFINE_DIALOG(BLAZE_01, 1, 4, 30, 200, _("\
+Cream, how good it is to\n\
+you see again. I'm sorry\n\
+to ask so suddenly but have\n\
+you seen Marine?\n\
+...Now that I think about,\n\
+you two have never met have\n\
+you? She's a lil' raccoon\n\
+about your age and height.\n\
+More of a troublemaker than\n\
+you, that's for sure, but she\n\
+does mean a lot to me.\n\
+\n\
+She disappeared when we arrived\n\
+and has been gone for a long\n\
+while. \n\
+\n\
+I've noticed the paintings\n\
+act like portals so that makes\n\
+finding her harder than it needs\n\
+to be.\n\
+If you do see her, please let\n\
+me know the next time you \n\
+see me. Take care, Cream."))
+
+//Marine, JRB
+DEFINE_DIALOG(MARINE_01, 1, 4, 30, 200, _("\
+Oi, this treasure won't\n\
+budge! Curse ye, you\n\
+mangy old pirates!\n\
+\n\
+...Who the heck are you??\n\
+Maybe you can figure out\n\
+this here puzzle. Get it\n\
+wrong and you get shocked!\n\
+Don't ask how I know this,\n\
+I just know! Wanna show \n\
+Blaze I can be a great\n\
+pirate one day!\n\
+Bet she's lookin' for me\n\
+right now, ain't she? If ya\n\
+see her, tell her I'm fine!"))
+
+DEFINE_DIALOG(MS_001, 1, 6, 30, 200, _("\
+-RADICAL HIGHWAY\n\
+CLOSED FOR REPAIRS-\n\
+\n\
+Please take detour through\n\
+downtown Central City\n\
+in the meantime.\n\
+Thanks to a certain fox\n\
+and hedgehog, damages are\n\
+far more severe than expected.\n\
+We thank you for your patience\n\
+while we fix the situation."))
+

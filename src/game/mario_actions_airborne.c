@@ -213,6 +213,50 @@ void update_air_with_turn(struct MarioState *m) {
     }
 }
 
+// Cream hovering code by AlonWoof
+void update_air_hovering(struct MarioState *m)
+{
+    f32 sidewaysSpeed = 0.0f;
+    f32 dragThreshold = 32.0f;
+    s16 intendedDYaw;
+    f32 intendedMag;
+
+    if (m->input & INPUT_NONZERO_ANALOG)
+    {
+        intendedDYaw = m->intendedYaw - m->faceAngle[1];
+        intendedMag = m->intendedMag / 32.0f;
+
+        m->forwardVel += intendedMag * coss(intendedDYaw) * 1.0f;
+        sidewaysSpeed = intendedMag * sins(intendedDYaw) * 10.0f;
+    }
+    else
+    {
+    	if(abs(m->forwardVel) > 0.1f)
+    	{
+    		m->forwardVel = (m->forwardVel * 0.75f);
+    	}
+    	else
+    	{
+    		m->forwardVel = 0.0f;
+    	}
+    }
+
+    //! Uncapped air speed. Net positive when moving forward.
+    if (m->forwardVel > dragThreshold)
+    {
+        m->forwardVel -= 1.0f;
+    }
+    if (m->forwardVel < -16.0f)
+    {
+        m->forwardVel += 2.0f;
+    }
+
+    m->faceAngle[1] = m->intendedYaw - approach_s32((s16)(m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
+
+    m->vel[0] = m->slideVelX = m->forwardVel * sins(m->faceAngle[1]);
+    m->vel[2] = m->slideVelZ = m->forwardVel * coss(m->faceAngle[1]);
+}
+
 void update_air_without_turn(struct MarioState *m) {
     f32 sidewaysSpeed = 0.0f;
     f32 dragThreshold;
@@ -369,9 +413,17 @@ void update_flying(struct MarioState *m) {
 u32 common_air_action_step(struct MarioState *m, u32 landAction, s32 animation, u32 stepArg) {
     u32 stepResult;
 
-    update_air_without_turn(m);
+ if(m->action != ACT_HOVERING)
+    	update_air_without_turn(m);
+    else
+    	update_air_hovering(m);
+
 
     stepResult = perform_air_step(m, stepArg);
+
+    if(stepResult != AIR_STEP_NONE && m->action == ACT_HOVERING)
+    	set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
+
     switch (stepResult) {
         case AIR_STEP_NONE:
             set_mario_animation(m, animation);
@@ -443,6 +495,78 @@ u32 common_air_action_step(struct MarioState *m, u32 landAction, s32 animation, 
     return stepResult;
 }
 
+// Cream hovering code by AlonWoof
+
+s32 act_hovering(struct MarioState *m)
+{
+	u16 max_stamina = 60;
+
+	//Only when A is being held.
+	if((m->controller->buttonDown & A_BUTTON) && m->flyStamina < max_stamina)
+	{
+
+			float offset = (sinf(((double)gGlobalTimer * 0.1f)));
+			m->vel[1] = offset;
+
+
+
+
+			if(m->flyTimer < 5)
+			{
+				m->forwardVel *= 0.85f;
+				m->vel[0] *= 0.65f;
+				m->vel[2] *= 0.65f;
+
+				play_mario_sound(m, 0, SOUND_MARIO_TWIRL_BOUNCE);
+				//set_camera_mode(m->area->camera, CAMERA_MODE_FREE_ROAM, 1);
+                
+			}
+
+			//Only effect stamina when moving.
+			if((m->input & INPUT_NONZERO_ANALOG) && m->flyTimer > 10)
+			{
+				m->flyStamina++;
+				m->flags &= ~(MARIO_ACTION_SOUND_PLAYED | MARIO_MARIO_SOUND_PLAYED);
+
+			}
+
+			if(m->flyTimer < 50)
+			{
+				m->vel[1] = (50 - m->flyTimer) * 0.25;
+				m->flyTimer++;
+			}
+
+	}
+	else
+	{
+		//Gently float down~
+		if(m->vel[1] < -20)
+			m->vel[1] = -20;
+
+		//set_camera_mode(m->area->camera, m->area->camera->defMode, 30);
+
+		if(m->flyStamina >= max_stamina)
+		{
+			play_mario_sound(m, 0, SOUND_MARIO_PANTING);
+			m->marioBodyState->eyeState = MARIO_EYES_HALF_CLOSED;
+		}
+	}
+
+    if (m->input & INPUT_Z_PRESSED) {
+        return set_mario_action(m, ACT_GROUND_POUND, 0);
+    }
+
+
+	//print_text_fmt_int(40, 60, "%2d", m->flyStamina);
+
+
+   common_air_action_step(m, ACT_FREEFALL_LAND, MARIO_ANIM_HOVERING, AIR_STEP_CHECK_LEDGE_GRAB);
+   return FALSE;
+
+   
+}
+
+
 s32 act_jump(struct MarioState *m) {
 #ifdef EASIER_LONG_JUMPS
     if (m->actionTimer < 1) {
@@ -460,6 +584,12 @@ s32 act_jump(struct MarioState *m) {
     if (m->input & INPUT_Z_PRESSED) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
+
+
+	if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
 
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, 0);
     common_air_action_step(m, ACT_JUMP_LAND, MARIO_ANIM_SINGLE_JUMP,
@@ -480,6 +610,12 @@ s32 act_double_jump(struct MarioState *m) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
 
+	if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
+
+
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, SOUND_MARIO_HOOHOO);
     common_air_action_step(m, ACT_DOUBLE_JUMP_LAND, animation,
                            AIR_STEP_CHECK_LEDGE_GRAB | AIR_STEP_CHECK_HANG);
@@ -494,6 +630,13 @@ s32 act_triple_jump(struct MarioState *m) {
     if (m->input & INPUT_B_PRESSED) {
         return set_mario_action(m, ACT_DIVE, 0);
     }
+
+	if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
+
+
 
     if (m->input & INPUT_Z_PRESSED) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
@@ -608,6 +751,11 @@ s32 act_side_flip(struct MarioState *m) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
 
+	if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
+
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, 0);
 
     if (common_air_action_step(m, ACT_SIDE_FLIP_LAND, MARIO_ANIM_SLIDEFLIP, AIR_STEP_CHECK_LEDGE_GRAB)
@@ -629,6 +777,10 @@ s32 act_wall_kick_air(struct MarioState *m) {
     if (m->input & INPUT_Z_PRESSED) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
+                    	if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
 
     play_mario_jump_sound(m);
     common_air_action_step(m, ACT_JUMP_LAND, MARIO_ANIM_SLIDEJUMP, AIR_STEP_CHECK_LEDGE_GRAB);
@@ -642,6 +794,10 @@ s32 act_long_jump(struct MarioState *m) {
     } else {
         animation = MARIO_ANIM_SLOW_LONGJUMP;
     }
+                    	if(m->vel[1] < 20 && (m->controller->buttonPressed & B_BUTTON))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
 
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, SOUND_MARIO_YAHOO);
 
@@ -836,6 +992,11 @@ s32 act_water_jump(struct MarioState *m) {
 
     play_mario_sound(m, SOUND_ACTION_WATER_JUMP, 0);
     set_mario_animation(m, MARIO_ANIM_SINGLE_JUMP);
+
+	if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
 
     switch (perform_air_step(m, AIR_STEP_CHECK_LEDGE_GRAB)) {
         case AIR_STEP_LANDED:
@@ -2033,6 +2194,7 @@ s32 mario_execute_airborne_action(struct MarioState *m) {
     switch (m->action) {
         case ACT_JUMP:                 cancel = act_jump(m);                 break;
         case ACT_DOUBLE_JUMP:          cancel = act_double_jump(m);          break;
+        case ACT_HOVERING:             cancel = act_hovering(m);             break;
         case ACT_FREEFALL:             cancel = act_freefall(m);             break;
         case ACT_HOLD_JUMP:            cancel = act_hold_jump(m);            break;
         case ACT_HOLD_FREEFALL:        cancel = act_hold_freefall(m);        break;

@@ -172,6 +172,7 @@ void spawn_sparkle_particles(s32 n, s32 radius, s32 height, s32 r) {
 #include "behaviors/bowser.inc.c"
 #include "behaviors/bowser_falling_platform.inc.c"
 #include "behaviors/bowser_flame.inc.c"
+#include "behaviors/cheese_follow.inc.c"
 #include "behaviors/blue_fish.inc.c"
 #include "behaviors/checkerboard_platform.inc.c"
 #include "behaviors/ddd_warp.inc.c"
@@ -234,3 +235,4 @@ void set_obj_anim_with_accel_and_sound(s16 frame1, s16 frame2, s32 sound) {
 #include "behaviors/strong_wind_particle.inc.c"
 #include "behaviors/sl_snowman_wind.inc.c"
 #include "behaviors/sl_walking_penguin.inc.c"
+#include "behaviors/story_npcs.inc.c"

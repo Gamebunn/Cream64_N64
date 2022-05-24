@@ -195,4 +195,44 @@ extern const GeoLayout test_platform_geo[];
 extern const Gfx unknown_seg8_dl_08026260[];
 extern const Collision unknown_seg8_collision_080262F8[];
 
+#include "exclamation_box/geo_header.h"
+
+
+#include "exclamation_box/anim_header.h"
+#include "amy/geo_header.h"
+
+#include "blaze/geo_header.h"
+
+#include "layla/geo_header.h"
+
+#include "kitten/geo_header.h"
+
+#include "marine/geo_header.h"
+
+
+#include "marine/anim_header.h"
+
+#include "kitten/anim_header.h"
+
+#include "layla/anim_header.h"
+
+#include "blaze/anim_header.h"
+
+#include "amy/anim_header.h"
+#include "goomba/geo_header.h"
+
+#include "floomba/geo_header.h"
+
+
+#include "floomba/anim_header.h"
+#include "bobomb_new/geo_header.h"
+
+#include "koopa_shell/geo_header.h"
+
+#include "flyguy/geo_header.h"
+
+#include "chuckya/geo_header.h"
+
+#include "exclamation_box_outline/geo_header.h"
+
 #endif

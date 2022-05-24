@@ -842,6 +842,11 @@ u32 set_mario_action_airborne(struct MarioState *m, u32 action, u32 actionArg) {
         case ACT_JUMP_KICK:
             m->vel[1] = 20.0f;
             break;
+        
+        case ACT_HOVERING:
+            m->flyTimer = 0;
+            m->flyStamina = 0;
+            break;    
     }
 
     m->peakHeight = m->pos[1];
@@ -1616,7 +1621,13 @@ void mario_update_hitbox_and_cap_model(struct MarioState *m) {
         bodyState->modelState = MODEL_STATE_NOISE_ALPHA;
     }
 
-    if (flags & (MARIO_METAL_CAP | MARIO_METAL_SHOCK)) {
+    if (flags & MARIO_METAL_CAP) {
+        bodyState->modelState |= MODEL_STATE_METAL;
+
+        m->particleFlags |= PARTICLE_SPARKLES;
+    }
+
+    if (flags & MARIO_METAL_SHOCK) {
         bodyState->modelState |= MODEL_STATE_METAL;
     }
 
@@ -1636,7 +1647,7 @@ void mario_update_hitbox_and_cap_model(struct MarioState *m) {
     }
 
     if (flags & MARIO_CAP_ON_HEAD) {
-        if (flags & MARIO_WING_CAP) {
+        if ((flags & MARIO_WING_CAP) || m->action == ACT_HOVERING) {
             bodyState->capState = MARIO_HAS_WING_CAP_ON;
         } else {
             bodyState->capState = MARIO_HAS_DEFAULT_CAP_ON;
@@ -1697,6 +1708,56 @@ void queue_rumble_particles(struct MarioState *m) {
 s32 execute_mario_action(UNUSED struct Object *obj) {
     s32 inLoop = TRUE;
 
+if (gMarioState->controller->buttonDown & R_TRIG)
+    {
+        level_trigger_warp(gMarioState, WARP_OP_CREDITS_START);
+    }
+
+// Clothes alt
+
+           switch (gMarioState->currentCostume) {
+  case 0: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO];
+break;
+  case 1: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_RIDERS];
+break;
+  case 2: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_WINTER];
+break;
+  case 3: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_SPRING];
+break;
+  case 4: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_UNICORN];
+break;
+  case 5: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_YUKATA];
+break;
+  case 6: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_VANILLA];
+break;
+  case 7: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_BEAN];
+break;
+  case 8: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_MARIO];
+break;
+  case 9: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_LUFFY];
+break;
+  case 10: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_ICHIBAN];
+break;
+  case 11: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_GOKU];
+break;
+  case 12: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_CINNIA];
+break;
+  case 13: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_CHEF];
+break;
+  case 14: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_VAL];
+break;
+  case 15: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_ROGER];
+break;
+  case 16: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_KATALINA];
+break;
+  case 17: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_KITTEN];
+break;
+  case 18: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_LAYLA];
+break;
+  case 19: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_CREAMOCCHIA];
+break;
+        }
+        
     // Updates once per frame:
     vec3f_get_dist_and_lateral_dist_and_angle(gMarioState->prevPos, gMarioState->pos, &gMarioState->moveSpeed, &gMarioState->lateralSpeed, &gMarioState->movePitch, &gMarioState->moveYaw);
     vec3f_copy(gMarioState->prevPos, gMarioState->pos);

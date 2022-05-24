@@ -36,7 +36,7 @@ struct MacroPreset MacroObjectPresets[] = {
     {bhvUnusedFakeStar,                 MODEL_STAR,                         0}, // macro_fake_star - unused
     {bhvMessagePanel,                   MODEL_WOODEN_SIGNPOST,              0}, // macro_wooden_signpost
     {bhvCannonClosed,                   MODEL_DL_CANNON_LID,                0}, // macro_cannon_closed
-    {bhvBobombBuddyOpensCannon,         MODEL_BOBOMB_BUDDY,                 0}, // macro_bobomb_buddy_opens_cannon
+    {bhvBobombBuddyOpensCannon,         MODEL_LAYLA,                        0}, // macro_bobomb_buddy_opens_cannon
     {bhvButterfly,                      MODEL_BUTTERFLY,                    0}, // macro_butterfly - unused
     {bhvBouncingFireball,               MODEL_NONE,                         0}, // macro_bouncing_fireball_copy - unused
     {bhvFishSpawner,                    MODEL_NONE,                         FISH_SPAWNER_BP_MANY_BLUE}, // macro_fish_group_3 - unused

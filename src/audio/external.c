@@ -76,7 +76,12 @@ enum DialogSpeakers {
     BOWS2, // Bowser Battle Laugh
     GRUNT,
     WIGLR,
-    YOSHI
+    YOSHI,
+    GARDE, // Sad Gardevoir
+    POCKY,
+    TALS1,
+    CHAO,
+    FLOOM,
 };
 
 #define _ 0xFF
@@ -102,7 +107,8 @@ u8 sDialogSpeaker[] = {
     /*16*/ _,     YOSHI, _,     _,     _,     _,     _,     _,     WIGLR, _,
     /*17*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /*18*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*19*/ _,     _,     _,     _,     _,     _,
+    /*19*/ _,     _,     _,     _,     _,     _,     GARDE, POCKY, TALS1, CHAO,
+    /*20*/ FLOOM,     
 };
 #undef _
 STATIC_ASSERT(ARRAY_COUNT(sDialogSpeaker) == DIALOG_COUNT,
@@ -120,6 +126,11 @@ s32 sDialogSpeakerVoice[] = {
     SOUND_OBJ2_BOSS_DIALOG_GRUNT,
     SOUND_OBJ_WIGGLER_TALK,
     SOUND_GENERAL_YOSHI_TALK,
+    SOUND_OBJ_SAD_GARDEVOIR,
+    SOUND_OBJ_POCKY,
+    SOUND_OBJ_TAILS1,
+    SOUND_OBJ_CHAO,
+    SOUND_OBJ_FLOOMBA,
 #if defined(VERSION_JP) || defined(VERSION_US)
     NO_SOUND,
     NO_SOUND,
@@ -299,6 +310,7 @@ u8 sBackgroundMusicDefaultVolume[] = {
     70,  // SEQ_EVENT_CUTSCENE_ENDING
     65,  // SEQ_MENU_FILE_SELECT
     0,   // SEQ_EVENT_CUTSCENE_LAKITU (not in JP)
+    127, // MISSION_STREET
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

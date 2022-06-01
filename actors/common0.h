@@ -235,4 +235,9 @@ extern const Collision unknown_seg8_collision_080262F8[];
 
 #include "exclamation_box_outline/geo_header.h"
 
+#include "tails/geo_header.h"
+
+
+#include "tails/anim_header.h"
+
 #endif

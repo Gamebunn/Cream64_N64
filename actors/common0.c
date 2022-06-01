@@ -101,3 +101,6 @@ UNUSED static const u64 binid_18 = 18;
 #include "floomba/anims/data.inc.c"
 #include "floomba/anims/table.inc.c"
 #include "bobomb_new/model.inc.c"
+#include "tails/model.inc.c"
+#include "tails/anims/data.inc.c"
+#include "tails/anims/table.inc.c"

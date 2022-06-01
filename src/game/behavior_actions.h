@@ -581,6 +581,7 @@ extern struct WaterDropletParams gShallowWaterSplashDropletParams;
 extern struct WaterDropletParams gShallowWaterWaveDropletParams;
 
 // Story NPCs
+Gfx *geo_switch_npc_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_amy_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_tails_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_blaze_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);

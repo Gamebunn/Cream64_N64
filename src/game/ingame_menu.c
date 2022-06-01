@@ -1158,7 +1158,7 @@ s8  gDialogCameraAngleIndex = CAM_SELECTION_MARIO;
 s8  gDialogCourseActNum     =  1;
 
 #define DIAG_VAL1  16
-#define DIAG_VAL3 170 // US & EU
+#define DIAG_VAL3 177 // US & EU
 #define DIAG_VAL4   5
 #define DIAG_VAL2 240 // JP & US
 

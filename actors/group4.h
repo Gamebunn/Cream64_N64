@@ -110,4 +110,8 @@ extern const Gfx whirlpool_seg5_dl_05013CB8[];
 
 #include "sushi_marine/geo_header.h"
 
+#include "motobug/geo_header.h"
+
+
+#include "motobug/anim_header.h"
 #endif

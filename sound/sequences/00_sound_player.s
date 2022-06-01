@@ -2040,6 +2040,7 @@ sound_ref .sound_peach_bake_a_cake
 sound_ref .sound_peach_for_mario
 sound_ref .sound_peach_mario2
 sound_ref .sound_mario_buh_bye
+sound_ref .sound_mario_ground_pound_sub
 
 .sound_mario_jump_hoo:
 chan_setbank 8
@@ -2672,6 +2673,16 @@ chan_end
 
 .layer_F8A:
 layer_note1 39, 0x50, 127
+layer_end
+
+.sound_mario_ground_pound_sub:
+chan_setbank 8
+chan_setinstr 28
+chan_setlayer 0, .layer_F8B
+chan_end
+
+.layer_F8B:
+layer_note1 39, 0xc8, 110
 layer_end
 
 #if defined(VERSION_EU) || defined(VERSION_SH)
@@ -5016,11 +5027,11 @@ sound_ref .sound_obj_wiggler_low_pitch
 sound_ref .sound_obj_snufit_skeeter_death
 sound_ref .sound_obj_bubba_chomp
 sound_ref .sound_obj_enemy_defeat_shrink
-sound_ref .sound_obj_bowser_tail_pickup
-sound_ref .sound_obj_bowser_defeated
-sound_ref .sound_obj_bowser_spinning
-sound_ref .sound_obj_klepto2
-sound_ref .sound_obj_king_bobomb_talk
+sound_ref .sound_obj_gardevoir_sad
+sound_ref .sound_obj_pocky
+sound_ref .sound_obj_tails1
+sound_ref .sound_obj_chao
+sound_ref .sound_obj_floomba
 sound_ref .sound_obj_baby_penguin_walk
 sound_ref .sound_obj_bowser_walk
 sound_ref .sound_obj_bowser_roar
@@ -5142,6 +5153,56 @@ chan_end
 
 .layer_1FFA:
 layer_note1 32, 0x28, 127
+layer_end
+
+.sound_obj_gardevoir_sad:
+chan_setbank 9
+chan_setinstr 7
+chan_setlayer 0, .layer_1FFB
+chan_end
+
+.layer_1FFB:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_obj_pocky:
+chan_setbank 9
+chan_setinstr 8
+chan_setlayer 0, .layer_1FFC
+chan_end
+
+.layer_1FFC:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_obj_tails1:
+chan_setbank 9
+chan_setinstr 9
+chan_setlayer 0, .layer_1FFD
+chan_end
+
+.layer_1FFD:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_obj_chao:
+chan_setbank 9
+chan_setinstr 10
+chan_setlayer 0, .layer_1FFE
+chan_end
+
+.layer_1FFE:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_obj_floomba:
+chan_setbank 9
+chan_setinstr 11
+chan_setlayer 0, .layer_1FFF
+chan_end
+
+.layer_1FFF:
+layer_note1 39, 0xFF, 127
 layer_end
 
 .sound_obj_bowser_inhaling:
@@ -7233,9 +7294,9 @@ chan_end
 
 .layer_2D99:
 layer_portamento 0x81, 23, 255
-layer_note1 35, 0x9, 96
+layer_note1 35, 0x9, 20
 layer_portamento 0x81, 36, 255
-layer_note1 43, 0x44, 100
+layer_note1 43, 0x44, 25
 layer_end
 
 .chan_2DA8:

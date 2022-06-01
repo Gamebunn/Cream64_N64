@@ -1641,6 +1641,7 @@ already defeated, select\n\
 the Stars you recovered\n\
 from them."))
 
+// Chao in basement
 DEFINE_DIALOG(DIALOG_136, 1, 3, 30, 200, _("\
 Chaaaao....\n\
 \n\
@@ -2607,3 +2608,99 @@ far more severe than expected.\n\
 We thank you for your patience\n\
 while we fix the situation."))
 
+DEFINE_DIALOG(MS_002, 1, 4, 30, 200, _("\
+Welcome to the adoption\n\
+center but unfortunately,\n\
+we're temporary closed while\n\
+we do some cleaning up.\n\
+The vaporeon in the window\n\
+escaped and left a mess\n\
+all over the place. So much\n\
+soggy bread...\n\
+I don't get paid enough to\n\
+deal with this. Come back\n\
+tomorrow and please take \n\
+the wonder bread fan."))
+
+// Pocky
+DEFINE_DIALOG(MS_003, 1, 5, 30, 200, _("\
+Hey! Welcome to the Emerald\n\
+Theater! I bet you're here\n\
+to watch the re-release of\n\
+Chao in Space huh?\n\
+\n\
+Sadly, the last ticket just\n\
+got bought by that cute lil'\n\
+fox over there. Aww he was so\n\
+red getting them. Probably\n\
+for a playdate. How cute!\n\
+Well, there's always my\n\
+favorite movie, the Sonic OVA!\n\
+Still a few tickets left if\n\
+you're interested or even\n\
+The Bani!\n\
+Sorbet, my chao over there,\n\
+can help ya out. Have fun\n\
+and enjoy the AC!"))
+
+// Tails
+DEFINE_DIALOG(MS_004, 1, 5, 30, 200, _("\
+Alright I got the tickets,\n\
+just have to go as-WHOA\n\
+hey Cream! Why are you all\n\
+the way out here? I thought\n\
+you were at a party...\n\
+WHAT?! Your mom's been \n\
+kidnapped?! Oh man, Eggman\n\
+sure pick the best time to\n\
+be evil. \n\
+\n\
+Ok, let me give Sonic a call \n\
+and let him know. In the \n\
+meantime, I don't suppose you'd\n\
+be up for a movie later this\n\
+week huh?\n\
+Chao in Space is back in theaters\n\
+and I know how much you love that \n\
+movie! ...Bad time to ask? Y-yeah!\n\
+Of course...I'll let you know\n\
+when I hear back from Sonic!\n\
+(Stupid stupid aaaagh. And I'm\n\
+supposed to be the smart \n\
+one...)"))
+
+// Sorbet
+DEFINE_DIALOG(MS_005, 1, 4, 30, 200, _("\
+(Welcome to the Emerald\n\
+Theather, I'll be handling\n\
+ticket sales today. Anything\n\
+you like in particular?\n\
+Hmm, sayin' you need to save\n\
+your Mama from that Eggman\n\
+fella? Hmm, we love to help\n\
+but it's just us here today.\n\
+Actually kind of busy today\n\
+so we gotta keep things\n\
+together. You look tough, kiddo,\n\
+don't think you'll need our help.\n\
+Good luck, short stuff, we'll\n\
+be rootin' for ya.)"))
+
+// Floomba
+DEFINE_DIALOG(MS_006, 1, 4, 30, 200, _("\
+Whoa, how did you get up here??\n\
+I didn't think anyone could\n\
+get up here without taking the\n\
+stars.\n\
+Well since you're up here, please\n\
+be careful of the stuff around\n\
+here. The Master isn't a fan\n\
+of people messing up his stuff.\n\
+Though I do question why he\n\
+made this room with only a simple\n\
+fence blocking access and even\n\
+THEN!\n\
+I trust you won't mess things up\n\
+though. His froggy friend winds\n\
+up doing it anyway so carry on\n\
+your business. "))

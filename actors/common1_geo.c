@@ -28,3 +28,4 @@
 
 #include "bait_fish/geo.inc.c"
 #include "bowser_key_cutscene/geo.inc.c"
+#include "tails_c1/geo.inc.c"

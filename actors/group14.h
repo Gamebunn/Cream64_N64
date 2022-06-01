@@ -143,4 +143,8 @@ extern const Collision whomp_seg6_collision_06020A0C[];
 
 #include "piranha_plant/geo_header.h"
 
+#include "gemerl/geo_header.h"
+
+
+#include "gemerl/anim_header.h"
 #endif

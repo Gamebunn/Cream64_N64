@@ -102,4 +102,8 @@ extern const struct Animation *const yoshi_seg5_anims_05024100[];
 
 #include "peach_mark/geo_header.h"
 
+#include "mark/geo_header.h"
+
+
+#include "mark/anim_header.h"
 #endif

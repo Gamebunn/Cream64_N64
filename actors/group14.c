@@ -40,3 +40,6 @@ UNUSED static const u64 binid_5 = 5;
 UNUSED static const u64 binid_6 = 6;
 
 #include "koopa_ns/model.inc.c"
+#include "gemerl/model.inc.c"
+#include "gemerl/anims/data.inc.c"
+#include "gemerl/anims/table.inc.c"

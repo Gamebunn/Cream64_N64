@@ -16,3 +16,4 @@
 #include "chain_chomp/geo.inc.c"
 
 #include "koopa_ns/geo.inc.c"
+#include "gemerl/geo.inc.c"

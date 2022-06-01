@@ -35,3 +35,4 @@
 #include "marine/geo.inc.c"
 #include "floomba/geo.inc.c"
 #include "bobomb_new/geo.inc.c"
+#include "tails/geo.inc.c"

@@ -13,3 +13,4 @@
 #include "unagi/geo.inc.c"
 
 #include "sushi_marine/geo.inc.c"
+#include "motobug/geo.inc.c"

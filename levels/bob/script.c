@@ -13,6 +13,7 @@
 
 #include "actors/common1.h"
 #include "actors/common0.h"
+#include "actors/group14.h"
 
 #include "make_const_nonconst.h"
 #include "levels/bob/header.h"
@@ -47,7 +48,7 @@ static const LevelScript script_func_local_2[] = {
 
 static const LevelScript script_func_local_3[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_KING_BOBOMB,           /*pos*/  1636, 4242, -5567, /*angle*/ 0, -147, 0, /*behParam*/ 0x00000000, /*beh*/ bhvKingBobomb,            /*acts*/ ACT_1),
-    OBJECT_WITH_ACTS(/*model*/ MODEL_KOOPA_WITH_SHELL,      /*pos*/ -4004,    0,  5221, /*angle*/ 0, 0, 0,    /*behParam*/ 0x01020000, /*beh*/ bhvKoopa,                 /*acts*/ ACT_2),
+    OBJECT_WITH_ACTS(/*model*/ MODEL_GEMERL,                /*pos*/ -4004,    0,  5221, /*angle*/ 0, 0, 0,    /*behParam*/ 0x01020000, /*beh*/ bhvKoopaGemerl,                 /*acts*/ ACT_2),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,                  /*pos*/ -6000, 1000,  2400, /*angle*/ 0, 0, 0,    /*behParam*/ 0x03000000, /*beh*/ bhvHiddenRedCoinStar,     /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,                  /*pos*/ -6600, 1000,  1250, /*angle*/ 0, 0, 0,    /*behParam*/ 0x04040000, /*beh*/ bhvHiddenStar,            /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_STAR,                  /*pos*/  1550, 1200,   300, /*angle*/ 0, 0, 0,    /*behParam*/ 0x05000000, /*beh*/ bhvStar,                  /*acts*/ ALL_ACTS),
@@ -77,6 +78,7 @@ const LevelScript level_bob_entry[] = {
 
     LOAD_MODEL_FROM_GEO(MODEL_LAYLA,      layla_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KITTEN,     kitten_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_GEMERL,     gemerl_geo),
 
     AREA(/*index*/ 1, bob_geo_000488),
         JUMP_LINK(script_func_local_1),

@@ -199,6 +199,11 @@ enum DialogId {
     BLAZE_01, //193
     MARINE_01, //194
     MS_001, //195
+    MS_002, //196
+    MS_003, //197
+    MS_004, //198
+    MS_005, //199
+    MS_006, //200
     DIALOG_COUNT
 };
 

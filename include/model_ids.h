@@ -52,12 +52,12 @@
 #define MODEL_BLAZE                       0x1C2        // blaze_geo
 #define MODEL_MARINE                      0x1C1        // marine_geo
 #define MODEL_TAILS                       0x1C0        // tails_geo
+#define MODEL_TAILS_C1                    0x1BF        // tails_c1_geo
 
-#define MODEL_POCKY                       0x1C0        // pocky_geo
-#define MODEL_SWEET                       0x1BF        // sweet_geo
-#define MODEL_ATLAS                       0x1BE        // atlas_geo
+#define MODEL_SWEET                       0x1BD        // sweet_geo
+#define MODEL_ATLAS                       0x1BC        // atlas_geo
 
-#define MODEL_FLOOMBA                     0x1BD        // floomba_geo
+#define MODEL_FLOOMBA                     0x1BB        // floomba_geo
 
 // Fish Models
 
@@ -266,6 +266,12 @@
 
 // sa
 
+#define MODEL_GARDEVOIR                           0x36        // gardevoir_geo
+#define MODEL_POCKY                               0x37        // pocky_geo
+#define MODEL_TREE_MS                             0x38        // ms_tree_geo
+#define MODEL_SORBET                              0x39        // sorbet_geo
+#define MODEL_FLOOMBA_SA                          0x3A        // floomba_sa_geo
+
 // bits
 #define MODEL_BITS_SLIDING_PLATFORM               0x36        // bits_geo_0005E0
 #define MODEL_BITS_TWIN_SLIDING_PLATFORMS         0x37        // bits_geo_0005F8
@@ -392,6 +398,8 @@
 #define MODEL_DL_WHIRLPOOL                0x57        // whirlpool_seg5_dl_05013CB8
 #define MODEL_CLAM_SHELL                  0x58        // clam_shell_geo
 #define MODEL_SUSHI_MARINE                0x59        // sushi_marine_geo
+#define MODEL_MOTOBUG                     0X5A        // motobug_geo
+#define MODEL_CRABMEAT                    0X5B        // crabmeat_geo
 
 // group 5
 #define MODEL_POKEY_HEAD                  0x54        // pokey_head_geo
@@ -432,9 +440,10 @@
 // group 10
 #define MODEL_BIRDS                       0x54        // birds_geo
 #define MODEL_YOSHI                       0x55        // yoshi_geo
+#define MODEL_MARK                        0x56        // mark_geo
 
-#define MODEL_CHEESE_ED                   0x56        // cheese_ed
-#define MODEL_CHOCOLA_ED                  0x57        // chocola_ed
+#define MODEL_CHEESE_ED                   0x57        // cheese_ed
+#define MODEL_CHOCOLA_ED                  0x58        // chocola_ed
 
 // group 11
 #define MODEL_ENEMY_LAKITU                0x54        // enemy_lakitu_geo
@@ -473,6 +482,7 @@
 #define MODEL_CHAIN_CHOMP                 0x66        // chain_chomp
 #define MODEL_KOOPA_FLAG                  0x6A        // koopa_flag_geo
 #define MODEL_WOODEN_POST                 0x6B        // wooden_post_geo
+#define MODEL_GEMERL                      0x6C        // gemerl_geo
 
 // group 15
 #define MODEL_MIPS                        0x64        // mips_geo

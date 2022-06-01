@@ -33,8 +33,4 @@ extern const LevelScript level_sa_entry[];
 
 #include "levels/sa/sorbet/anim_header.h"
 
-#include "levels/sa/floomba_sa/geo_header.h"
-
-#include "levels/sa/floomba_sa/anim_header.h"
-
 #endif

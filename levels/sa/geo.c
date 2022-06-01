@@ -20,4 +20,3 @@
 #include "levels/sa/pocky/geo.inc.c"
 #include "levels/sa/ms_tree/geo.inc.c"
 #include "levels/sa/sorbet/geo.inc.c"
-#include "levels/sa/floomba_sa/geo.inc.c"

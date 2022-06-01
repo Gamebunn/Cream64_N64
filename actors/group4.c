@@ -31,6 +31,3 @@ UNUSED static const u64 binid_3 = 3;
 UNUSED static const u64 binid_4 = 4;
 
 #include "sushi_marine/model.inc.c"
-#include "motobug/model.inc.c"
-#include "motobug/anims/data.inc.c"
-#include "motobug/anims/table.inc.c"

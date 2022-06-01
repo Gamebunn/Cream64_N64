@@ -473,6 +473,7 @@
 #define MODEL_CYAN_FISH                   0x67        // cyan_fish_geo
 #define MODEL_WATER_RING                  0x68        // water_ring_geo
 #define MODEL_SKEETER                     0x69        // skeeter_geo
+#define MODEL_TAMMIE                      0x6A        // tammie_geo
 
 // group 14
 #define MODEL_PIRANHA_PLANT               0x64        // piranha_plant_geo

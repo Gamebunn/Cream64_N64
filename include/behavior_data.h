@@ -449,7 +449,6 @@ extern const BehaviorScript bhvPokeyBodyPart[];
 extern const BehaviorScript bhvSwoop[];
 extern const BehaviorScript bhvFlyGuy[];
 extern const BehaviorScript bhvGoomba[];
-extern const BehaviorScript bhvGoombaSA[];
 extern const BehaviorScript bhvGoombaTripletSpawner[];
 #ifdef FLOOMBAS
 extern const BehaviorScript bhvFloomba[];
@@ -569,7 +568,7 @@ extern const BehaviorScript bhvToadMessageTails1[];
 extern const BehaviorScript bhvToadMessagePocky[];
 extern const BehaviorScript bhvToadMessageSorbet[];
 extern const BehaviorScript bhvBobombBuddyGardevoir[];
-extern const BehaviorScript bhvBobombBuddyFloombaSA[];
+extern const BehaviorScript bhvBobombBuddyTammie[];
 
 extern const BehaviorScript bhvTankFishGroup2[];
 #endif // BEHAVIOR_DATA_H

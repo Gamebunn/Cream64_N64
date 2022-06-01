@@ -30,6 +30,3 @@
 #include "levels/sa/sorbet/model.inc.c"
 #include "levels/sa/sorbet/anims/data.inc.c"
 #include "levels/sa/sorbet/anims/table.inc.c"
-#include "levels/sa/floomba_sa/model.inc.c"
-#include "levels/sa/floomba_sa/anims/data.inc.c"
-#include "levels/sa/floomba_sa/anims/table.inc.c"

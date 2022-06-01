@@ -12,6 +12,7 @@
 #include "levels/scripts.h"
 
 #include "actors/group4.h"
+#include "actors/group13.h"
 #include "actors/common1.h"
 
 #include "make_const_nonconst.h"
@@ -48,8 +49,9 @@ const LevelScript level_sa_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_POCKY, pocky_geo),
     LOAD_MODEL_FROM_GEO(MODEL_TREE_MS, ms_tree_geo),
     LOAD_MODEL_FROM_GEO(MODEL_SORBET, sorbet_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_FLOOMBA_SA, floomba_sa_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_MOTOBUG, motobug_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_FLOOMBA_SA, floomba_sa_geo),
+    //LOAD_MODEL_FROM_GEO(MODEL_MOTOBUG, motobug_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_TAMMIE, tammie_geo),
 
     AREA(/*index*/ 1, sa_geo_000170),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ 0, -1535, 0, /*angle*/ 0, 90, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvSwimmingWarp),
@@ -68,14 +70,13 @@ const LevelScript level_sa_entry[] = {
 		WARP_NODE(0x0A, LEVEL_SA, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_SA, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_SA, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		OBJECT(MODEL_MOTOBUG, -255, 154, 193, 0, 0, 0, 0x00000000, bhvGoombaSA),
-		OBJECT(MODEL_MOTOBUG, -423, 154, -770, 0, 0, 0, 0x00000000, bhvGoombaSA),
-		OBJECT(MODEL_MOTOBUG, -1649, 154, 313, 0, 0, 0, 0x00000000, bhvGoombaSA),
-		OBJECT(MODEL_FLOOMBA_SA, 6853, 1549, -4902, 0, -90, 0, MS_006 << 16, bhvBobombBuddyFloombaSA),
+		OBJECT(MODEL_TAMMIE, 5391, 131, -1901, 0, -90, 0, MS_006 << 16, bhvBobombBuddyTammie),
 		OBJECT(MODEL_GARDEVOIR, -5761, 131, 2180, 0, 0, 0, MS_002 << 16, bhvBobombBuddyGardevoir),
 		OBJECT(MODEL_POCKY, 3056, 131, 1412, 0, 25, 0, MS_003 << 24, bhvToadMessagePocky),
 		OBJECT(MODEL_SORBET, 2559, 366, 1207, 0, 0, 0, MS_005 << 24, bhvToadMessageSorbet),
 		OBJECT(MODEL_TAILS_C1, 1678, 131, 2374, 0, 90, 0, MS_004 << 24, bhvToadMessageTails1),
+		OBJECT(MODEL_NONE, 3194, 432, 2042, 0, 0, 0, 0x00000000, bhvHiddenRedCoinStar),
+		OBJECT(MODEL_NONE, 3194, 214, 2042, 0, 0, 0, 0x00000000, bhvRedCoinStarMarker),
 		OBJECT(MODEL_WOODEN_SIGNPOST, -4733, 228, -5763, 0, 0, 0, MS_001 << 16, bhvMessagePanel),
 		OBJECT(MODEL_TREE_MS, 951, 131, 2657, 0, 0, 0, 0x00000000, bhvTree),
 		OBJECT(MODEL_TREE_MS, -2062, 131, 4112, 0, 0, 0, 0x00000000, bhvTree),

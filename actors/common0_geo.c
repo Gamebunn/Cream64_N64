@@ -36,3 +36,5 @@
 #include "floomba/geo.inc.c"
 #include "bobomb_new/geo.inc.c"
 #include "tails/geo.inc.c"
+#include "toad_normal/geo.inc.c"
+#include "goomba_marine/geo.inc.c"

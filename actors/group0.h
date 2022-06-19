@@ -351,13 +351,7 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "mario_vanilla/geo_header.h"
 
-#include "mario_bean/geo_header.h"
-
 #include "mario_mario/geo_header.h"
-
-#include "mario_luffy/geo_header.h"
-
-#include "mario_ichiban/geo_header.h"
 
 #include "mario_goku/geo_header.h"
 
@@ -367,17 +361,9 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "mario_val/geo_header.h"
 
-#include "mario_roger/geo_header.h"
-
 #include "mario_katalina/geo_header.h"
 
-#include "mario_kitten/geo_header.h"
-
-#include "mario_layla/geo_header.h"
-
 #include "mario_creamocchia/geo_header.h"
-
-#include "exclamation_box/anim_header.h"
 
 #include "wisp1/geo_header.h"
 
@@ -386,4 +372,5 @@ extern const Gfx white_particle_small_unused_dl[];
 
 
 #include "wisp2/anim_header.h"
+
 #endif

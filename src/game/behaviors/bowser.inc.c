@@ -608,6 +608,15 @@ void bowser_act_spit_fire_into_sky(void) {
  */
 void bowser_act_hit_mine(void) {
     // Similar vel values from bowser_fly_back_dead
+
+    if(o->oHealth == 1)
+    {
+        if(!o->unused2)
+            play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, SEQ_LEVEL_EGGMAN3FINALE), 0);
+
+        o->unused2 = 1;
+    }
+    
     if (o->oTimer == 0) {
         o->oForwardVel = -400.0f;
         o->oVelY = 100.0f;

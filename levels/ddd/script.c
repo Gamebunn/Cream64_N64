@@ -102,7 +102,7 @@ const LevelScript level_ddd_entry[] = {
         INSTANT_WARP(/*index*/ 3, /*destArea*/ 2, /*displace*/ -8192, 0, 0),
         TERRAIN(/*terrainData*/ ddd_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ ddd_seg7_area_1_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_WATER),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_NEW_DDD),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_WATER),
     END_AREA(),
 
@@ -121,7 +121,7 @@ const LevelScript level_ddd_entry[] = {
         INSTANT_WARP(/*index*/ 2, /*destArea*/ 1, /*displace*/ 8192, 0, 0),
         TERRAIN(/*terrainData*/ ddd_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ ddd_seg7_area_2_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_WATER),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_NEW_DDD),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_WATER),
     END_AREA(),
 

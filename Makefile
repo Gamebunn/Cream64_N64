@@ -134,11 +134,11 @@ LINK_LIBRARIES = $(foreach i,$(LIBRARIES),-l$(i))
 #==============================================================================#
 
 # Default non-gcc opt flags
-DEFAULT_OPT_FLAGS = -Ofast
+DEFAULT_OPT_FLAGS = -O
 
 # Main opt flags
 GCC_MAIN_OPT_FLAGS = \
-  -Ofast \
+  -O \
   --param case-values-threshold=20 \
   --param max-completely-peeled-insns=10 \
   --param max-unrolled-insns=10 \
@@ -149,7 +149,7 @@ GCC_MAIN_OPT_FLAGS = \
 
 # Surface Collision
 GCC_COLLISION_OPT_FLAGS = \
-  -Ofast \
+  -O \
   --param case-values-threshold=20 \
   --param max-completely-peeled-insns=100 \
   --param max-unrolled-insns=100 \
@@ -162,7 +162,7 @@ GCC_COLLISION_OPT_FLAGS = \
 
 # Math Util
 GCC_MATH_UTIL_OPT_FLAGS = \
-  -Ofast \
+  -O \
   -fno-unroll-loops \
   -fno-peel-loops \
   --param case-values-threshold=20  \

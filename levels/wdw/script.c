@@ -112,7 +112,7 @@ const LevelScript level_wdw_entry[] = {
         INSTANT_WARP(/*index*/ 1, /*destArea*/ 2, /*displace*/ 0, 0, 0),
         TERRAIN(/*terrainData*/ wdw_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ wdw_seg7_area_1_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_UNDERGROUND),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_NEW_WDW),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_STONE),
     END_AREA(),
 
@@ -124,7 +124,7 @@ const LevelScript level_wdw_entry[] = {
         INSTANT_WARP(/*index*/ 0, /*destArea*/ 1, /*displace*/ 0, 0, 0),
         TERRAIN(/*terrainData*/ wdw_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ wdw_seg7_area_2_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_UNDERGROUND),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0003, /*seq*/ SEQ_LEVEL_NEW_WDW),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_WATER),
     END_AREA(),
 

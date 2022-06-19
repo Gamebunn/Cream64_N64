@@ -29,3 +29,7 @@
 #include "bait_fish/geo.inc.c"
 #include "bowser_key_cutscene/geo.inc.c"
 #include "tails_c1/geo.inc.c"
+#include "warpring/geo.inc.c"
+//#include "marios_cap/geo.inc.c"
+//#include "marios_metal_cap/geo.inc.c"
+//#include "marios_wing_cap/geo.inc.c"

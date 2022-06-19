@@ -1,0 +1,64 @@
+{
+    "date": "1996-03-19",
+    "sample_bank": "streamed_audio_side",
+    "envelopes": {
+        "envelope0": [
+            [1, 32700],
+            [1, 32700],
+            [32700, 29430],
+            "hang"
+        ]
+    },
+    "instruments": {
+        "inst0": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "highscore_0"
+        },
+        "inst1": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "castlemessage_0"
+        },
+        "inst2": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "boss_maniaboss_0"  
+        },
+        "inst3": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "boss_maniaboss_0"  
+        },
+        "inst4": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "boss_maniaboss_0"  
+        },
+        "inst5": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "boss2_wiseman_0"  
+        },
+        "inst6": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "mission_street_0"  
+        },
+        "inst7": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "kb_dudleytheme_0"  
+        }
+    },
+    "instrument_list": [
+        "inst0",
+        "inst1",
+        "inst2",
+        "inst3",
+        "inst4",
+        "inst5",
+        "inst6",
+        "inst7"
+    ]
+}

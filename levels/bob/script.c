@@ -89,6 +89,7 @@ const LevelScript level_bob_entry[] = {
         OBJECT(/*model*/ MODEL_NONE, /*pos*/  1680,  3835, -5523, /*angle*/ 0, -153, 0, /*behParam*/ 0x000C0000, /*beh*/ bhvFadingWarp),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ -6612,  1024, -3351, /*angle*/ 0, 107, 0,  /*behParam*/ 0x000D0000, /*beh*/ bhvFadingWarp),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/  1980,   768,  6618, /*angle*/ 0, -151, 0, /*behParam*/ 0x000E0000, /*beh*/ bhvFadingWarp),
+        OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -6365,  1000,  6464, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
         OBJECT(/*model*/ MODEL_WISP1, /*pos*/  -6806,   0,  5004, /*angle*/ 0, 0, 0, /*behParam*/ MWISP_BOB << 16, /*beh*/ bhvWisp1),
         OBJECT(/*model*/ MODEL_WISP2, /*pos*/  -6500,   0,  4776, /*angle*/ 0, 0, 0, /*behParam*/ WWISP_LAYLA_KITTEN << 16, /*beh*/ bhvWisp2),
         WARP_NODE(/*id*/ 0x0A, /*destLevel*/ LEVEL_BOB, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),

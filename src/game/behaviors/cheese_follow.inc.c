@@ -33,14 +33,14 @@ void bhv_cheese_act_follow_mario(void) {
 	cur_obj_move_xz_using_fvel_and_yaw();
     o->oFaceAngleYaw = o->oAngleToMario;
 
-	switch (gMarioState->currentCostume) {
+	/*switch (gMarioState->currentCostume) {
     case 0: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW];
 break;
     case 1: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW];
 break;
     case 2: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW];
 break;
-    case 3: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW];
+    case 3: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW_SPRING];
 break;
     case 4: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW];
 break;
@@ -74,7 +74,7 @@ break;
 break;
     case 19: o->header.gfx.sharedChild = gLoadedGraphNodes [MODEL_CHEESE_FOLLOW];
 break;
-    }
+    }*/
 	
 }
 

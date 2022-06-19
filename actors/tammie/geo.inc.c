@@ -17,7 +17,7 @@ const GeoLayout tammie_geo[] = {
 		GEO_OPEN_NODE(),
 			GEO_SCALE(LAYER_OPAQUE, 10486),
 			GEO_OPEN_NODE(),
-				GEO_ANIMATED_PART(LAYER_ALPHA, 0, 587, 28, tammie_Root_mesh_layer_4),
+				GEO_ANIMATED_PART(LAYER_ALPHA, 0, 118, 28, tammie_Root_mesh_layer_4),
 				GEO_OPEN_NODE(),
 					GEO_DISPLAY_LIST(LAYER_OPAQUE, tammie_Root_mesh_layer_1),
 					GEO_DISPLAY_LIST(LAYER_OPAQUE, tammie_Chest_skinned_mesh_layer_1),

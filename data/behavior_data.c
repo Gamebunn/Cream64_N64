@@ -45,6 +45,7 @@
 #include "levels/ttc/header.h"
 #include "levels/rr/header.h"
 #include "levels/castle_grounds/header.h"
+#include "levels/castle_courtyard/header.h"
 #include "levels/bitdw/header.h"
 #include "levels/lll/header.h"
 #include "levels/sa/header.h"
@@ -6489,19 +6490,122 @@ const BehaviorScript bhvBobombBuddyGardevoir[] = {
     END_LOOP(),
 };
 
-const BehaviorScript bhvBobombBuddyTammie[] = {
-    BEGIN(OBJ_LIST_GENACTOR),
-    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO | OBJ_FLAG_HOLDABLE | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+const BehaviorScript bhvTammie[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
     LOAD_ANIMATIONS(oAnimations, tammie_anims),
-    SET_INTERACT_TYPE(INTERACT_TEXT),
-    DROP_TO_FLOOR(),
-    SET_HITBOX(/*Radius*/ 100, /*Height*/ 60),
     ANIMATE(0),
-    SET_INT(oBobombBuddyRole, 0),
-    SET_HOME(),
-    CALL_NATIVE(bhv_bobomb_buddy_init),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_INT(oInteractionSubtype, INT_SUBTYPE_SIGN),
+    SET_HITBOX(/*Radius*/ 150, /*Height*/ 80),
+    SET_INT(oWoodenPostTotalMarioAngle, 0),
     BEGIN_LOOP(),
         SET_INT(oIntangibleTimer, 0),
-        CALL_NATIVE(bhv_bobomb_buddy_loop),
+        SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvToadMessageBait[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_PERSISTENT_RESPAWN | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, bait_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 100),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_toad_message_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_toad_message_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvWarpRing[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_ANIMATIONS(oAnimations, warpring_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_INT(oInteractionSubtype, INT_SUBTYPE_SIGN),
+    SET_HITBOX(/*Radius*/ 150, /*Height*/ 80),
+    SET_INT(oWoodenPostTotalMarioAngle, 0),
+    BEGIN_LOOP(),
+        SET_INT(oIntangibleTimer, 0),
+        SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvLurk[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_ANIMATIONS(oAnimations, lurk_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_INT(oInteractionSubtype, INT_SUBTYPE_SIGN),
+    SET_HITBOX(/*Radius*/ 150, /*Height*/ 0),
+    SET_INT(oWoodenPostTotalMarioAngle, 0),
+    BEGIN_LOOP(),
+        SET_INT(oIntangibleTimer, 0),
+        SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvToadMessageBump[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_PERSISTENT_RESPAWN | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, bump_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 100),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_toad_message_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_toad_message_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvSage[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_ANIMATIONS(oAnimations, sage_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_INT(oInteractionSubtype, INT_SUBTYPE_SIGN),
+    SET_HITBOX(/*Radius*/ 150, /*Height*/ 0),
+    SET_INT(oWoodenPostTotalMarioAngle, 0),
+    BEGIN_LOOP(),
+        SET_INT(oIntangibleTimer, 0),
+        SET_INT(oInteractStatus, 0),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvToadMessageGoombaMarine[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_PERSISTENT_RESPAWN | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, goomba_marine_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 100),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_toad_message_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_toad_message_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvToadMessageNormal[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_PERSISTENT_RESPAWN | OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, toad_normal_anims),
+    ANIMATE(0),
+    SET_INTERACT_TYPE(INTERACT_TEXT),
+    SET_HITBOX(/*Radius*/ 80, /*Height*/ 100),
+    SET_INT(oIntangibleTimer, 0),
+    CALL_NATIVE(bhv_init_room),
+    CALL_NATIVE(bhv_toad_message_init),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_toad_message_loop),
     END_LOOP(),
 };

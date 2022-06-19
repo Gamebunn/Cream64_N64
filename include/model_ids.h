@@ -16,27 +16,21 @@
 #define MODEL_MARIO_UNICORN               0x1FC        // mario_unicorn_geo
 #define MODEL_MARIO_YUKATA                0x1FB        // mario_yukata_geo
 #define MODEL_MARIO_VANILLA               0x1FA        // mario_vanilla_geo
-#define MODEL_MARIO_BEAN                  0x1F9        // mario_bean_geo
+//#define MODEL_MARIO_BEAN                  0x1F9        // mario_bean_geo
 #define MODEL_MARIO_MARIO                 0x1F8        // mario_mario_geo
-#define MODEL_MARIO_LUFFY                 0x1F7        // mario_luffy_geo
-#define MODEL_MARIO_ICHIBAN               0x1F6        // mario_ichiban_geo
+//#define MODEL_MARIO_LUFFY                 0x1F7        // mario_luffy_geo
+//#define MODEL_MARIO_ICHIBAN               0x1F6        // mario_ichiban_geo
 
 #define MODEL_MARIO_GOKU                  0x1F5        // mario_goku_geo
 #define MODEL_MARIO_CINNIA                0x1F4        // mario_cinnia_geo
 #define MODEL_MARIO_CHEF                  0x1F3        // mario_chef_geo
 #define MODEL_MARIO_VAL                   0x1F2        // mario_val_geo
-#define MODEL_MARIO_ROGER                 0x1F1        // mario_roger_geo
+//#define MODEL_MARIO_ROGER                 0x1F1        // mario_roger_geo
 
 #define MODEL_MARIO_KATALINA              0x1F0        // mario_katalina_geo
-#define MODEL_MARIO_KITTEN                0x1EF        // mario_kitten_geo
-#define MODEL_MARIO_LAYLA                 0x1EE        // mario_layla_geo
+//#define MODEL_MARIO_KITTEN                0x1EF        // mario_kitten_geo
+//#define MODEL_MARIO_LAYLA                 0x1EE        // mario_layla_geo
 #define MODEL_MARIO_CREAMOCCHIA           0x1ED        // mario_creamocchia_geo
-
-
-
-// Cheese Alts
-
-#define MODEL_CHEESE_FOLLOW_CHOCOLA       0x1E1        // cheese_follow_chocola_geo
 
 // Vanilla Alts
 
@@ -53,11 +47,14 @@
 #define MODEL_MARINE                      0x1C1        // marine_geo
 #define MODEL_TAILS                       0x1C0        // tails_geo
 #define MODEL_TAILS_C1                    0x1BF        // tails_c1_geo
+#define MODEL_WARPRING                    0x1BE        // warpring_geo
 
 #define MODEL_SWEET                       0x1BD        // sweet_geo
 #define MODEL_ATLAS                       0x1BC        // atlas_geo
 
 #define MODEL_FLOOMBA                     0x1BB        // floomba_geo
+#define MODEL_TOAD_NORMAL                 0x1BA        // toad_normal_geo
+#define MODEL_GOOMBA_MARINE               0x1B9        // goomba_marine_geo
 
 // Fish Models
 
@@ -233,7 +230,11 @@
 #define MODEL_RR_TRICKY_TRIANGLES_FRAME3          0x44        // rr_geo_0009A0
 #define MODEL_RR_TRICKY_TRIANGLES_FRAME4          0x45        // rr_geo_0009B8
 
-// castle grounds
+// castle inside
+#define MODEL_BAIT                                0x36        // bait_geo
+#define MODEL_LURK                                0x37        // lurk_geo
+#define MODEL_BUMP                                0x38        // bump_geo
+#define MODEL_SAGE                                0x39        // sage_geo
 
 // bitdw
 #define MODEL_BITDW_SQUARE_PLATFORM               0x36        // geo_bitdw_000558

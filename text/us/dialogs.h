@@ -2681,26 +2681,391 @@ fella? Hmm, we love to help\n\
 but it's just us here today.\n\
 Actually kind of busy today\n\
 so we gotta keep things\n\
-together. You look tough, kiddo,\n\
-don't think you'll need our help.\n\
-Good luck, short stuff, we'll\n\
-be rootin' for ya.)"))
+together. You look tough, kiddo.\n\
+Don't think you'll need our help.\n\
+You know I think those red rings\n\
+may help ya on your adventure.\n\
+Go bash that egghead, little \n\
+bunny. We're rootin' for ya.)"))
 
-// Floomba
+// Tammie
 DEFINE_DIALOG(MS_006, 1, 4, 30, 200, _("\
-Whoa, how did you get up here??\n\
-I didn't think anyone could\n\
-get up here without taking the\n\
-stars.\n\
-Well since you're up here, please\n\
-be careful of the stuff around\n\
-here. The Master isn't a fan\n\
-of people messing up his stuff.\n\
-Though I do question why he\n\
-made this room with only a simple\n\
-fence blocking access and even\n\
-THEN!\n\
-I trust you won't mess things up\n\
-though. His froggy friend winds\n\
-up doing it anyway so carry on\n\
-your business. "))
+Oh hi, you here to jump on some\n\
+cars too? Man, I wish. Ever since\n\
+that tunnel closed, it's been \n\
+pretty quiet around here.\n\
+Why would I jump on moving\n\
+cars? Cause it's fun, that's why!\n\
+But this spot is a pretty cool\n\
+spot to just relax.\n\
+No one to bother ya except\n\
+the occasional city worker. But\n\
+they look at me and know to\n\
+not mess with me, haha!"))
+
+// Vending Machine
+DEFINE_DIALOG(MS_007, 1, 2, 30, 200, _("\
+Oh man, this vending machine\n\
+is full of a bunch of...\n\
+cool car magazines! You bet\n\
+Mr. Vector would love these!\n\
+Or even Charmy. He does love\n\
+that movie about the talking cars."))
+
+// Sign2
+DEFINE_DIALOG(MS_008, 1, 5, 30, 200, _("\
+Listen for the sounds of\n\
+Sweeps in the area. They seem\n\
+to be attracted to the \n\
+reflective red rings. So if\n\
+they're nearby, so is a ring!"))
+
+//Music Credits, Mission Street
+DEFINE_DIALOG(MWISP_MS, 1, 4, 30, 200, _("\
+Music used:\n\
+-Sonic Adventure 2-\n\
+Mission Street\n\
+-- Dreamcast"))
+
+//Lurk
+DEFINE_DIALOG(KB_000, 1, 6, 30, 200, _("\
+Welcome to the Trashpit,\n\
+what would it b- Well hello\n\
+there, sweetie!\n\
+How'd you manage to get in?\n\
+Are you lost? ... \n\
+\n\
+You look just like... Oh! \n\
+Is your name Cream? I wouldn't \n\
+let minors in usually but as \n\
+you're as cute as your Mom,\n\
+I'll make an exception for  \n\
+you, Sweetie!\n\
+You may not know this but\n\
+your mom and her friends\n\
+are frequent guests here. \n\
+Let Auntie Lurk look after \n\
+you for awhile.\n\
+\n\
+A lot of my drinks aren't \n\
+for you, Honeybun. Though I \n\
+do have some carrot jui- hm? \n\
+You need to get back to \n\
+the castle to save your \n\
+mom?\n\
+Oh, Sweetie, this is Central \n\
+City. No Castles here. You \n\
+must of got off at the train \n\
+station at Central Square.\n\
+\n\
+\n\
+Next you're gonna tell me you \n\
+'warped' here or something like \n\
+those two over there... You did?\n\
+Well franky, hun, it's not the\n\
+strangest thing I've heard since\n\
+taking over the bar.\n\
+Anyway darling, why don't you \n\
+join in our karaoke night! \n\
+I'm sure you'll wow the crowd \n\
+as much as your mom does with \n\
+her lovely voice~\n\
+\n\
+Feel free to have a look around \n\
+and talk to the patrons, \n\
+I'll keep an eye on them \n\
+for you sweetie. -wink-\n\
+And don't worry, sweetie, I'm \n\
+sure your mom is fine!\n\
+She keeps those pals of hers\n\
+in check and has the patience \n\
+of a saint. She's a lot \n\
+stronger than you think and\n\
+you should be proud of that.\n\
+\n\
+Make sure you behave yourself \n\
+and don't go wondering off. \n\
+Check around some objects to\n\
+learn a few things!\n\
+See ya around honeybun~"))
+
+//Sage - Bar
+DEFINE_DIALOG(KB_001, 1, 2, 30, 200, _("\
+...\n\
+\n\
+Don't bother me right\n\
+now, Earflops."))
+
+//Bump - Bar
+DEFINE_DIALOG(KB_002, 1, 5, 30, 200, _("\
+-You listen carefully and \n\
+you can kind of make out\n\
+some lyrics to various\n\
+songs...-\n\
+\n\
+hold on much longer...\n\
+-hic- oneee waay\n\
+traaack. Dun dun doooo\n\
+do dooo this'll last!\n\
+\n\
+So many faces...\n\
+I've seen them all.\n\
+buh buh buh...\n\
+as they faaaalllll!!\n\
+\n\
+I see it, now within my \n\
+reach...\n\
+it's always been within -hic-\n\
+which meeee. \n\
+The possibilities...\n\
+...\n\
+Light the fuse...\n\
+da da something...\n\
+READY TO BLOW!\n\
+\n\
+Yeah! I can feel it now!\n\
+Just take my hand baybee!!\n\
+Gonna reach it!\n\
+Reach for those staaaaars..\n\
+toooniiiiight. \n\
+-Ya know despite everything\n\
+she's still having a good time.\n\
+And really, for karaoke, that's\n\
+all that really matters.- "))
+
+//Marine Goomba - Bar
+DEFINE_DIALOG(KB_003, 1, 4, 30, 200, _("\
+C'mon, c'mon just a set of\n\ 
+sevens pleaaaaase.\n\
+...Oh gosh, it's you. How \n\
+did you even get here?\n\
+Ugh, nevermind that. Look\n\
+just don't tell my superiors\n\
+that I'm here okay? \n\
+\n\
+Have you tried dealing with\n\
+The Straw Hats?! They don't \n\
+mess around!! \n\
+\n\
+I rather lose my entire bank\n\
+account than lose my life...\n\
+But I know I gotta go back\n\
+out there eventually.\n\
+Command says there's three\n\
+of them somewhere in these \n\
+worlds.\n\
+\n\
+One in a misty lake,\n\
+another in the desert\n\
+and one in the sky.\n\
+\n\
+I know I'll cya later, kid.\n\
+Just let me enjoy my time\n\
+before I have to deal with\n\
+them again... "))
+
+//Marine Goomba 2 - Bar
+DEFINE_DIALOG(KB_004, 1, 5, 30, 200, _("\
+Aye, child. Do you see the\n\
+creature in front of you? \n\
+People claim it's a dog\n\
+or even some dinosaur...\n\
+\n\
+...But you would believe \n\
+it's a legendary beast living\n\
+in the darkness below the ground.\n\
+\n\
+\n\
+I'm grateful the owner here\n\
+let me hang up this old \n\
+painting of the beast in case\n\
+people feel interested in it.\n\
+\n\
+Only a few have ever seen its\n\
+beauty in person, my grandfather\n\
+being one of them. The diaries\n\
+he left detailing its existance\n\
+and beauty.\n\
+Sadly he never wrote exactly \n\
+where to find the beast but\n\
+legend say it's residing in an\n\
+underground lake. \n\
+\n\
+Maybe one day someone will\n\
+find the beast and record\n\
+their findings for others\n\
+to read and discover.\n\
+\n\
+Till then, I will continue to\n\
+spread the tale and maybe\n\
+just one day, someone can \n\
+witness it for themselves\n\
+as well."))
+
+//Bup 1 - Bar
+DEFINE_DIALOG(KB_005, 1, 4, 30, 200, _("\
+Oh hello there! Strange to see\n\
+a kid here but tonight looks\n\
+to be a slow one, so the more\n\
+the merrier!\n\
+It's funny. We were given the\n\
+order to leave the castle by\n\
+the princess for some party. \n\
+Can't beat an early vacation!\n\
+But as we were doing one \n\
+last inspection in the castle,\n\
+this guy and I found a weird\n\
+ring in the courtyard.\n\
+We got near it and suddenly, we\n\
+were in front of this place. \n\
+Sure, it's no Isle Defino but\n\
+this place is something else.\n\
+The barista is nice, the drinks\n\
+are great, the locals are \n\
+friendly folk and the \n\
+atmosphere is incredible!\n\
+This deer gal on stage right\n\
+now is wonderful!\n\
+\n\
+\n\
+Sure, she's a bit of a  \n\
+lightweight and her singing \n\
+is iffy but man, she's so cute \n\
+and nice. Can't stay mad.\n\
+I do wish her pal here wasn't \n\
+so ...what's the word for it. \n\
+A big meanie? Just be careful\n\
+around her.\n\
+Anyway, you have fun, kid,\n\
+and enjoy your time here!"))
+
+//Bup 2 - Bar
+DEFINE_DIALOG(KB_006, 1, 5, 30, 200, _("\
+Oh hello! Bet you got here\n\
+through some warp ring too huh?\n\
+Yeah, no idea when it showed up \n\
+but what cha gonna do.\n\
+\n\
+Oh, did you by chance run into\n\
+a Toad with bushy brows in the\n\
+basement? Oh man, please don't \n\
+tell me he insulted you too?\n\
+\n\
+Yeah, the rest of us have no\n\
+idea why he's that way, even\n\
+more so with you furry fellas.\n\
+\n\
+\n\
+Just kind of happened one day\n\
+back in London during the\n\
+Olympics. When we got back,\n\
+he suddenly got real angry\n\
+at the rabbits in the garden.\n\
+Also would not surprise us\n\
+that he stayed at the castle.\n\
+He's very committed to his\n\
+job.\n\
+\n\
+The rest of us apologize for\n\
+his behavior. We just kind of\n\
+leave him to his business. \n\
+Maybe he'll relax when we're\n\
+all back! Hopefully..."))
+
+//Bait - Bar
+DEFINE_DIALOG(KB_007, 1, 3, 30, 200, _("\
+Silly rabbit, you won't find \n\
+any tricks here. \n\
+\n\
+Just water, rust, and a \n\
+whole lot of nasty, nasty \n\
+stuff."))
+
+//Big doll - Bar
+DEFINE_DIALOG(KB_008, 1, 3, 30, 200, _("\
+-It's a doll of Mr. Big!\n\
+Aww, it's so cute and\n\ 
+fluffy!!\n\
+Wonder how he got one?\n\
+I want one of me!!...and\n\
+one of Tails and Cheese too!-"))
+
+//Arcade Flvaortext, MVC2 Cab
+DEFINE_DIALOG(KB_MVC2, 1, 4, 30, 200, _("\
+-Tails and Charmy talk about this\n\
+a lot for some reason. They watch\n\
+the better player do these crazy\n\
+combos and I can hardly keep up.\n\
+Mr. Mark tells me this is also in\n\
+his world. He's not very good at \n\
+it but he keeps coming back to \n\
+play with friends.\n\
+There's so many characters and\n\
+the music is really good too!\n\
+Maybe I should try it next \n\
+time the guys play again.-"))
+
+//Arcade Flvaortext, CVS2 Cab
+DEFINE_DIALOG(KB_CVS2, 1, 5, 30, 200, _("\
+-Mr. Mark doesn't mention this \n\
+one often. It was something he\n\
+completely missed but is trying \n\
+to get back into. He does mention \n\
+how fun it is to watch though!\n\
+The amount of grooves, the\n\
+characters and music are what \n\
+amazed him but also kind of scared\n\
+him as well. That and getting\n\
+beat a lot. That did the trick...\n\
+Mama came in when we were\n\
+watching some matches and had \n\
+this weird look on her face. She\n\
+instantly covered my ears and \n\
+glared at Mr. Mark.\n\
+Since then, he mutes the stream\n\
+whenever the game takes them\n\
+to the London stage. That has\n\
+the best song though!-"))
+
+//Arcade Flvaortext, SF3 Cab
+DEFINE_DIALOG(KB_SF3, 1, 4, 30, 200, _("\
+-Mr. Mark talks about this a lot\n\
+oddly enough. Says he 'borrowed' a\n\
+lot of moves from a character in \n\
+this game. Dudley was his name.\n\
+He does look super cool! Everyone \n\
+looks super cool!!! He told me\n\
+this was the last one of these\n\
+for a while. That's upsetting.\n\
+But it's gotten popular again\n\
+and loads of people play it now.\n\
+He manage to find a place here\n\
+that does tournaments weekly.\n\
+I love to come with him at least\n\
+once just to check it out. It\n\
+sounds super fun and maybe I \n\
+can learn to play too!!"))
+
+//Arcade Flvaortext, Mr. Do Cab
+DEFINE_DIALOG(KB_MRDO, 1, 1, 30, 200, _("\
+-It's Mr. Do.\n\
+...\n\
+It's Mr. Do!!-"))
+
+//Arcade Flvaortext, Mappy Cab
+DEFINE_DIALOG(KB_MAPPY, 1, 4, 30, 200, _("\
+-Oh! Mama loves this game. She\n\
+thinks the cats and mouse are\n\
+cute. She's also really good at\n\
+this. Always get the hi-scores.\n\
+I think Pac-Man is a better game\n\
+though. Maybe cause I'm just bad \n\
+at it. Stupid cats...-"))
+
+//Arcade Flvaortext, Karaoke Bar
+DEFINE_DIALOG(MWISP_KB, 1, 5, 30, 200, _("\
+Music used:\n\
+-Dudley's Theme-\n\
+Street Fighter 3:\n\
+A New Generation\n\
+-- Arcade"))

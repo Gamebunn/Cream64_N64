@@ -1,9 +1,8 @@
 #include "src/game/envfx_snow.h"
 
 const GeoLayout unagi_geo[] = {
-	GEO_NODE_START(),
+	GEO_CULLING_RADIUS(2000),
 	GEO_OPEN_NODE(),
-		GEO_CULLING_RADIUS(2000),
 		GEO_OPEN_NODE(),
 			GEO_SCALE(LAYER_FORCE, 16384),
 			GEO_OPEN_NODE(),

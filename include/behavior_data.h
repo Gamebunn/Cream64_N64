@@ -563,12 +563,22 @@ extern const BehaviorScript bhvToadMessageMarine[];
 extern const BehaviorScript bhvToadMessageMarine2[];
 extern const BehaviorScript bhvToadMessageMarine3[];
 extern const BehaviorScript bhvToadMessageTails1[];
+extern const BehaviorScript bhvWarpRing[];
+extern const BehaviorScript bhvToadMessageGoombaMarine[];
+extern const BehaviorScript bhvToadMessageNormal[];
 
 // SA
 extern const BehaviorScript bhvToadMessagePocky[];
 extern const BehaviorScript bhvToadMessageSorbet[];
 extern const BehaviorScript bhvBobombBuddyGardevoir[];
-extern const BehaviorScript bhvBobombBuddyTammie[];
+extern const BehaviorScript bhvTammie[];
 
+// Castle Courtyard
+extern const BehaviorScript bhvToadMessageBait[];
+extern const BehaviorScript bhvLurk[];
+extern const BehaviorScript bhvToadMessageBump[];
+extern const BehaviorScript bhvSage[];
+
+// Castle Inside
 extern const BehaviorScript bhvTankFishGroup2[];
 #endif // BEHAVIOR_DATA_H

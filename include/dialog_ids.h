@@ -174,36 +174,54 @@ enum DialogId {
     DIALOG_168,
     DIALOG_169,
     MWISP_CASTLE, //170
-    MWISP_CASTLE2, //171
-    MWISP_BOB, //172
-    MWISP_WF, //173
-    MWISP_JRB, //174
-    MWISP_CCM, //175
-    MWISP_BBH, //176
-    MWISP_HMC, //177
-    MWISP_LLL, //178
-    MWISP_SSL, //179
-    MWISP_DDD, //180
-    MWISP_SL, //181
-    MWISP_WDW, //182
-    MWISP_TTM, //183
-    MWISP_THI, //184
-    MWISP_TTC, //185
-    MWISP_RR, //186 
-    MWISP_BITDW, //187
-    MWISP_BITFS, //188
-    MWISP_BITS, //189
-    WWISP_LAYLA_KITTEN, //190
-    WWISP_KATALINA, //191
-    WWISP_MARK, //192
-    BLAZE_01, //193
-    MARINE_01, //194
-    MS_001, //195
-    MS_002, //196
-    MS_003, //197
-    MS_004, //198
-    MS_005, //199
-    MS_006, //200
+    MWISP_CASTLE2,
+    MWISP_BOB,
+    MWISP_WF,
+    MWISP_JRB, 
+    MWISP_CCM,
+    MWISP_BBH, 
+    MWISP_HMC, 
+    MWISP_LLL,
+    MWISP_SSL, 
+    MWISP_DDD, // 180
+    MWISP_SL, 
+    MWISP_WDW, 
+    MWISP_TTM, 
+    MWISP_THI, 
+    MWISP_TTC,
+    MWISP_RR, 
+    MWISP_BITDW, 
+    MWISP_BITFS, 
+    MWISP_BITS, 
+    WWISP_LAYLA_KITTEN, //180
+    WWISP_KATALINA, 
+    WWISP_MARK,
+    BLAZE_01,
+    MARINE_01, 
+    MS_001,
+    MS_002,
+    MS_003,
+    MS_004,
+    MS_005,
+    MS_006, //190
+    MS_007, 
+    MS_008,
+    MWISP_MS, 
+    KB_000,
+    KB_001, 
+    KB_002,
+    KB_003,
+    KB_004,
+    KB_005, 
+    KB_006,  // 200
+    KB_007,
+    KB_008, 
+    KB_MVC2,
+    KB_CVS2,
+    KB_SF3, 
+    KB_MRDO, 
+    KB_MAPPY, 
+    MWISP_KB, 
     DIALOG_COUNT
 };
 

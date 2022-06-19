@@ -27,7 +27,7 @@
 // #define NO_SLEEP
 
 // Disables fall damage
-#define NO_FALL_DAMAGE
+// #define NO_FALL_DAMAGE
 
 // Disables the scream that mario makes when falling off a great height (this is separate from actual fall damage)
 //#define NO_FALL_DAMAGE_SOUND
@@ -45,7 +45,7 @@
 // #define HANDS_FREE_HOLDING_FIX
 
 // Prevents Mario losing his cap.
-//#define PREVENT_CAP_LOSS
+#define PREVENT_CAP_LOSS
 
 // Platform displacement 2 also known as momentum patch. Makes Mario keep the momemtum from moving platforms. Doesn't break treadmills anymore!
 #define PLATFORM_DISPLACEMENT_2

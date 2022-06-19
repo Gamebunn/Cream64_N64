@@ -119,7 +119,7 @@ const LevelScript level_thi_entry[] = {
         JUMP_LINK(script_func_local_4),
         TERRAIN(/*terrainData*/ thi_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ thi_seg7_area_1_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_GRASS),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_NEW_THI),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_GRASS),
     END_AREA(),
 
@@ -139,7 +139,7 @@ const LevelScript level_thi_entry[] = {
         JUMP_LINK(script_func_local_6),
         TERRAIN(/*terrainData*/ thi_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ thi_seg7_area_2_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_GRASS),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_NEW_THI),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_GRASS),
     END_AREA(),
 
@@ -156,7 +156,7 @@ const LevelScript level_thi_entry[] = {
         JUMP_LINK(script_func_local_3),
         TERRAIN(/*terrainData*/ thi_seg7_area_3_collision),
         MACRO_OBJECTS(/*objList*/ thi_seg7_area_3_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0004, /*seq*/ SEQ_LEVEL_UNDERGROUND),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0004, /*seq*/ SEQ_LEVEL_NEW_DDD),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_GRASS),
     END_AREA(),
 

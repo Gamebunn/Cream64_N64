@@ -64,6 +64,8 @@ enum SeqId {
     SEQ_EVENT_BOSS_WISEMAN,           // 0x33 WISEMAN
     SEQ_MISSION_STREET,               // 0x34 MISSION STREET
     SEQ_KARAOKE_BAR,                  // 0x35 KARAOKE BAR
+    SEQ_WHITE_PARK,                   // 0x36 WHITE PARK
+    SEQ_NTMFUGIYAMA,                  // 0x37 FUGIYAMA GOLF CLUB
     SEQ_COUNT
 };
 

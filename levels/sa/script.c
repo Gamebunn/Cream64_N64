@@ -73,6 +73,7 @@ const LevelScript level_sa_entry[] = {
 		OBJECT(MODEL_SORBET, 2559, 366, 1207, 0, 0, 0, MS_005 << 24, bhvToadMessageSorbet),
 		OBJECT(MODEL_TAILS_C1, 1678, 131, 2374, 0, 90, 0, MS_004 << 24, bhvToadMessageTails1),
 		OBJECT(MODEL_TAMMIE, 4471, 1789, -546, 0, 0, 0, MS_006 << 16, bhvTammie),
+        OBJECT(MODEL_WISP1, 5260, 131, 4853, 0, 0, 0, MWISP_MS << 16, bhvWisp1),
 		OBJECT(MODEL_CHEESE_FOLLOW, 6830, 131, 5783, 0, -90, 0, 0x00000000, bhvCheeseFollow),
 		OBJECT(MODEL_NONE, 3194, 432, 2042, 0, 0, 0, 0x00000000, bhvHiddenRedCoinStar),
 		OBJECT(MODEL_NONE, 3194, 214, 2042, 0, 0, 0, 0x00000000, bhvRedCoinStarMarker),

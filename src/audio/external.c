@@ -109,7 +109,8 @@ u8 sDialogSpeaker[] = {
     /*18*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /*19*/ _,     _,     _,     _,     _,     _,     GARDE, POCKY, TALS1, CHAO,
     /*20*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*21*/ _,     _,     _,     _,     _,     _,     _,     _,     _,
+    /*21*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
+    /*22*/ _,     _,     _,     _,     _,     _,     _,
 };
 #undef _
 STATIC_ASSERT(ARRAY_COUNT(sDialogSpeaker) == DIALOG_COUNT,
@@ -330,6 +331,8 @@ u8 sBackgroundMusicDefaultVolume[] = {
     127, // BOSS2 WISEMAN
     127, // MISSION_STREET
     127, // KARAOKE BAR
+    127, // WHITE PARK
+    127, // FUGIYAMA
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

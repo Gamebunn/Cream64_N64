@@ -49,6 +49,16 @@
             "release_rate": 10,
             "envelope": "envelope0",
             "sound": "kb_dudleytheme_0"  
+        },
+        "inst8": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "wp_bubblebobble2_0"  
+        },
+        "inst9": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "gc_ntmfujiyama_0"  
         }
     },
     "instrument_list": [
@@ -59,6 +69,8 @@
         "inst4",
         "inst5",
         "inst6",
-        "inst7"
+        "inst7",
+        "inst8",
+        "inst9"
     ]
 }

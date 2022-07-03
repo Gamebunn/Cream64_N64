@@ -222,6 +222,14 @@ enum DialogId {
     KB_MRDO, 
     KB_MAPPY, 
     MWISP_KB, 
+    WP_000,
+    WP_001, // 210
+    WP_002,
+    WP_003,
+    MWISP_WP,
+    WWISP_JACK,
+    CASTLESIGN,
+    ARTIST01,
     DIALOG_COUNT
 };
 

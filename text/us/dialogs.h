@@ -271,12 +271,12 @@ Shhh! Please walk\n\
 quietly in the hallway!"))
 
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
-Dear Mario:\n\
+Dear Cream:\n\
 Please come to the\n\
 castle. I've baked\n\
 a cake for you.\n\
-Yours truly--\n\
-Princess Toadstool"))
+Your loving mother--\n\
+Princess Vanilla"))
 
 DEFINE_DIALOG(DIALOG_021, 1, 5, 95, 200, _("\
 Welcome.\n\
@@ -2647,24 +2647,24 @@ and enjoy the AC!"))
 DEFINE_DIALOG(MS_004, 1, 5, 30, 200, _("\
 Alright I got the tickets,\n\
 just have to go as-WHOA\n\
-hey Cream! Why are you all\n\
-the way out here? I thought\n\
-you were at a party...\n\
-WHAT?! Your mom's been \n\
-kidnapped?! Oh man, Eggman\n\
-sure pick the best time to\n\
-be evil. \n\
-\n\
-Ok, let me give Sonic a call \n\
-and let him know. In the \n\
-meantime, I don't suppose you'd\n\
-be up for a movie later this\n\
-week huh?\n\
-Chao in Space is back in theaters\n\
-and I know how much you love that \n\
-movie! ...Bad time to ask? Y-yeah!\n\
-Of course...I'll let you know\n\
-when I hear back from Sonic!\n\
+hey Cream! Why are you\n\
+all the way out here? Is\n\
+Amy here with you??\n\
+I wanted to go find you to\n\
+see if you wanted to go see\n\
+Chao in Space? It's back\n\
+in theaters for a short time\n\
+and I know it's your favorite!\n\
+Huh? Eggman kidnapped your\n\
+mom again?! Man, always busy\n\
+being a jerk. I'm sure Sonic\n\
+is on his way to take care\n\
+of it!\n\
+In the mean time, you wanna \n\
+go watch the movie? ...Bad\n\
+time to ask? Y-yeah, of \n\
+course! No need to just wait\n\
+on Sonic. Good luck, Cream!\n\
 (Stupid stupid aaaagh. And I'm\n\
 supposed to be the smart \n\
 one...)"))
@@ -2991,60 +2991,42 @@ I want one of me!!...and\n\
 one of Tails and Cheese too!-"))
 
 //Arcade Flvaortext, MVC2 Cab
-DEFINE_DIALOG(KB_MVC2, 1, 4, 30, 200, _("\
--Tails and Charmy talk about this\n\
-a lot for some reason. They watch\n\
-the better player do these crazy\n\
-combos and I can hardly keep up.\n\
-Mr. Mark tells me this is also in\n\
-his world. He's not very good at \n\
-it but he keeps coming back to \n\
-play with friends.\n\
-There's so many characters and\n\
-the music is really good too!\n\
-Maybe I should try it next \n\
-time the guys play again.-"))
+DEFINE_DIALOG(KB_MVC2, 1, 5, 30, 200, _("\
+-Tails took me to an arcade that\n\
+had this and I don't know how\n\
+he does those crazy moves. Everything\n\
+moves so fast, it's exhausting!\n\
+\n\
+Mr. Mark says he has this in his\n\
+world too. But in his own words,\n\
+he's 'really awful at figuring\n\
+out basic combos'. Still really\n\
+likes it though!-"))
 
 //Arcade Flvaortext, CVS2 Cab
 DEFINE_DIALOG(KB_CVS2, 1, 5, 30, 200, _("\
--Mr. Mark doesn't mention this \n\
-one often. It was something he\n\
-completely missed but is trying \n\
-to get back into. He does mention \n\
-how fun it is to watch though!\n\
-The amount of grooves, the\n\
-characters and music are what \n\
-amazed him but also kind of scared\n\
-him as well. That and getting\n\
-beat a lot. That did the trick...\n\
-Mama came in when we were\n\
-watching some matches and had \n\
-this weird look on her face. She\n\
-instantly covered my ears and \n\
-glared at Mr. Mark.\n\
-Since then, he mutes the stream\n\
-whenever the game takes them\n\
-to the London stage. That has\n\
-the best song though!-"))
+-The Chaotix have a machine of \n\
+this in their offices. I see Mr.\n\
+Espio and Charmy play it all the\n\
+time. It looks super complicated\n\
+to me.\n\
+Mama doesn't want me there when\n\
+they play though. Something about\n\
+the music being 'dirty'. But it\n\
+sounds so cool!-"))
 
 //Arcade Flvaortext, SF3 Cab
-DEFINE_DIALOG(KB_SF3, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(KB_SF3, 1, 5, 30, 200, _("\
 -Mr. Mark talks about this a lot\n\
 oddly enough. Says he 'borrowed' a\n\
 lot of moves from a character in \n\
-this game. Dudley was his name.\n\
-He does look super cool! Everyone \n\
-looks super cool!!! He told me\n\
-this was the last one of these\n\
-for a while. That's upsetting.\n\
-But it's gotten popular again\n\
-and loads of people play it now.\n\
-He manage to find a place here\n\
-that does tournaments weekly.\n\
-I love to come with him at least\n\
-once just to check it out. It\n\
-sounds super fun and maybe I \n\
-can learn to play too!!"))
+this game. Mr. Dudley was his name.\n\
+He does look super cool!\n\
+He's also weird about it when he \n\
+sleeps after playing some. Mama \n\
+and I sometimes hear him whisper\n\
+'Let's go, Justiiiiin' in his sleep.\n\
+I need to ask him about that.-"))
 
 //Arcade Flvaortext, Mr. Do Cab
 DEFINE_DIALOG(KB_MRDO, 1, 1, 30, 200, _("\
@@ -3060,12 +3042,107 @@ cute. She's also really good at\n\
 this. Always get the hi-scores.\n\
 I think Pac-Man is a better game\n\
 though. Maybe cause I'm just bad \n\
-at it. Stupid cats...-"))
+at it. Stupid cute kitties...-"))
 
-//Arcade Flvaortext, Karaoke Bar
+//Wisp, Karaoke Bar
 DEFINE_DIALOG(MWISP_KB, 1, 5, 30, 200, _("\
 Music used:\n\
 -Dudley's Theme-\n\
 Street Fighter 3:\n\
 A New Generation\n\
 -- Arcade"))
+
+//Tails Part 2
+DEFINE_DIALOG(WP_000, 1, 4, 30, 200, _("\
+Cream, good to see ya!! Any\n\
+luck with finding your mom?\n\
+And I haven't gotten back with\n\
+Sonic either, which is strange.\n\
+(Glad I found that letter before\n\
+calling Sonic. Would've spilled\n\
+the beans to her in an instant...)\n\
+\n\
+I dunno how you got here but look\n\
+at this place! I didn't think they\n\
+would be open but we can go ride \n\
+some rides and have some sweets!\n\
+Maybe even just have a snowball\n\
+fight! ...now's not the time? \n\
+Right, I understand. I'll go\n\
+see what I can do to help you.\n\
+(Maybe I can actually help her\n\
+without actually getting in the\n\
+way. Need to go find Gemerl...)"))
+
+//Jack
+DEFINE_DIALOG(WP_001, 1, 4, 30, 200, _("\
+Cream? It's nice to see you\n\
+but strange to see you all by\n\
+yourself. Is your Mom around?\n\
+Kidnapped? Really??\n\
+(Ahh right...the party...)\n\
+\n\
+\n\
+\n\
+Ahh, so you're going out to go\n\
+save your mom, huh? She's told me \n\
+you've done it before. I have no\n\
+doubt you'll save her in no time.\n\
+As for me, I wanted to take the \n\
+girls to have some fun at the park,\n\
+see the Chao races and just relax\n\
+in the snowy weather.\n\
+When this whole mess is over, \n\
+why don't you and Katalina join\n\
+us? I know you can use the rest\n\
+after this whole journey."))
+
+//Layla-Kitten
+DEFINE_DIALOG(WP_002, 1, 4, 30, 200, _("\
+-Your friends are having so much\n\
+fun in the snow. You wish you could\n\
+join them but Mama is still at the\n\
+castle!-"))
+
+//Hocus
+DEFINE_DIALOG(WP_003, 1, 4, 30, 200, _("\
+Man, I had the perfect act planned\n\
+but this switch beat me to the \n\
+whole disappearing act! Don't \n\
+worry, I got a backup plan.\n\
+Nothing up my sleeves and nothing\n\
+under my hat. With a flick of my \n\
+wrist and a tap of my shoes...."))
+
+
+//Wisp, White Park
+DEFINE_DIALOG(MWISP_WP, 1, 4, 30, 200, _("\
+Music used:\n\
+-Woolen's Theme-\n\
+Puzzle Bobble 2\n\
+-- Arcade"))
+
+//White Wisp, Jack
+DEFINE_DIALOG(WWISP_WP, 1, 4, 30, 200, _("\
+Music used:\n\
+-Woolen's Theme-\n\
+Puzzle Bobble 2\n\
+-- Arcade"))
+
+//Sign at Front of Castle
+DEFINE_DIALOG(CASTLESIGN, 1, 2, 30, 200, _("\
+Welcome!\n\
+\n\
+To the Castle of\n\
+Cream's Mom!\n\
+\n\
+...and Cream I guess.\n\
+I hope you enjoy this little\n\
+world I put together.\n\
+And the hack of course. \n\
+Enjoy -Gamebun"))
+
+//Artist, BOB
+DEFINE_DIALOG(ARTIST01, 1, 2, 30, 200, _("\
+This painting was done by\n\
+InfiniteBrians"))

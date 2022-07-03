@@ -174,3 +174,4 @@ Gfx *geo_switch_npc_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx) {
     }
     return NULL;
 }
+

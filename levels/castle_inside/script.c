@@ -253,6 +253,7 @@ const LevelScript level_castle_inside_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CHOCOLA, chocola_geo),
     LOAD_MODEL_FROM_GEO(MODEL_SILVER, silver_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KATALINA, katalina_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_SIGNPOST_ARTIST, signpost_artist_geo),
 
 
     LOAD_MODEL_FROM_GEO(MODEL_FISH_BAIT, bait_fish_geo),
@@ -269,8 +270,9 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_TOAD,       /*pos*/  1524,  307,   458, /*angle*/ 0, 110, 0, /*behParam*/ DIALOG_134 << 24, /*beh*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,       /*pos*/   596, -306, -2637, /*angle*/ 0, 152, 0, /*behParam*/ DIALOG_135 << 24, /*beh*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_WISP1,    /*pos*/ -716,    0,  -6, /*angle*/ 0,  83, 0, /*behParam*/ MWISP_CASTLE << 16, /*beh*/ bhvWisp1),
-        
-        OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -1154, 0, 2012, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
+        OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -1154, 0, 2012, /*angle*/ 0, 90, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
+        OBJECT(MODEL_SIGNPOST_ARTIST, -5079, 307, -733, 0, 90, 0, ARTIST01 << 16, bhvMessagePanel),
+
         JUMP_LINK(script_func_local_1),
         WARP_NODE(/*id*/ 0xF1, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 0x01, /*destNode*/ 0x03, /*flags*/ WARP_NO_CHECKPOINT),
         TERRAIN(/*terrainData*/ inside_castle_seg7_area_1_collision),

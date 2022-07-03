@@ -492,6 +492,7 @@ extern const BehaviorScript bhvMrBlizzard[];
 extern const BehaviorScript bhvMrBlizzardSnowball[];
 extern const BehaviorScript bhvSlidingPlatform2[];
 extern const BehaviorScript bhvOctagonalPlatformRotating[];
+extern const BehaviorScript bhvOctagonalPlatformRotatingVC[];
 extern const BehaviorScript bhvAnimatesOnFloorSwitchPress[];
 extern const BehaviorScript bhvActivatedBackAndForthPlatform[];
 extern const BehaviorScript bhvRecoveryHeart[];
@@ -578,6 +579,14 @@ extern const BehaviorScript bhvToadMessageBait[];
 extern const BehaviorScript bhvLurk[];
 extern const BehaviorScript bhvToadMessageBump[];
 extern const BehaviorScript bhvSage[];
+
+// Vanish Cap
+extern const BehaviorScript bhvJack[];
+extern const BehaviorScript bhvKittenLayla[];
+extern const BehaviorScript bhvSweet[];
+extern const BehaviorScript bhvToadMessageHocus[];
+//extern const BehaviorScript bhvToadMessageJohnny[];
+extern const BehaviorScript bhvToadMessageTails2[];
 
 // Castle Inside
 extern const BehaviorScript bhvTankFishGroup2[];

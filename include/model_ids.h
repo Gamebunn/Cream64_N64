@@ -49,12 +49,13 @@
 #define MODEL_TAILS_C1                    0x1BF        // tails_c1_geo
 #define MODEL_WARPRING                    0x1BE        // warpring_geo
 
-#define MODEL_SWEET                       0x1BD        // sweet_geo
 #define MODEL_ATLAS                       0x1BC        // atlas_geo
 
 #define MODEL_FLOOMBA                     0x1BB        // floomba_geo
 #define MODEL_TOAD_NORMAL                 0x1BA        // toad_normal_geo
 #define MODEL_GOOMBA_MARINE               0x1B9        // goomba_marine_geo
+#define MODEL_SIGNPOST_VANILLA            0x1B8        // signpost_vanilla_geo
+#define MODEL_SIGNPOST_ARTIST             0x1B7        // signpost_artist_geo
 
 // Fish Models
 
@@ -250,6 +251,11 @@
 
 // vcutm
 #define MODEL_VCUTM_SEESAW_PLATFORM               0x36        // vcutm_geo_0001F0
+#define MODEL_CAROUSEL                            0X37        // carousel_geo
+#define MODEL_JACK                                0X38        // jack_geo
+#define MODEL_KITTEN_LAYLA                        0X39        // kitten_layla_geo
+#define MODEL_SWEET                               0x3A        // sweet_geo
+#define MODEL_HOCUS                               0x3B        // hocus_geo
 
 // bitfs
 #define MODEL_BITFS_PLATFORM_ON_TRACK             0x36        // bitfs_geo_000758

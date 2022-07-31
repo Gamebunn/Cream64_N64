@@ -38,7 +38,7 @@ const LevelScript level_pss_entry[] = {
         TERRAIN(/*terrainData*/ pss_seg7_collision),
         MACRO_OBJECTS(/*objList*/ pss_seg7_macro_objs),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_SLIDE),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0001, /*seq*/ SEQ_LEVEL_SLIDE),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0001, /*seq*/ SEQ_PSS_LEAFFOREST),
     END_AREA(),
 
     FREE_LEVEL_POOL(),

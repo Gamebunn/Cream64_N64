@@ -557,6 +557,14 @@ void bhv_explosion_nd_loop(void);
 void bhv_cheese_follow_init(void);
 void bhv_cheese_act_follow_mario(void);
 void bhv_tank_fish_group2_loop(void);
+void bhv_tank_fish_group3_loop(void);
+void bhv_hocus_explode_init(void);
+void bhv_hocus_explode_loop(void);
+void bhv_tails_explode_init(void);
+void bhv_tails_explode_loop(void);
+
+void bhv_amyBoo_init(void);
+void bhv_amyBoo_loop(void);
 
 Gfx *geo_move_mario_part_from_parent(s32 callContext, UNUSED struct GraphNode *node, Mat4 mtx);
 

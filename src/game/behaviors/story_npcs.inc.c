@@ -30,7 +30,7 @@ Gfx *geo_switch_amy_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx) {
 
         if(gCurrLevelNum == LEVEL_BBH)
         {
-            if(gCurrActNum == 3 || gCurrActNum == 5)
+            if(gCurrActNum == 2 || gCurrActNum == 3 || gCurrActNum == 5 || gCurrActNum == 6)
                 switchCase->selectedCase = 4;
             if(gCurrActNum == 4)
                 switchCase->selectedCase = 5;
@@ -128,25 +128,8 @@ Gfx *geo_switch_tails_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx) {
         else
             switchCase->selectedCase = 1;
 
-        if(gCurrLevelNum == LEVEL_SSL)
-            switchCase->selectedCase = 6;
-
-        if(gCurrLevelNum == LEVEL_TTC)
-        {
-            if(gCurrActNum == 1)
-                switchCase->selectedCase = 8;
-        }
-
-        if(gCurrLevelNum == LEVEL_BBH)
-        {
-            if(gCurrActNum == 3 || gCurrActNum == 5)
-                switchCase->selectedCase = 4;
-            if(gCurrActNum == 4)
-                switchCase->selectedCase = 5;
-        }
-
-        if(gCurrLevelNum == LEVEL_WDW)
-            switchCase->selectedCase = 7;
+        if(gCurrLevelNum == LEVEL_WMOTR)
+            switchCase->selectedCase = 3;
     }
     return NULL;
 }

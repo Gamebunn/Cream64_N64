@@ -32,6 +32,12 @@ static struct Object *sIntroWarpPipeObj;
 static struct Object *sEndPeachObj;
 static struct Object *sEndRightToadObj;
 static struct Object *sEndLeftToadObj;
+static struct Object *sEndExtraToadObj;
+static struct Object *sEndExtraToad2Obj;
+static struct Object *sEndKatalinaObj;
+static struct Object *sEndRudeToadObj;
+static struct Object *sEndBlazeObj;
+static struct Object *sEndMarineObj;
 static struct Object *sEndJumboStarObj;
 static s16 sEndPeachAnimation;
 static s16 sEndToadAnims[2];
@@ -49,7 +55,7 @@ static s8 sPeachManualBlinkTime = 0;
 static s8 sPeachIsBlinking = FALSE;
 static s8 sPeachBlinkTimes[7] = { 2, 3, 2, 1, 2, 3, 2 };
 
-static u8 sStarsNeededForDialog[] = { 1, 3, 8, 30, 50, 70 };
+static u8 sStarsNeededForDialog[] = { 3, 8, 30, 50, 70, 120 };
 
 /**
  * Data for the jumbo star cutscene. It specifies the flight path after triple
@@ -592,9 +598,11 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 } else {
                     if (gCurrLevelNum == LEVEL_BOWSER_1 || gCurrLevelNum == LEVEL_BOWSER_2) {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_KEY), 0);
-                    } else {
+                    } else if (gCurrLevelNum == LEVEL_WMOTR) {
+                        play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_NTM_STARGET), 0);
+                    } else  {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_STAR), 0);
-                    }
+                }
                 }
                 m->marioBodyState->eyeState = MARIO_EYES_LOOK_LEFT;
                 break;
@@ -1713,7 +1721,7 @@ static void intro_cutscene_raise_pipe(struct MarioState *m) {
     sIntroWarpPipeObj->oPosY = camera_approach_f32_symmetric(sIntroWarpPipeObj->oPosY, 260.0f, 10.0f);
 
     if (m->actionTimer == 0) {
-        play_sound(SOUND_MENU_EXIT_PIPE, sIntroWarpPipeObj->header.gfx.cameraToObject);
+        play_sound(SOUND_MENU_PIPE_SLIDE, sIntroWarpPipeObj->header.gfx.cameraToObject);
     }
 
     if (m->actionTimer++ == TIMER_RAISE_PIPE) {
@@ -1757,7 +1765,7 @@ static void intro_cutscene_land_outside_pipe(struct MarioState *m) {
 
 static void intro_cutscene_lower_pipe(struct MarioState *m) {
     if (m->actionTimer++ == 0) {
-        play_sound(SOUND_MENU_ENTER_PIPE, sIntroWarpPipeObj->header.gfx.cameraToObject);
+        play_sound(SOUND_MENU_PIPE_SLIDE2, sIntroWarpPipeObj->header.gfx.cameraToObject);
         set_mario_animation(m, MARIO_ANIM_FIRST_PERSON);
     }
 
@@ -2732,15 +2740,42 @@ break;
     }
 
 
+        sEndPeachObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_PEACH, bhvEndPeach, 60, 906,
+                                                 -1180, 0, 0, 0);
+
         sEndRightToadObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_CHOCOLA_ED, bhvEndToad, 180,
                                                      906, -1170, 0, 0, 0);
 
         sEndLeftToadObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_CHEESE_ED, bhvEndToad, -180,
                                                     906, -1170, 0, 0, 0);
 
+        sEndExtraToadObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_GEMERL_ED, bhvEndToadGemerl, -250,
+                                                     955, -1070, 0, 0, 0);    
+
+        sEndExtraToad2Obj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_MARK_ED, bhvEndToadMark, -350,
+                                                    825, -670, 0, 0, 0);
+
+        sEndKatalinaObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_KATALINA_ED, bhvEndToadKatalina, -350,
+                                                   830, -270, 0, 0, 0);
+
+        sEndBlazeObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_BLAZE_ED, bhvEndToadBlaze, 250,
+                                                     933, -1070, 0, 0, 0);    
+
+        sEndMarineObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_TAILS_ED, bhvEndToadTails, 350,
+                                                    890, -670, 0, 0, 0);
+
+        sEndRudeToadObj = spawn_object_abs_with_rot(gCurrentObject, 0, MODEL_AMY_ED, bhvEndToadAmy, 350,
+                                                    830, -270, 0, 0, 0);
+
         sEndPeachObj->oOpacity = 255;
         sEndRightToadObj->oOpacity = 255;
         sEndLeftToadObj->oOpacity = 255;
+        sEndExtraToadObj->oOpacity = 255;       
+        sEndExtraToad2Obj->oOpacity = 255;    
+        sEndKatalinaObj->oOpacity = 255;    
+        sEndBlazeObj->oOpacity = 255;    
+        sEndMarineObj->oOpacity = 255;    
+        sEndRudeToadObj->oOpacity = 255;    
 
         sEndPeachAnimation = PEACH_ANIM_WAVING;
         sEndToadAnims[END_TOAD_INDEX_WEST] = TOAD_ANIM_WEST_WAVING_BOTH_ARMS;

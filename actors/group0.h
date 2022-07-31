@@ -361,8 +361,6 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "mario_val/geo_header.h"
 
-#include "mario_katalina/geo_header.h"
-
 #include "mario_creamocchia/geo_header.h"
 
 #include "wisp1/geo_header.h"
@@ -372,5 +370,9 @@ extern const Gfx white_particle_small_unused_dl[];
 
 
 #include "wisp2/anim_header.h"
+
+#include "mario/collision_header.h"
+
+#include "mario_klonoa/geo_header.h"
 
 #endif

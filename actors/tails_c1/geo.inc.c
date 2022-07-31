@@ -1,5 +1,12 @@
 #include "src/game/envfx_snow.h"
 
+const GeoLayout tails_c1_Skeleton_Main_Happy[] = {
+	GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 0, 160, 0, 0, 0, 0),
+	GEO_OPEN_NODE(),
+		GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, tails_c1_Head_Switch_001_Head_mesh_layer_1),
+	GEO_CLOSE_NODE(),
+	GEO_RETURN(),
+};
 const GeoLayout tails_c1_Head_Switch_opt1[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
@@ -34,6 +41,7 @@ const GeoLayout tails_c1_geo[] = {
 							GEO_CLOSE_NODE(),
 							GEO_BRANCH(1, tails_c1_Head_Switch_opt1),
 							GEO_BRANCH(1, tails_c1_Head_Switch_opt2),
+							GEO_BRANCH(1, tails_c1_Skeleton_Main_Happy),
 						GEO_CLOSE_NODE(),
 						GEO_ANIMATED_PART(LAYER_OPAQUE, 101, 128, 0, tails_c1_lArm_001_mesh_layer_1),
 						GEO_OPEN_NODE(),

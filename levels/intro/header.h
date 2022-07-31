@@ -10,10 +10,20 @@ extern const GeoLayout intro_geo_mario_head_dizzy[];
 extern const GeoLayout intro_geo_debug_level_select[];
 
 // leveldata
-extern const Gfx intro_seg7_dl_main_logo[];
+extern Lights1 title_cream64_colors_f3d_lights;
+extern u8 title_cream64_titlescreen_ci8_ci8[];
+extern u8 title_cream64_titlescreen_ci8_ci8_pal_rgba16[];
+extern Vtx title_cream64_title_cream64_mesh_vtx_0[3998];
+extern Gfx title_cream64_title_cream64_mesh_tri_0[];
+extern Gfx mat_title_cream64_colors_f3d[];
+extern Gfx mat_revert_title_cream64_colors_f3d[];
+extern Gfx title_cream64_title_cream64_mesh[];
+
 extern const Gfx intro_seg7_dl_copyright_trademark[];
 extern const f32 intro_seg7_table_scale_1[];
 extern const f32 intro_seg7_table_scale_2[];
+
+
 
 // script
 extern const LevelScript level_intro_splash_screen[];

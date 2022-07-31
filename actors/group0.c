@@ -45,7 +45,6 @@
 #include "mario_cinnia/model.inc.c"
 #include "mario_chef/model.inc.c"
 #include "mario_val/model.inc.c"
-#include "mario_katalina/model.inc.c"
 #include "mario_creamocchia/model.inc.c"
 #include "wisp1/model.inc.c"
 #include "wisp1/anims/data.inc.c"
@@ -53,3 +52,5 @@
 #include "wisp2/model.inc.c"
 #include "wisp2/anims/data.inc.c"
 #include "wisp2/anims/table.inc.c"
+#include "mario/collision.inc.c"
+#include "mario_klonoa/model.inc.c"

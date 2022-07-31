@@ -1355,7 +1355,8 @@ u32 interact_bounce_top(struct MarioState *m, UNUSED u32 interactType, struct Ob
         queue_rumble_data(5, 80);
 #endif
         attack_object(obj, interaction);
-                        if (obj->behavior != segmented_to_virtual(bhvBoo)
+               if (obj->behavior != segmented_to_virtual(bhvBoo)
+            &&     obj->behavior != segmented_to_virtual(bhvAmyBoo)
             &&     obj->behavior != segmented_to_virtual(bhvBooWithCage)
             &&     obj->behavior != segmented_to_virtual(bhvMerryGoRoundBoo)
             &&     obj->behavior != segmented_to_virtual(bhvMerryGoRoundBigBoo)
@@ -1582,9 +1583,14 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
         m->flags |= capFlag;
 
         switch (capFlag) {
-            case MARIO_VANISH_CAP: capTime =  600; capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_POWERUP  ); break;
+            case MARIO_VANISH_CAP: capTime =  600; capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_VANISH  ); break;
             case MARIO_METAL_CAP:  capTime =  600; capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_METAL_CAP); break;
-            case MARIO_WING_CAP:   capTime = 1800; capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_POWERUP  ); break;
+            case MARIO_WING_CAP: if(gCurrLevelNum == LEVEL_WMOTR)  {
+                    capTime = 1800; break;
+                }
+                else {
+                    capTime = 1800; capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_POWERUP  ); break;
+                }
         }
 
         if (capTime > m->capTimer) {

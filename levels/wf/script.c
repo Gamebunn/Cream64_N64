@@ -148,7 +148,7 @@ const LevelScript level_wf_entry[] = {
         OBJECT(/*model*/ MODEL_NONE, /*pos*/  2600, 1256,  5120, /*angle*/ 0, 90, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvSpinAirborneWarp),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ -2925, 2560,  -947, /*angle*/ 0, 19, 0, /*behParam*/ 0x000B0000, /*beh*/ bhvFadingWarp),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/  2548, 1075, -3962, /*angle*/ 0, 51, 0, /*behParam*/ 0x000C0000, /*beh*/ bhvFadingWarp),
-        OBJECT_WITH_ACTS(/*model*/ MODEL_AMY, /*pos*/  3115, 336,  4227,  /*angle*/ 0, 0, 0, /*behParam*/ DIALOG_001 << 24, /*beh*/ bhvToadMessageAmy,   /*acts*/ ACT_1 | ACT_2),
+        OBJECT_WITH_ACTS(/*model*/ MODEL_AMY, /*pos*/  3115, 336,  4227,  /*angle*/ 0, 0, 0, /*behParam*/ AMY_01 << 24, /*beh*/ bhvToadMessageAmy,   /*acts*/ ACT_1 | ACT_2),
         OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ 2800, 1256,  5120, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
         OBJECT(/*model*/ MODEL_WISP1,    /*pos*/ 4091,    256,  4220, /*angle*/ 0,  350, 0, /*behParam*/ MWISP_WF << 16, /*beh*/ bhvWisp1),
         WARP_NODE(/*id*/ 0x0A, /*destLevel*/ LEVEL_WF, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),

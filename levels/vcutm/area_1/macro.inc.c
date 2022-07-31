@@ -24,7 +24,6 @@ const MacroObject vcutm_area_1_macro_objs[] = {
 	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, 0, 2145, 2202, -3014, 0x00000000),
 	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, 0, -1336, 1401, -4117, 0x00000000),
 	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, 45, -1698, 94, 2093, 0x00000000),
-	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, 45, -967, 94, 2081, 0x00000000),
 	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, 45, -965, 94, 2826, 0x00000000),
 	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, 45, -1715, 94, 2824, 0x00000000),
 	MACRO_OBJECT_WITH_BEH_PARAM(macro_yellow_coin, -180, 2735, 94, 2135, 0x00000000),

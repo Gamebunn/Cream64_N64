@@ -167,6 +167,11 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "1C_subaluwa"
+        },
+        "inst29": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "1D_jeezus"
         }
     },
     "instrument_list": [
@@ -198,6 +203,7 @@
         "inst25",
         "inst26",
         "inst27",
-        "inst28"
+        "inst28",
+        "inst29"
     ]
 }

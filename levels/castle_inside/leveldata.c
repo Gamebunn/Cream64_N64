@@ -87,3 +87,6 @@
 #include "levels/castle_inside/areas/3/movtext.inc.c"
 
 #include "levels/castle_inside/signpost_artist/model.inc.c"
+#include "levels/castle_inside/bait_fish2/model.inc.c"
+#include "levels/castle_inside/bait_fish/model.inc.c"
+#include "levels/castle_inside/toad_angy/model.inc.c"

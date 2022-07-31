@@ -2127,6 +2127,11 @@ s32 act_special_triple_jump(struct MarioState *m) {
         return set_mario_action(m, ACT_DIVE, 0);
     }
 
+    if(m->vel[1] < 20 && (m->input & INPUT_A_PRESSED))
+	{
+		return set_mario_action(m, ACT_HOVERING, 0);
+	}
+
     if (m->input & INPUT_Z_PRESSED) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
     }

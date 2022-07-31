@@ -66,6 +66,13 @@ enum SeqId {
     SEQ_KARAOKE_BAR,                  // 0x35 KARAOKE BAR
     SEQ_WHITE_PARK,                   // 0x36 WHITE PARK
     SEQ_NTMFUGIYAMA,                  // 0x37 FUGIYAMA GOLF CLUB
+    SEQ_NTM_STARGET,                  // 0x38 FUGIYAMA GOLF CLUB - STAR GET
+    SEQ_RACING,                       // 0x39 VS GEMERL/TAILS
+    SEQ_SHELLSLIDE,                   // 0x3A VS SHELL SLIDING
+    SEQ_PSS_LEAFFOREST,               // 0x3B VS PSS - LEAF FOREST BETA
+    SEQ_THEEND,                       // 0x3C VS THE END
+    SEQ_EVENT_VANISH,                 // 0x3D VANISH CAP
+    SEQ_EVENT_PEACH_MESSAGE_ORI,      // 0x3E ORIGINAL PEACH MESSAGE
     SEQ_COUNT
 };
 

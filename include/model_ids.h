@@ -18,6 +18,7 @@
 #define MODEL_MARIO_VANILLA               0x1FA        // mario_vanilla_geo
 //#define MODEL_MARIO_BEAN                  0x1F9        // mario_bean_geo
 #define MODEL_MARIO_MARIO                 0x1F8        // mario_mario_geo
+#define MODEL_MARIO_KLONOA                0x1F7        // mario_mario_geo
 //#define MODEL_MARIO_LUFFY                 0x1F7        // mario_luffy_geo
 //#define MODEL_MARIO_ICHIBAN               0x1F6        // mario_ichiban_geo
 
@@ -27,7 +28,7 @@
 #define MODEL_MARIO_VAL                   0x1F2        // mario_val_geo
 //#define MODEL_MARIO_ROGER                 0x1F1        // mario_roger_geo
 
-#define MODEL_MARIO_KATALINA              0x1F0        // mario_katalina_geo
+//#define MODEL_MARIO_KATALINA              0x1F0        // mario_katalina_geo
 //#define MODEL_MARIO_KITTEN                0x1EF        // mario_kitten_geo
 //#define MODEL_MARIO_LAYLA                 0x1EE        // mario_layla_geo
 #define MODEL_MARIO_CREAMOCCHIA           0x1ED        // mario_creamocchia_geo
@@ -49,8 +50,6 @@
 #define MODEL_TAILS_C1                    0x1BF        // tails_c1_geo
 #define MODEL_WARPRING                    0x1BE        // warpring_geo
 
-#define MODEL_ATLAS                       0x1BC        // atlas_geo
-
 #define MODEL_FLOOMBA                     0x1BB        // floomba_geo
 #define MODEL_TOAD_NORMAL                 0x1BA        // toad_normal_geo
 #define MODEL_GOOMBA_MARINE               0x1B9        // goomba_marine_geo
@@ -60,6 +59,8 @@
 // Fish Models
 
 #define MODEL_FISH_BAIT                   0x19A        // bait_fish_geo
+#define MODEL_FISH_BAIT2                  0x19B        // bait_fish2_geo
+#define MODEL_FISH_BAIT3                  0x19C        // bait_fish3_geo
 
 /* Various static level geometry, the geo layout differs but terrain object presets treat them the same.*/
 
@@ -195,6 +196,8 @@
 // thi
 #define MODEL_THI_HUGE_ISLAND_TOP                 0x36        // thi_geo_0005B0
 #define MODEL_THI_TINY_ISLAND_TOP                 0x37        // thi_geo_0005C8
+#define MODEL_TAILSRACE                           0x38        // tailsrace_geo
+#define MODEL_TAILSFLAG                           0x39        // tailsflag_geo
 
 // ttc
 #define MODEL_TTC_ROTATING_CUBE                   0x36        // ttc_geo_000240
@@ -236,6 +239,7 @@
 #define MODEL_LURK                                0x37        // lurk_geo
 #define MODEL_BUMP                                0x38        // bump_geo
 #define MODEL_SAGE                                0x39        // sage_geo
+
 
 // bitdw
 #define MODEL_BITDW_SQUARE_PLATFORM               0x36        // geo_bitdw_000558
@@ -354,6 +358,11 @@
 
 // wmotr
 
+#define MODEL_GOLFTREE                            0x36        // golftree_geo
+#define MODEL_JOHNNY                              0x37        // johnny_geo
+#define MODEL_STARFLAG                            0x38        // starflag_geo
+#define MODEL_VECTOR                              0x39        // vector_geo
+
 // bowser 2
 #define MODEL_BOWSER_2_TILTING_ARENA              0x36        // bowser_2_geo_000170
 
@@ -449,8 +458,14 @@
 #define MODEL_YOSHI                       0x55        // yoshi_geo
 #define MODEL_MARK                        0x56        // mark_geo
 
-#define MODEL_CHEESE_ED                   0x57        // cheese_ed
-#define MODEL_CHOCOLA_ED                  0x58        // chocola_ed
+#define MODEL_CHEESE_ED                   0x57        // cheese_ed_geo
+#define MODEL_CHOCOLA_ED                  0x58        // chocola_ed_geo
+#define MODEL_GEMERL_ED                   0x59        // gemerl_ed_geo
+#define MODEL_BLAZE_ED                    0x5A        // blaze_ed_geo
+#define MODEL_MARK_ED                     0x5B        // mark_ed_geo
+#define MODEL_KATALINA_ED                 0x5C        // katalina_ed_geo
+#define MODEL_AMY_ED                      0x5D        // amy_ed_geo
+#define MODEL_TAILS_ED                    0x5E        // tails_ed_geo
 
 // group 11
 #define MODEL_ENEMY_LAKITU                0x54        // enemy_lakitu_geo
@@ -500,6 +515,8 @@
 #define MODEL_CHOCOLA                     0x67        // chocola_geo
 #define MODEL_SILVER                      0x68        // silver_geo
 #define MODEL_KATALINA                    0x69        // katalina_geo
+
+#define MODEL_TOAD_ANGY                   0x6A        // toad_angy_geo
 
 
 // group 16

@@ -109,7 +109,7 @@ const LevelScript level_ddd_entry[] = {
     AREA(/*index*/ 2, ddd_geo_000570),
         OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -2871, 3000, 0, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
         OBJECT(/*model*/ MODEL_WISP1, /*pos*/  6898,  110,  423, /*angle*/ 0, 0, 0, /*behParam*/ MWISP_DDD << 16, /*beh*/ bhvWisp1),
-        OBJECT_WITH_ACTS(/*model*/ MODEL_BLAZE, /*pos*/  6934,  190,  2864, /*angle*/ 0, 270, 0, /*behParam*/ 0x00000000 << 16, /*beh*/ bhvToadMessageBlaze3, /*acts*/ ACT_2 | ACT_3 | ACT_4),
+        OBJECT_WITH_ACTS(/*model*/ MODEL_BLAZE, /*pos*/  6934,  190,  2864, /*angle*/ 0, 270, 0, /*behParam*/ BLAZE_03 << 24, /*beh*/ bhvToadMessageBlaze3, /*acts*/ ACT_2 | ACT_3 | ACT_4),
         WHIRLPOOL(/*unk2*/ 0, /*unk3*/ 0, /*pos*/ 3355, -3575, -515, /*strength*/ -30),
         WHIRLPOOL(/*unk2*/ 1, /*unk3*/ 2, /*pos*/ 3917, -2040, -6041, /*strength*/ 50),
         WARP_NODE(/*id*/ 0xF0, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 0x03, /*destNode*/ 0x35, /*flags*/ WARP_NO_CHECKPOINT),

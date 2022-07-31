@@ -1708,10 +1708,10 @@ void queue_rumble_particles(struct MarioState *m) {
 s32 execute_mario_action(UNUSED struct Object *obj) {
     s32 inLoop = TRUE;
 
-if (gMarioState->controller->buttonDown & R_TRIG)
+/* if (gMarioState->controller->buttonDown & R_TRIG)
     {
         level_trigger_warp(gMarioState, WARP_OP_CREDITS_START);
-    }
+    } */
 
 // Clothes alt
 
@@ -1726,11 +1726,11 @@ break;
 break;
   case 4: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_UNICORN];
 break;
-  case 5: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_YUKATA];
+  case 5: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_VANILLA];
 break;
-  case 6: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_VANILLA];
+  case 6: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_MARIO];
 break;
-  case 7: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_MARIO];
+  case 7: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_KLONOA];
 break;
   case 8: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_GOKU];
 break;
@@ -1741,8 +1741,6 @@ break;
   case 11: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_VAL];
 break;
   case 12: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_CREAMOCCHIA];
-break;
-  case 13: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_KATALINA];
 break;
         }
         

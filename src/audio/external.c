@@ -69,48 +69,72 @@ enum DialogSpeakers {
     UKIKI,
     TUXIE,
     BOWS1, // Bowser Intro / Doors Laugh
-    KOOPA,
+    BOWS3, // Bowser 3 laugh
     KBOMB,
     BOO,
+    BOOM,
     BOMB,
     BOWS2, // Bowser Battle Laugh
     GRUNT,
     WIGLR,
     YOSHI,
+    AMY1,
+    AMY2,
+    AMY3,
+    AMY4,
+    AMY5,
+    BLAZ1,
+    BLAZ2,
+    BLAZ3,
+    BLAZ4,
+    BLAZ5,
     GARDE, // Sad Gardevoir
     POCKY,
     TALS1,
+    TALS2,
+    TALS3,
+    TALS4,
+    TALS5,
     CHAO,
-    FLOOM,
+    CHAO2,
+    WIZE1,
+    WIZE2,
+    VECTR,
+    SILVR,
+    RTOAD,
+    GTOAD,
 };
 
 #define _ 0xFF
 
 u8 sDialogSpeaker[] = {
     //       0      1      2      3      4      5      6      7      8      9
-    /* 0*/ _,     BOMB,  BOMB,  BOMB,  BOMB,  KOOPA, KOOPA, KOOPA, _,     KOOPA,
+    /* 0*/ _,     BOMB,  BOMB,  BOMB,  BOMB,  _,     _,     _,     _,     TALS3,
     /* 1*/ _,     _,     _,     _,     _,     _,     _,     KBOMB, _,     _,
     /* 2*/ _,     BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1,
-    /* 3*/ _,     _,     _,     _,     _,     _,     _,     TUXIE, _,     _,
-    /* 4*/ _,     KOOPA, _,     _,     _,     _,     _,     BOMB,  _,     _,
-    /* 5*/ _,     _,     _,     _,     _,     TUXIE, TUXIE, TUXIE, TUXIE, TUXIE,
+    /* 3*/ _,     TALS4, _,     _,     _,     _,     _,     CHAO2, _,     _,
+    /* 4*/ _,     _,     _,     _,     _,     _,     _,     BOMB,  _,     _,
+    /* 5*/ _,     _,     _,     _,     _,     CHAO2, CHAO2, TUXIE, TUXIE, TUXIE,
     /* 6*/ _,     _,     _,     _,     _,     _,     _,     BOWS2, _,     _,
-    /* 7*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     UKIKI,
-    /* 8*/ UKIKI, _,     _,     _,     _,     BOO,   _,     _,     _,     _,
-    /* 9*/ BOWS2, _,     BOWS2, BOWS2, _,     _,     _,     _,     BOO,   BOO,
-    /*10*/ UKIKI, UKIKI, _,     _,     _,     BOMB,  BOMB,  BOO,   BOO,   _,
-    /*11*/ _,     _,     _,     _,     GRUNT, GRUNT, KBOMB, GRUNT, GRUNT, _,
+    /* 7*/ _,     _,     _,     _,     _,     _,     SILVR, _,     _,     UKIKI,
+    /* 8*/ UKIKI, _,     RTOAD, _,     _,     BOO,   _,     _,     _,     _,
+    /* 9*/ BOWS2, _,     BOWS2, BOWS3, _,     _,     _,     _,     BOO,   BOO,
+    /*10*/ UKIKI, UKIKI, _,     _,     _,     BOMB,  BOMB,  BOO,   BOOM,  _,
+    /*11*/ _,     _,     _,     _,     GRUNT, GRUNT, KBOMB, WIZE1, WIZE2, _,
     /*12*/ _,     _,     _,     _,     _,     _,     _,     _,     KBOMB, _,
-    /*13*/ _,     _,     TUXIE, _,     _,     _,     _,     _,     _,     _,
+    /*13*/ _,     _,     CHAO2,  CHAO,  CHAO,  CHAO,  CHAO,  CHAO, _,     _,
     /*14*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*15*/ WIGLR, WIGLR, WIGLR, _,     _,     _,     _,     _,     _,     _,
-    /*16*/ _,     YOSHI, _,     _,     _,     _,     _,     _,     WIGLR, _,
+    /*15*/ WIGLR, WIGLR, WIGLR, _,     RTOAD, SILVR, _,     _,     _,     _,
+    /*16*/ _,     YOSHI, _,     _,     CHAO2, _,     _,     _,     WIGLR, _,
     /*17*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /*18*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*19*/ _,     _,     _,     _,     _,     _,     GARDE, POCKY, TALS1, CHAO,
-    /*20*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*21*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*22*/ _,     _,     _,     _,     _,     _,     _,
+    /*19*/ _,     _,     _,     AMY1,  AMY2,  AMY2,  AMY3,  AMY4,  _,     AMY5, 
+    /*20*/ BLAZ1, _,     BLAZ2, _,     BLAZ3, BLAZ4, _,     BLAZ5, _,     GARDE, 
+    /*21*/ POCKY, TALS1, CHAO,  _,     _,     _,     _,     _,     _,     _,
+    /*22*/ _,     _,     GTOAD, GTOAD, _,     _,     _,     _,     _,     _,
+    /*23*/ _,     _,     TALS2, _,     _,     _,     _,     _,     _,     _,
+    /*24*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
+    /*25*/ VECTR, TALS5, _,     _,     _,
 };
 #undef _
 STATIC_ASSERT(ARRAY_COUNT(sDialogSpeaker) == DIALOG_COUNT,
@@ -120,19 +144,41 @@ s32 sDialogSpeakerVoice[] = {
     SOUND_OBJ_UKIKI_CHATTER_LONG,
     SOUND_OBJ_BIG_PENGUIN_YELL,
     SOUND_OBJ_BOWSER_INTRO_LAUGH,
-    SOUND_OBJ_KOOPA_TALK,
+    SOUND_OBJ_BOWSER_SERIOUS,
     SOUND_OBJ_KING_BOBOMB_TALK,
     SOUND_OBJ_BOO_LAUGH_LONG,
+    SOUND_OBJ_KINGBOOMBOO,
     SOUND_OBJ_BOBOMB_BUDDY_TALK,
     SOUND_OBJ_BOWSER_LAUGH,
     SOUND_OBJ2_BOSS_DIALOG_GRUNT,
     SOUND_OBJ_WIGGLER_TALK,
     SOUND_GENERAL_YOSHI_TALK,
+    SOUND_OBJ_AMY1,
+    SOUND_OBJ_AMY2,
+    SOUND_OBJ_AMY3,
+    SOUND_OBJ_AMY4,
+    SOUND_OBJ_AMY5,
+    SOUND_OBJ_BLAZE1,
+    SOUND_OBJ_BLAZE2,
+    SOUND_OBJ_BLAZE3,
+    SOUND_OBJ_BLAZE4,
+    SOUND_OBJ_BLAZE5,
     SOUND_OBJ_SAD_GARDEVOIR,
     SOUND_OBJ_POCKY,
     SOUND_OBJ_TAILS1,
+    SOUND_OBJ_TAILS2,
+    SOUND_OBJ_TAILS3,
+    SOUND_OBJ_TAILS4,
+    SOUND_OBJ_TAILS5,
     SOUND_OBJ_CHAO,
-    SOUND_OBJ_FLOOMBA,
+    SOUND_OBJ_CHAO_DEEPER,
+    SOUND_OBJ_EYEROK_OPENING,
+    SOUND_OBJ_EYEROK_DEATH,
+    SOUND_OBJ_VECTOR,
+    SOUND_OBJ_SILVER,
+    SOUND_OBJ_RUDETOAD,
+    SOUND_OBJ_GOODTOAD,
+
 #if defined(VERSION_JP) || defined(VERSION_US)
     NO_SOUND,
     NO_SOUND,
@@ -333,6 +379,13 @@ u8 sBackgroundMusicDefaultVolume[] = {
     127, // KARAOKE BAR
     127, // WHITE PARK
     127, // FUGIYAMA
+    127, // FUGIYAMA - STAR GET
+    127, // RACING
+    127, // SHELL SLIDING
+    127, // VANILLA'S SECRET SLIDE
+    127, // THE END
+    90,  // SEQ_EVENT_VANISH
+    90,  // SEQ_PEACH_MESSAGE_ORIGINAL
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

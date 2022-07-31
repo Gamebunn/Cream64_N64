@@ -24,3 +24,6 @@
 #include "levels/castle_inside/areas/3/geo.inc.c"
 
 #include "levels/castle_inside/signpost_artist/geo.inc.c"
+#include "levels/castle_inside/bait_fish2/geo.inc.c"
+#include "levels/castle_inside/bait_fish/geo.inc.c"
+#include "levels/castle_inside/toad_angy/geo.inc.c"

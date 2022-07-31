@@ -2673,6 +2673,16 @@ enum animIDsFirePiranhaPlant {
     #define WHITE_PUFF_EXPLODE_BP_FAST_FADE                 0x2
     #define WHITE_PUFF_EXPLODE_BP_SLOW_FADE                 0x3
 
+/* Hocus */
+
+    #define HOCUS_IDLE                                      0x0
+    #define HOCUS_MAGIC                                     0x1
+
+/* Tails */
+
+    #define TAILS_IDLE                                      0x0
+    #define TAILS_HAPPY                                     0x1
+    
 /* Dirt Particle */
 enum oAnimStatesTinyDirtParticle {
     TINY_DIRT_PARTICLE_ANIM_STATE_RED,

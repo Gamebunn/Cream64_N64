@@ -59,6 +59,31 @@
             "release_rate": 10,
             "envelope": "envelope0",
             "sound": "gc_ntmfujiyama_0"  
+        },
+        "inst10": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "stargetextra_par_0"  
+        },
+        "inst11": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "race_saturnspecial_0"  
+        },
+        "inst12": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "shell_tiltthemachine_0"  
+        },
+        "inst13": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "pss_leafforest_0"  
+        },
+        "inst14": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "theend_0"  
         }
     },
     "instrument_list": [
@@ -71,6 +96,11 @@
         "inst6",
         "inst7",
         "inst8",
-        "inst9"
+        "inst9",
+        "inst10",
+        "inst11",
+        "inst12",
+        "inst13",
+        "inst14"
     ]
 }

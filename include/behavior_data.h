@@ -550,11 +550,13 @@ extern const BehaviorScript bhvToadMessageSilver[];
 extern const BehaviorScript bhvToadMessageKatty[];
 extern const BehaviorScript bhvToadMessageAmy[];
 extern const BehaviorScript bhvToadMessageAmy2[];
-extern const BehaviorScript bhvToadMessageAmy3[];
+extern const BehaviorScript bhvAmyBoo[];
 extern const BehaviorScript bhvToadMessageAmy4[];
 extern const BehaviorScript bhvToadMessageAmy5[];
 extern const BehaviorScript bhvToadMessageAmy6[];
 extern const BehaviorScript bhvKoopaGemerl[];
+extern const BehaviorScript bhvKoopaTails[]; 
+extern const BehaviorScript bhvKoopaRaceEndpointTails[]; 
 extern const BehaviorScript bhvWisp1[];
 extern const BehaviorScript bhvWisp2[];
 extern const BehaviorScript bhvToadMessageBlaze[];
@@ -567,6 +569,7 @@ extern const BehaviorScript bhvToadMessageTails1[];
 extern const BehaviorScript bhvWarpRing[];
 extern const BehaviorScript bhvToadMessageGoombaMarine[];
 extern const BehaviorScript bhvToadMessageNormal[];
+extern const BehaviorScript bhvToadMessageFloomba[];
 
 // SA
 extern const BehaviorScript bhvToadMessagePocky[];
@@ -585,9 +588,23 @@ extern const BehaviorScript bhvJack[];
 extern const BehaviorScript bhvKittenLayla[];
 extern const BehaviorScript bhvSweet[];
 extern const BehaviorScript bhvToadMessageHocus[];
-//extern const BehaviorScript bhvToadMessageJohnny[];
 extern const BehaviorScript bhvToadMessageTails2[];
+
+// WMOTR
+extern const BehaviorScript bhvStarFlag[];
+extern const BehaviorScript bhvToadMessageTails3[];
+extern const BehaviorScript bhvToadMessageJohnny[];
+extern const BehaviorScript bhvToadMessageVector[];
 
 // Castle Inside
 extern const BehaviorScript bhvTankFishGroup2[];
+extern const BehaviorScript bhvTankFishGroup3[];
+
+// Ending
+extern const BehaviorScript bhvEndToadGemerl[];
+extern const BehaviorScript bhvEndToadBlaze[];
+extern const BehaviorScript bhvEndToadMark[];
+extern const BehaviorScript bhvEndToadKatalina[];
+extern const BehaviorScript bhvEndToadAmy[];
+extern const BehaviorScript bhvEndToadTails[];
 #endif // BEHAVIOR_DATA_H

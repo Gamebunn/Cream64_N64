@@ -68,6 +68,17 @@ const char *credits06[] = { "4SKETCHMEISTER", "COWQUACK", "NEW HUD AND RING SPRI
 const char *credits07[] = { "3CODING ASSIST", "WISEGUY", "CHEEZEPIN", "REONU"  };
 const char *credits08[] = { "3CODING ASSIST", "KAZE", "FAZANA", "AND MUCH MORE OH DEAR GOD" };
 
+#ifdef VERSION_US
+const char *credits09[] = { "1SOUND COMPOSER", "KOJI KONDO" };
+// ...as well as sound effects and sound programmer in order to make room for screen text writer, Mario voice, and Peach voice
+const char *credits10[] = { "4SOUND EFFECTS", "SOUND PROGRAMMER", "YOJI INAGAKI", "HIDEAKI SHIMIZU" }; 
+const char *credits11[] = { "23-D ANIMATORS", "YOSHIAKI KOIZUMI", "SATORU TAKIZAWA" };
+const char *credits12[] = { "1ADDITIONAL GRAPHICS", "MASANAO ARIMOTO" };
+const char *credits13[] = { "3TECHNICAL SUPPORT", "TAKAO SAWANO", "HIROHITO YOSHIMOTO", "HIROTO YADA" };
+const char *credits14[] = { "1TECHNICAL SUPPORT", "SGI N64 PROJECT STAFF" };
+const char *credits15[] = { "2PROGRESS MANAGEMENT", "KIMIYOSHI FUKUI", "KEIZO KATO" };
+const char *credits16[] = { "5SCREEN TEXT WRITER", "TRANSLATION", "LESLIE SWAN", "MINA AKINO", "HIRO YAMADA" }; 
+#else // VERSION_EU
 // ...as well as sound composer, sound effects, and sound programmer, and...
 const char *credits09[] = { "5NEW PAINTING ASSETS", "ZACK ZHANG", "INFINITEBRIANS", "SKETCHMEISTER", "FLAMINGGARACO" };
 // ...3D animators and additional graphics in order to make room for screen text writer(s), Mario voice, and Peach voice

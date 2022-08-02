@@ -28,7 +28,7 @@ void play_far_fall_sound(struct MarioState *m) {
     u32 action = m->action;
     if (!(action & ACT_FLAG_INVULNERABLE) && action != ACT_TWIRLING && action != ACT_FLYING
         && !(m->flags & MARIO_FALL_SOUND_PLAYED)) {
-        if (m->peakHeight - m->pos[1] > FALL_DAMAGE_HEIGHT_SMALL) {
+        if (m->peakHeight - m->pos[1] > 1150.0f) {
             play_sound(SOUND_MARIO_WAAAOOOW, m->marioObj->header.gfx.cameraToObject);
             m->flags |= MARIO_FALL_SOUND_PLAYED;
         }
@@ -63,14 +63,30 @@ s32 check_fall_damage(struct MarioState *m, u32 hardFallAction) {
 #ifdef NO_FALL_DAMAGE
     return FALSE;
 #endif
+    f32 fallHeight;
+    f32 damageHeight;
 
-    f32 fallHeight = m->peakHeight - m->pos[1];
+    fallHeight = m->peakHeight - m->pos[1];
 
-    f32 damageHeight = FALL_DAMAGE_HEIGHT_SMALL;
+#pragma GCC diagnostic push
+#if defined(__clang__)
+#pragma GCC diagnostic ignored "-Wtautological-constant-out-of-range-compare"
+#elif defined(__GNUC__)
+#pragma GCC diagnostic ignored "-Wtype-limits"
+#endif
+
+    //! Never true
+    if (m->actionState == ACT_GROUND_POUND) {
+        damageHeight = 600.0f;
+    } else {
+        damageHeight = 1150.0f;
+    }
+
+#pragma GCC diagnostic pop
 
     if (m->action != ACT_TWIRLING && m->floor->type != SURFACE_BURNING) {
         if (m->vel[1] < -55.0f) {
-            if (fallHeight > FALL_DAMAGE_HEIGHT_LARGE) {
+            if (fallHeight > 3000.0f) {
                 m->hurtCounter += (m->flags & MARIO_CAP_ON_HEAD) ? 16 : 24;
 #if ENABLE_RUMBLE
                 queue_rumble_data(5, 80);
@@ -100,12 +116,11 @@ s32 check_kick_or_dive_in_air(struct MarioState *m) {
     return FALSE;
 }
 
-#ifdef NO_GETTING_BURIED
-s32 should_get_stuck_in_ground(UNUSED struct MarioState *m) {
-    return FALSE;
-}
-#else
 s32 should_get_stuck_in_ground(struct MarioState *m) {
+#ifdef NO_GETTING_BURIED
+    return FALSE;
+#else
+
     u32 terrainType = m->area->terrainType & TERRAIN_MASK;
     struct Surface *floor = m->floor;
     s32 flags = floor->flags;
@@ -119,8 +134,8 @@ s32 should_get_stuck_in_ground(struct MarioState *m) {
     }
 
     return FALSE;
-}
 #endif
+}
 
 s32 check_fall_damage_or_get_stuck(struct MarioState *m, u32 hardFallAction) {
     if (should_get_stuck_in_ground(m)) {

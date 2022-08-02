@@ -8,10 +8,10 @@
 // The defined number is the forward speed threshold before the change is active, since it's only noticeable at lower speeds.
 #define FAST_FLOOR_ALIGN 10
 
-// Automatically calculates the optimal collision distance for an object based on its vertices.
+// Automatically calculate the optimal collision distance for an object based on its vertices.
 #define AUTO_COLLISION_DISTANCE
 
-// Allows all surfaces types to have force, (doesn't require setting force, just allows it to be optional).
+// Allow all surfaces types to have force, (doesn't require setting force, just allows it to be optional).
 #define ALL_SURFACES_HAVE_FORCE
 
 // Number of walls that can push Mario at once. Vanilla is 4.

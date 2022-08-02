@@ -169,7 +169,7 @@ void reset_bank_and_seq_load_status(void) {
 #ifdef VERSION_SH
     bzero(&gBankLoadStatus, sizeof(gBankLoadStatus));
     bzero(&gUnkLoadStatus,  sizeof(gUnkLoadStatus));
-    bzero(&gSeqLoadStatus,  sizeof(gSeqLoadStatus));
+    bzero(&gSeqLoadStatus,  sizeof(gBankLoadStatus));
 #else
     bzero(&gBankLoadStatus, sizeof(gBankLoadStatus)); // Setting this array to zero is equivilent to SOUND_LOAD_STATUS_NOT_LOADED
     bzero(&gSeqLoadStatus,  sizeof(gSeqLoadStatus));  // Same dealio
@@ -274,7 +274,7 @@ void sound_alloc_pool_init(struct SoundAllocPool *pool, void *memAddr, u32 size)
 #ifdef VERSION_SH
     pool->size = size - ((uintptr_t) memAddr & 0xf);
 #else
-    pool->size = ALIGN16(size);
+    pool->size = size;
 #endif
     pool->numAllocatedEntries = 0;
 }
@@ -380,7 +380,7 @@ void *alloc_bank_or_seq(struct SoundMultiPool *arg0, s32 arg1, s32 size, s32 arg
     // arg3 = 0, 1 or 2?
 
 #ifdef VERSION_SH
-    struct SoundMultiPool *arg0 = NULL;
+    struct SoundMultiPool *arg0;
 #define isSound poolIdx
 #endif
     struct TemporaryPool *tp;
@@ -407,8 +407,6 @@ void *alloc_bank_or_seq(struct SoundMultiPool *arg0, s32 arg1, s32 size, s32 arg
     u32 leftNotLoaded, rightNotLoaded;
     u32 leftAvail, rightAvail;
 #endif
-
-size = ALIGN16(size);
 
 #ifdef VERSION_SH
     switch (poolIdx) {
@@ -658,7 +656,7 @@ size = ALIGN16(size);
 #if defined(VERSION_SH)
                 tp->entries[1].ptr = (u8 *) ((uintptr_t) (pool->start + pool->size - size) & ~0x0f);
 #else
-                tp->entries[1].ptr = pool->start + pool->size - size;
+                tp->entries[1].ptr = pool->start + pool->size - size - 0x10;
 #endif
                 tp->entries[1].id = id;
                 tp->entries[1].size = size;
@@ -760,7 +758,7 @@ void *get_bank_or_seq(s32 poolIdx, s32 arg1, s32 id) {
 }
 void *get_bank_or_seq_inner(s32 poolIdx, s32 arg1, s32 bankId) {
     u32 i;
-    struct SoundMultiPool* loadedPool = NULL;
+    struct SoundMultiPool* loadedPool;
     struct TemporaryPool* temporary;
     struct PersistentPool* persistent;
 
@@ -933,7 +931,7 @@ void decrease_reverb_gain(void) {
 
 #if defined(VERSION_EU) || defined(VERSION_SH)
 s32 audio_shut_down_and_reset_step(void) {
-    s32 i;
+    s32 i, j;
 
     switch (gAudioResetStatus) {
         case 5:
@@ -1009,7 +1007,7 @@ void init_reverb_eu(void) {
     gNumSynthesisReverbs = preset->numReverbs;
     for (j = 0; j < gNumSynthesisReverbs; j++) {
         reverb = &gSynthesisReverbs[j];
-        reverbSettings = &sReverbSettings[MIN((u32)(gAudioResetPresetIdToLoad + j), (sizeof(sReverbSettings) / sizeof(struct ReverbSettingsEU)) - 1)];
+        reverbSettings = &sReverbSettings[MIN((gAudioResetPresetIdToLoad + j), (sizeof(sReverbSettings) / sizeof(struct ReverbSettingsEU)) - 1)];
         reverb->windowSize = (reverbSettings->windowSize * 0x40);
         reverb->downsampleRate = reverbSettings->downsampleRate;
         reverb->reverbGain = reverbSettings->gain;

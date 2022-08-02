@@ -52,9 +52,6 @@ u8 curFrameTimeIndex = 0;
 
 #include "PR/os_convert.h"
 
-#ifdef USE_PROFILER
-float profiler_get_fps();
-#else
 // Call once per frame
 f32 calculate_and_update_fps() {
     OSTime newTime = osGetTime();
@@ -67,14 +64,9 @@ f32 calculate_and_update_fps() {
     }
     return ((f32)FRAMETIME_COUNT * 1000000.0f) / (s32)OS_CYCLES_TO_USEC(newTime - oldTime);
 }
-#endif
 
 void print_fps(s32 x, s32 y) {
-#ifdef USE_PROFILER
-    f32 fps = profiler_get_fps();
-#else
     f32 fps = calculate_and_update_fps();
-#endif
     char text[14];
 
     sprintf(text, "FPS %2.2f", fps);
@@ -83,6 +75,7 @@ void print_fps(s32 x, s32 y) {
 #else
     print_text(x, y, text);
 #endif
+
 }
 
 // ------------ END OF FPS COUNER -----------------
@@ -395,6 +388,7 @@ void render_hud_breath_meter(void) {
 }
 #endif
 
+#define HUD_TOP_Y 209
 
 /**
  * Renders the amount of lives Mario has.
@@ -425,6 +419,8 @@ void render_hud_coins(void) {
     print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(38), 171, "*"); // 'X' glyph
     print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(54), 171, "%d", gHudDisplay.coins);
 }
+
+#define HUD_STARS_X 78
 
 /**
  * Renders the amount of stars collected.
@@ -494,7 +490,7 @@ void set_hud_camera_status(s16 status) {
  */
 void render_hud_camera_status(void) {
     Texture *(*cameraLUT)[6] = segmented_to_virtual(&main_hud_camera_lut);
-    s32 x = GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_CAMERA_X);
+    s32 x = GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(54);
     s32 y = 205;
 
     if (sCameraHUD.status == CAM_STATUS_NONE) {

@@ -112,6 +112,7 @@ const LevelScript level_castle_courtyard_entry[] = {
 		OBJECT(MODEL_BUMP, 582, -325, -3332, 0, -45, 0, KB_002 << 24, bhvToadMessageBump),
 		OBJECT(MODEL_GOOMBA_MARINE, -2731, -336, -1301, 0, 0, 0, KB_003 << 24, bhvToadMessageGoombaMarine),
 		OBJECT(MODEL_GOOMBA_MARINE, -1086, -435, -1207, 0, -118, 0, KB_004 << 24, bhvToadMessageGoombaMarine),
+		OBJECT(MODEL_WOODEN_SIGNPOST, 1121, -409, -1848, 0, -90, 0, KB_009 << 24, bhvMessagePanel),
 		OBJECT(MODEL_LURK, -153, -435, -1256, 0, -180, 0, 0x00000000, bhvLurk),
 		OBJECT(MODEL_NONE, -152, -294, -1557, 0, -180, 0, KB_000 << 16, bhvSignOnWall),
 		OBJECT(MODEL_NONE, 1110, -379, -2118, 0, -90, 0, MWISP_KB << 16, bhvSignOnWall),

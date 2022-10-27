@@ -98,7 +98,7 @@
         "inst17": { // 11
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "thi_juicearchipelago_0"
+            "sound": "thi_waveocean_0"
         },
         "inst18": { // 12
             "release_rate": 10,
@@ -113,7 +113,7 @@
         "inst20": { // 14
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "eggstage1_soarinoverspace_0"
+            "sound": "eggstage1__theark_0"
         },
         "inst21": { // 15
             "release_rate": 10,
@@ -148,7 +148,7 @@
         "inst27": { // 1B
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "eggman3_liveandlearn_0"
+            "sound": "eggman3_whatimmadeof_0"
         }
     },
     "instrument_list": [

@@ -556,6 +556,7 @@ extern const BehaviorScript bhvToadMessageAmy5[];
 extern const BehaviorScript bhvToadMessageAmy6[];
 extern const BehaviorScript bhvKoopaGemerl[];
 extern const BehaviorScript bhvKoopaTails[]; 
+extern const BehaviorScript bhvToadMessageGemerl[]; 
 extern const BehaviorScript bhvKoopaRaceEndpointTails[]; 
 extern const BehaviorScript bhvWisp1[];
 extern const BehaviorScript bhvWisp2[];

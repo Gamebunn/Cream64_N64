@@ -24,7 +24,7 @@ Gfx *geo_switch_amy_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx) {
 
         if(gCurrLevelNum == LEVEL_TTC)
         {
-            if(gCurrActNum == 1)
+            if(gCurrActNum == 1 || gCurrActNum == 2)
                 switchCase->selectedCase = 8;
         }
 

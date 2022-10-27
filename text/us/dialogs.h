@@ -448,10 +448,7 @@ adventure.\n\
 Here's a Star Ring for beating\n\
 me. I know you're super close to\n\
 saving your Mom, just keep at \n\
-it! I'll be seeing ya later.\n\
-\n\
-\n\
-~Tails Story 3 out of 4~"))
+it! I'll be seeing ya later."))
 
 //bob, ssl - how to fly
 DEFINE_DIALOG(DIALOG_032, 1, 6, 30, 200, _("\
@@ -1509,7 +1506,7 @@ in the process!"))
 DEFINE_DIALOG(DIALOG_098, 1, 3, 95, 200, _("\
 -You feel as if hundreds\n\
 of eyes are suddenly\n\
-glazing at you...-"))
+gazing at you...-"))
 
 //no idea
 DEFINE_DIALOG(DIALOG_099, 1, 5, 95, 200, _("\
@@ -1542,8 +1539,8 @@ reappear when you turn back.\n\
 You can't hurt them when\n\
 they're invisible, so sneak\n\
 behind them and give them a \n\
-good punch! Ground pound also\n\
-works. "))
+good punch! Ground pound works\n\
+really well against them, too!."))
 
 //ssl
 DEFINE_DIALOG(DIALOG_103, 1, 4, 95, 200, _("\
@@ -1792,7 +1789,6 @@ bwa ha ha ha!!!\n\
 \n\
 \n\
 \n\
-\n\
 (Oh and...umm...\n\
 Happy Birthday...)"))
 
@@ -1850,10 +1846,10 @@ parks along with the annual\n\
 Chao Races held at the Grand\n\
 Chateau!\n\
 Don't worry, the Vanish Switch\n\
-is still here and hard to miss!\n\
-Take your time exploring the\n\
-park, enjoy the music and have\n\
-fun!"))
+is still here and hard \n\
+to miss! Take your time exploring \n\
+the park, enjoy the music and \n\
+have fun!"))
 
 DEFINE_DIALOG(DIALOG_130, 1, 5, 30, 200, _("\
 Welcome to the Metal Locket\n\
@@ -2950,9 +2946,9 @@ Challenge- Mission 2\n\
 DEFINE_DIALOG(MWISP_THI, 1, 5, 30, 200, _("\
 Music used:\n\
 Main Area: \n\
--Sonic Lost World-\n\
-Juice Archipelago\n\
--- Wii U"))
+-Sonic 06-\n\
+Wave Ocean\n\
+-- Various Platforms"))
 
 //Music Credits, ttc
 DEFINE_DIALOG(MWISP_TTC, 1, 5, 30, 200, _("\
@@ -2969,13 +2965,12 @@ End of the Summer\n\
 -- Mobile"))
 
 //Music Credits, bowser 1
-DEFINE_DIALOG(MWISP_BITDW, 1, 6, 30, 200, _("\
+DEFINE_DIALOG(MWISP_BITDW, 1, 5, 30, 200, _("\
 Music used:\n\
 Stage: \n\
--Sonic Adventure 2-\n\
-Soarin' Over Space -\n\
-Cosmic Wall\n\
--- Dreamcast\n\
+-Shadow the Hedgehog-\n\
+The Ark\n\
+-- Various Systems\n\
 Fight:\n\
 -Sonic Adventure-\n\
 Theme of Dr.EGGMAN\n\
@@ -3175,9 +3170,7 @@ see ya later!\n\
 in certains acts on certain\n\
 levels. There is a \n\
 pattern so keep an eye \n\
-out!)\n\
-\n\
-~Amy Story 1 out of 7~"))
+out!)"))
 
 //Amy Dialogue in bbh pt 1
 DEFINE_DIALOG(AMY_02, 1, 4, 30, 200, _("\
@@ -3196,9 +3189,7 @@ why...\n\
 The sooner I find him, the\n\
 sooner I can get the heck out\n\
 of here! I'm hoping you join\n\
-me soon...\n\
-\n\
-~Amy Story 2 out of 7~"))
+me soon..."))
 
 //Amy Dialogue in bbh pt 2
 DEFINE_DIALOG(AMY_03, 1, 4, 30, 200, _("\
@@ -3216,9 +3207,7 @@ good enough for me, I'm\n\
 getting out of here!\n\
 Have fun in this spook\n\
 hole, Cream...as soon\n\
-as I do one last check.\n\
-\n\
-~Amy Story 3 out of 7~"))
+as I do one last check."))
 
 //Amy Dialogue in ssl
 DEFINE_DIALOG(AMY_04, 1, 5, 30, 200, _("\
@@ -3244,11 +3233,7 @@ can do that if you want, but \n\
 I must continue. \n\
 Catch ya later, as always!\n\
 And don't forget to bring\n\
-some water!\n\
-\n\
-\n\
-\n\
-~Amy Story 4 out of 7~"))
+some water!"))
 
 //Amy Dialogue in wdw
 DEFINE_DIALOG(AMY_05, 1, 5, 30, 200, _("\
@@ -3275,10 +3260,7 @@ count, Cream and you know it.\n\
 Next spot has to be it, I'm\n\
 sure of it! You go on ahead,\n\
 I need to figure out where\n\
-to go next...\n\
-\n\
-\n\
-~Amy Story 5 out of 7~"))
+to go next..."))
 
 //Amy Dialogue in ttc pt 1
 DEFINE_DIALOG(AMY_06, 1, 5, 30, 200, _("\
@@ -3331,9 +3313,7 @@ But thank you, Cream, and \n\
 again I'm so sorry. Just \n\
 give me some time alone\n\
 to clear out my head. I'll\n\
-talk to you in a bit.\n\
-\n\
-~Amy Story 6 out of 7~"))
+talk to you in a bit."))
 
 //Amy Dialogue in ttc pt 2
 DEFINE_DIALOG(AMY_07, 1, 5, 30, 200, _("\
@@ -3351,9 +3331,7 @@ I'm just gonna chill here for  \n\
 the moment but I'll be there  \n\
 for your big moment later, ok? \n\
 Do what you gotta do, ya big \n\
-ol' hero you!\n\
-\n\
-~End of Amy Story~"))
+ol' hero you!"))
 
 //Blaze, JRB
 DEFINE_DIALOG(BLAZE_01, 1, 4, 30, 200, _("\
@@ -3384,9 +3362,7 @@ see me. Take care, Cream.\n\
 (Blaze and Marine are usually\n\
 found together, so if you see\n\
 one, the other can't be too far.\n\
-Keep an eye out!\n\
-\n\
-~Blaze Story 1 out of 5~"))
+Keep an eye out!"))
 
 //Marine, JRB
 DEFINE_DIALOG(MARINE_01, 1, 4, 30, 200, _("\
@@ -3404,10 +3380,7 @@ Blaze I can be a great\n\
 pirate one day!\n\
 Bet she's lookin' for me\n\
 right now, ain't she? If ya\n\
-see her, tell her I'm fine!\n\
-\n\
-\n\
-~Marine Story 1 out of 3~"))
+see her, tell her I'm fine!"))
 
 //Blaze, HMC
 DEFINE_DIALOG(BLAZE_02, 1, 5, 30, 200, _("\
@@ -3430,9 +3403,7 @@ So I hate to ask again, but\n\
 if you see her, let her \n\
 know I'm at the entrance\n\
 of this maze. Thank you,\n\
-Cream.\n\
-\n\
-~Blaze Story 2 out of 5~"))
+Cream."))
 
 //Marine, HMC
 DEFINE_DIALOG(MARINE_02, 1, 5, 30, 200, _("\
@@ -3453,11 +3424,7 @@ like I'm gonna get myself\n\
 into trouble.\n\
 Well, if I can't ride that\n\
 thing, I'll find something\n\
-else! Just you wait!!\n\
-\n\
-\n\
-\n\
-~Marine Story 2 out of 3~"))
+else! Just you wait!!"))
 
 //Blaze, DDD
 DEFINE_DIALOG(BLAZE_03, 1, 5, 30, 200, _("\
@@ -3480,9 +3447,7 @@ Hopefully the next time I\n\
 find her, we'll have a \n\
 little chat and go from \n\
 there. Thank you for letting\n\
-me know she's ok, Cream.\n\
-\n\
-~Blaze Story 3 out of 5~"))
+me know she's ok, Cream."))
 
 //Blaze, RR
 DEFINE_DIALOG(BLAZE_04, 1, 5, 30, 200, _("\
@@ -3499,10 +3464,7 @@ let me know in advance.\n\
 Sorry to get you involved\n\
 in this mess, Cream, but \n\
 thank you none the less. \n\
-I'll talk to you in a bit.\n\
-\n\
-\n\
-~Blaze Story 4 out of 5~"))
+I'll talk to you in a bit."))
 
 //Marine, RR
 DEFINE_DIALOG(MARINE_03, 1, 5, 30, 200, _("\
@@ -3519,10 +3481,7 @@ to get to know you!\n\
 I can see why Blaze talks \n\
 a lot of good things about\n\
 cha. You have fun doing\n\
-the adventure thing!\n\
-\n\
-\n\
-~End of Marine Story~"))
+the adventure thing!"))
 
 //Blaze, RR 2
 DEFINE_DIALOG(BLAZE_05, 1, 6, 30, 200, _("\
@@ -3542,10 +3501,7 @@ But whichever you choose,\n\
 we'll be rooting for you\n\
 to save your mom. Good\n\
 luck, Cream, we know\n\
-you can do it!\n\
-\n\
-\n\
-~End of Blaze Story~"))
+you can do it!"))
 
 DEFINE_DIALOG(MS_001, 1, 6, 30, 200, _("\
 -RADICAL HIGHWAY\n\
@@ -3626,10 +3582,7 @@ one...)\n\
 (Oh, poor Tails, does he try.\n\
 Tails is usually seen at the\n\
 start of new areas so you'll\n\
-see him right away!\n\
-\n\
-\n\
-~Tails Story 1 out of 4~"))
+see him right away!"))
 
 // Sorbet
 DEFINE_DIALOG(MS_005, 1, 4, 30, 200, _("\
@@ -4031,10 +3984,7 @@ Right, I understand. I'll go\n\
 see what I can do to help you.\n\
 (Maybe I can actually help her\n\
 without actually getting in the\n\
-way. Need to go find Gemerl...)\n\
-\n\
-\n\
-~Tails Story 2 out of 4~"))
+way. Need to go find Gemerl...)"))
 
 //Jack
 DEFINE_DIALOG(WP_001, 1, 4, 30, 200, _("\
@@ -4262,10 +4212,7 @@ And honestly, when this whole \n\
 ordeal is completely done, taking \n\
 his offer to go see Chao in Space\n\
 doesn't sound like a bad idea\n\
-right now.-\n\
-\n\
-\n\
-~End of Tails Story~"))
+right now.-"))
 
 //Floomba NTM
 DEFINE_DIALOG(NTM_002, 1, 5, 30, 200, _("\
@@ -4302,3 +4249,28 @@ Music used:\n\
 Golf Club (Japan)-\n\
 Neo Turf Masters\n\
 -- Neo Geo"))
+
+//Gemerl at THI
+DEFINE_DIALOG(EX_001, 1, 6, 30, 200, _("\
+He really wanted to race ya,\n\
+I couldn't say no to the\n\
+guy. It's fine, you've made\n\
+it this far without any\n\
+trouble so why test you\n\
+again.\n\
+I can give you a small\n\
+hint for the last section:\n\
+Your flying is unaffected\n\
+by the wind. Take advantage\n\
+of that!"))
+
+//Kat's Painting in Bar 
+DEFINE_DIALOG(KB_009, 1, 4, 30, 200, _("\
+'Parent's Night Out'\n\
+This painting was done by\n\
+FudgerNutter\n\
+\n\
+~So this is where Mama goes\n\
+with Mr. Mark and Jack. Why\n\
+can't they invite me? They're \n\
+having lots of fun!~"))

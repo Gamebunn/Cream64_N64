@@ -2132,6 +2132,7 @@ you won't recover\n\
 automatically.\n\
 //--The Snowman"))
 
+// Slide Dialog box, now unused
 DEFINE_DIALOG(DIALOG_149, 1, 3, 30, 200, _("\
 Welcome to\n\
 Princess Vanilla's\n\
@@ -4043,32 +4044,12 @@ Music used:\n\
 Puzzle Bobble 2\n\
 -- Arcade"))
 
-//White Wisp, Jack
-DEFINE_DIALOG(WWISP_JACK, 1, 6, 30, 200, _("\
--Jack the Hedgehog-\n\
-By: FudgerNutter\n\
-Age: Late 30s\n\
-~A former bounty-hunter\n\
-who finally settled down\n\
-upon finding a wiley kitten~\n\
-A pyrokinetic who settled on\n\
-bounty-hunting to make a living.\n\
-Due to his left eye being the \n\
-focus of his magic, he who would\n\
-end up blind, retiring from the\n\
-profession.\n\
-Trying to find a relationship, and\n\
-failing, he runs into a young child\n\
-named Kitten who clings to him like\n\
-...well like a lost kitten.\n\
-\n\
-\n\
-Overtime, their time together grew\n\
-and he eventually accepted the role\n\
-of being a Dad. Now a few years \n\
-later, he has no regrets in his \n\
-decision, even making friends with\n\
-Kitten's friend's parents. "))
+//(former) White Wisp, Jack, KZ Nekoarc
+DEFINE_DIALOG(KZNEKO, 1, 4, 30, 200, _("\
+I just don't see the\n\
+appeal of Mario 64 anyway\n\
+because Cream the Rabbit\n\
+isn't there."))
 
 //Sign at Front of Castle
 DEFINE_DIALOG(CASTLESIGN, 1, 2, 30, 200, _("\

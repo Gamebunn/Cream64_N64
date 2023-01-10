@@ -559,7 +559,7 @@ extern const BehaviorScript bhvKoopaTails[];
 extern const BehaviorScript bhvToadMessageGemerl[]; 
 extern const BehaviorScript bhvKoopaRaceEndpointTails[]; 
 extern const BehaviorScript bhvWisp1[];
-extern const BehaviorScript bhvWisp2[];
+//extern const BehaviorScript bhvWisp2[];
 extern const BehaviorScript bhvToadMessageBlaze[];
 extern const BehaviorScript bhvToadMessageBlaze2[];
 extern const BehaviorScript bhvToadMessageBlaze3[];
@@ -577,6 +577,8 @@ extern const BehaviorScript bhvToadMessagePocky[];
 extern const BehaviorScript bhvToadMessageSorbet[];
 extern const BehaviorScript bhvBobombBuddyGardevoir[];
 extern const BehaviorScript bhvTammie[];
+extern const BehaviorScript bhvGremlin[];
+extern const BehaviorScript bhvKZNekoarc[];
 
 // Castle Courtyard
 extern const BehaviorScript bhvToadMessageBait[];

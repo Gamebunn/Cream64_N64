@@ -366,10 +366,10 @@ extern const Gfx white_particle_small_unused_dl[];
 #include "wisp1/geo_header.h"
 
 #include "wisp1/anim_header.h"
-#include "wisp2/geo_header.h"
+//#include "wisp2/geo_header.h"
 
 
-#include "wisp2/anim_header.h"
+//#include "wisp2/anim_header.h"
 
 #include "mario/collision_header.h"
 

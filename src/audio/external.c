@@ -103,6 +103,7 @@ enum DialogSpeakers {
     SILVR,
     RTOAD,
     GTOAD,
+    KZX,
 };
 
 #define _ 0xFF
@@ -132,7 +133,7 @@ u8 sDialogSpeaker[] = {
     /*20*/ BLAZ1, _,     BLAZ2, _,     BLAZ3, BLAZ4, _,     BLAZ5, _,     GARDE, 
     /*21*/ POCKY, TALS1, CHAO,  _,     _,     _,     _,     _,     _,     _,
     /*22*/ _,     _,     GTOAD, GTOAD, _,     _,     _,     _,     _,     _,
-    /*23*/ _,     _,     TALS2, _,     _,     _,     _,     _,     _,     _,
+    /*23*/ _,     _,     TALS2, _,     _,     _,     _,     _,     KZX,     _,
     /*24*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
     /*25*/ VECTR, TALS5, _,     _,     _,     _,     _, 
 };
@@ -178,6 +179,7 @@ s32 sDialogSpeakerVoice[] = {
     SOUND_OBJ_SILVER,
     SOUND_OBJ_RUDETOAD,
     SOUND_OBJ_GOODTOAD,
+    SOUND_OBJ_KZNEKO,
 
 #if defined(VERSION_JP) || defined(VERSION_US)
     NO_SOUND,

@@ -92,7 +92,6 @@ const LevelScript level_main_scripts_entry[] = {
     //LOAD_MODEL_FROM_GEO(MODEL_CHEESE_FOLLOW_SPRING,    cheese_follow_spring_geo),
 
     LOAD_MODEL_FROM_GEO(MODEL_WISP1,                   wisp1_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_WISP2,                   wisp2_geo),
     LOAD_MODEL_FROM_GEO(MODEL_SMOKE,                   smoke_geo),
     LOAD_MODEL_FROM_GEO(MODEL_SPARKLES,                sparkles_geo),
     LOAD_MODEL_FROM_GEO(MODEL_BUBBLE,                  bubble_geo),

@@ -299,7 +299,6 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_LAKITU,                   /*pos*/  4231, 1408, 1601, /*angle*/ 0,   0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCameraLakitu),
         OBJECT(/*model*/ MODEL_SILVER,                     /*pos*/  -977, 1293, 2569, /*angle*/ 0,   0, 0, /*behParam*/ DIALOG_076 << 24, /*beh*/ bhvToadMessageSilver),
         OBJECT(/*model*/ MODEL_KATALINA,                     /*pos*/ -1584, 2303, 7157, /*angle*/ 0, 136, 0, /*behParam*/ DIALOG_083 << 24, /*beh*/ bhvToadMessageKatty),
-        OBJECT(/*model*/ MODEL_WISP2, /*pos*/  -1235,  2253,  7250, /*angle*/ 0, 136, 0, /*behParam*/ WWISP_KATALINA << 16, /*beh*/ bhvWisp2),
         OBJECT(/*model*/ MODEL_TOAD,                     /*pos*/   837, 1203, 3020, /*angle*/ 0, 180, 0, /*behParam*/ DIALOG_137 << 24, /*beh*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -1201, 512, 2827, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
         OBJECT(MODEL_SIGNPOST_ARTIST, -306, 1203, -97, 0, 0, 0, ARTIST06 << 16, bhvMessagePanel),

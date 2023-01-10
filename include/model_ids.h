@@ -281,7 +281,8 @@
 #define MODEL_POCKY                               0x37        // pocky_geo
 #define MODEL_TREE_MS                             0x38        // ms_tree_geo
 #define MODEL_SORBET                              0x39        // sorbet_geo
-#define MODEL_FLOOMBA_SA                          0x3A        // floomba_sa_geo
+#define MODEL_GREMLIN                             0x3A        // gremlin_geo
+#define MODEL_KZ_NEKOARC                          0x3B        // kz_nekoarc_geo
 
 // bits
 #define MODEL_BITS_SLIDING_PLATFORM               0x36        // bits_geo_0005E0

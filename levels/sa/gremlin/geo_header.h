@@ -1,0 +1,15 @@
+extern const GeoLayout gremlin_geo[];
+extern u8 gremlin_gremlin2_ci8[];
+extern u8 gremlin_gremlin2_ci8_pal_rgba16[];
+extern u8 gremlin_gremlin1_ci8[];
+extern u8 gremlin_gremlin1_ci8_pal_rgba16[];
+extern Vtx gremlin_Root_mesh_layer_4_vtx_0[4];
+extern Gfx gremlin_Root_mesh_layer_4_tri_0[];
+extern Vtx gremlin_Root_mesh_layer_4_vtx_1[4];
+extern Gfx gremlin_Root_mesh_layer_4_tri_1[];
+extern Gfx mat_gremlin_gremlin2[];
+extern Gfx mat_revert_gremlin_gremlin2[];
+extern Gfx mat_gremlin_gremlin1[];
+extern Gfx mat_revert_gremlin_gremlin1[];
+extern Gfx gremlin_Root_mesh_layer_4[];
+extern Gfx gremlin_material_revert_render_settings[];

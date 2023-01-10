@@ -32,6 +32,7 @@
 #include "puppyprint.h"
 #include "puppylights.h"
 #include "level_commands.h"
+#include "alon_cheats.h"
 
 #include "config.h"
 
@@ -976,6 +977,7 @@ s32 play_mode_normal(void) {
 
     warp_area();
     check_instant_warp();
+    alon_cheats_update();
 
     if (sTimerRunning && gHudDisplay.timer < 17999) {
         gHudDisplay.timer++;

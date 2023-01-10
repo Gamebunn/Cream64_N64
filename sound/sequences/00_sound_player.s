@@ -6802,6 +6802,7 @@ sound_ref .sound_obj_silver
 sound_ref .sound_obj_rudetoad
 sound_ref .sound_obj_goodtoad
 sound_ref .sound_bowser_charge
+sound_ref .sound_kzneko
 
 .sound_air_bowser_spit_fire:
 chan_setbank 7
@@ -7178,6 +7179,16 @@ chan_end
 layer_note1 39, 0xFF, 127
 layer_end
 
+.sound_kzneko:
+chan_setbank 9
+chan_setinstr 27
+chan_setlayer 0, .layer_2B21
+chan_end
+
+.layer_2B21:
+layer_note1 39, 0x2FF, 127
+layer_end
+
 .channel7_table:
 sound_ref .sound_menu_change_select
 sound_ref .sound_menu_reverse_pause
@@ -7218,7 +7229,7 @@ sound_ref .sound_menu_star_sound_okey_dokey
 sound_ref .sound_menu_star_sound_lets_a_go
 sound_ref .sound_menu_pipe_slide
 sound_ref .sound_menu_pipe_slide2
-sound_ref .sound_menu_exit_pipe
+sound_ref .sound_menu_big_ring
 sound_ref .sound_menu_collect_red_coin
 sound_ref .sound_menu_collect_red_coin
 sound_ref .sound_menu_collect_red_coin
@@ -7582,16 +7593,13 @@ layer_note1 51, 0x5, 73
 layer_end
 
 .sound_menu_coin_its_a_me_mario:
-chan_setbank 9
-chan_setinstr 3
-chan_setenvelope .envelope_3358
+chan_setbank 0
+chan_setinstr 17
 chan_setvibratoextent 3
 chan_setvibratorate 60
 chan_setval 25
 chan_call .set_reverb
 chan_setlayer 0, .layer_2E28
-chan_setlayer 1, .layer_2E3D
-chan_setlayer 2, .layer_2E34
 chan_setval 70
 chan_call .delay
 chan_setbank 10
@@ -7599,25 +7607,8 @@ chan_setinstr 8
 chan_end
 
 .layer_2E28:
-layer_call .layer_11E4
-layer_delay 0x12
-layer_transpose 0
+layer_call .layer_2EF2
 layer_note1 39, 0xc8, 120
-layer_end
-
-.layer_2E34:
-layer_delay 0x6e
-layer_transpose 0
-layer_note1 39, 0xc8, 31
-layer_end
-
-.layer_2E3D:
-layer_transpose 24
-layer_delay 0x1e
-layer_note1 25, 0x2, 18
-layer_note1 37, 0x7, 36
-layer_note1 30, 0x5, 18
-layer_note1 42, 0x37, 36
 layer_end
 
 .sound_menu_yoshi_gain_lives:
@@ -7687,6 +7678,15 @@ chan_end
 layer_note1 39, 0xFF, 127
 layer_end
 
+.sound_menu_big_ring:
+chan_setbank 0
+chan_setinstr 17
+chan_setlayer 0, .layer_2EF2
+chan_end
+
+.layer_2EF2:
+layer_note1 39, 0x6C, 127
+layer_end
 
 .sound_menu_bowser_laugh:
 chan_setbank 6

@@ -241,7 +241,7 @@ enum DialogId {
     WP_003,
     WP_004,
     MWISP_WP,
-    WWISP_JACK,
+    KZNEKO,
     CASTLESIGN,
     ARTIST00, // 240
     ARTIST01, 

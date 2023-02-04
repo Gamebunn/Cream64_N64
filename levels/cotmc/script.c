@@ -55,10 +55,24 @@ const LevelScript level_cotmc_entry[] = {
         JUMP_LINK(script_func_local_1),
         TERRAIN(/*terrainData*/ cotmc_seg7_collision_level),
         MACRO_OBJECTS(/*objList*/ cotmc_seg7_macro_objs),
-        SHOW_DIALOG(/*index*/ 0x00, DIALOG_130),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0004, /*seq*/ SEQ_LEVEL_UNDERGROUND),
+        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0004, /*seq*/ SEQ_LEVEL_NEW_COTMC),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_STONE),
     END_AREA(),
+
+    AREA(2, cotmc_area_2),
+		WARP_NODE(0x0A, LEVEL_COTMC, 0x02, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF0, LEVEL_CASTLE, 0x01, 0x26, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF1, LEVEL_CASTLE, 0x01, 0x23, WARP_NO_CHECKPOINT),
+		OBJECT(MODEL_NONE, 0, -5292, 0, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
+		MARIO_POS(0x01, 0, 0, -5292, 0),
+		TERRAIN(cotmc_area_2_collision),
+		MACRO_OBJECTS(cotmc_area_2_macro_objs),
+        SHOW_DIALOG(/*index*/ 0x00, DIALOG_130),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_NEW_COTMC),
+		TERRAIN_TYPE(TERRAIN_STONE),
+		/* Fast64 begin persistent block [area commands] */
+		/* Fast64 end persistent block [area commands] */
+	END_AREA(),
 
     FREE_LEVEL_POOL(),
     MARIO_POS(/*area*/ 1, /*yaw*/ 90, /*pos*/ -4185, 20, -47),

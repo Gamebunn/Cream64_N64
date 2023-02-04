@@ -77,6 +77,8 @@ enum SeqId {
     SEQ_EVENT_HIGH_SCORE3,            // 0x40 NEW HI-SCORE3
     SEQ_EVENT_HIGH_SCORE4,            // 0x41 NEW HI-SCORE4
     SEQ_EVENT_HIGH_SCORE5,            // 0x42 NEW HI-SCORE5
+    SEQ_LEVEL_NEW_TOTWC,              // 0x43 TOTWC
+    SEQ_LEVEL_NEW_COTMC,              // 0x44 COTMC
     SEQ_COUNT
 };
 

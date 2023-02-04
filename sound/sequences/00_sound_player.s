@@ -6803,6 +6803,10 @@ sound_ref .sound_obj_rudetoad
 sound_ref .sound_obj_goodtoad
 sound_ref .sound_bowser_charge
 sound_ref .sound_kzneko
+sound_ref .sound_layla
+sound_ref .sound_tammie
+sound_ref .sound_kitten
+sound_ref .sound_herochao
 
 .sound_air_bowser_spit_fire:
 chan_setbank 7
@@ -7189,6 +7193,46 @@ chan_end
 layer_note1 39, 0x2FF, 127
 layer_end
 
+.sound_layla:
+chan_setbank 9
+chan_setinstr 28
+chan_setlayer 0, .layer_2B22
+chan_end
+
+.layer_2B22:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_tammie:
+chan_setbank 9
+chan_setinstr 29
+chan_setlayer 0, .layer_2B23
+chan_end
+
+.layer_2B23:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_kitten:
+chan_setbank 9
+chan_setinstr 30
+chan_setlayer 0, .layer_2B24
+chan_end
+
+.layer_2B24:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_herochao:
+chan_setbank 9
+chan_setinstr 31
+chan_setlayer 0, .layer_2B25
+chan_end
+
+.layer_2B25:
+layer_note1 39, 0xFF, 127
+layer_end
+
 .channel7_table:
 sound_ref .sound_menu_change_select
 sound_ref .sound_menu_reverse_pause
@@ -7246,7 +7290,7 @@ sound_ref .sound_menu_collect_secret
 sound_ref .sound_menu_collect_secret
 sound_ref .sound_menu_collect_secret
 sound_ref .sound_menu_collect_secret
-sound_ref .sound_menu_pinch_mario_face
+sound_ref .sound_menu_cheatcode
 sound_ref .sound_menu_let_go_mario_face
 sound_ref .sound_menu_hand_appear
 sound_ref .sound_menu_hand_disappear
@@ -7686,6 +7730,16 @@ chan_end
 
 .layer_2EF2:
 layer_note1 39, 0x6C, 127
+layer_end
+
+.sound_menu_cheatcode:
+chan_setbank 0
+chan_setinstr 18
+chan_setlayer 0, .layer_2EF3
+chan_end
+
+.layer_2EF3:
+layer_note1 39, 0x7F, 127
 layer_end
 
 .sound_menu_bowser_laugh:

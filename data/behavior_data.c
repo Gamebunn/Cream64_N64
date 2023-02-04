@@ -56,6 +56,7 @@
 #include "levels/ttm/header.h"
 #include "levels/vcutm/header.h"
 #include "levels/wmotr/header.h"
+#include "levels/totwc/header.h"
 
 #include "make_const_nonconst.h"
 #include "behavior_data.h"
@@ -6897,3 +6898,15 @@ const BehaviorScript bhvEndToadAmy[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvSmallBullyK[] = {
+    BEGIN(OBJ_LIST_GENACTOR),
+    OR_INT(oFlags, (OBJ_FLAG_SET_FACE_YAW_TO_MOVE_YAW | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+    LOAD_ANIMATIONS(oAnimations, bullyk_anims),
+    DROP_TO_FLOOR(),
+    SET_HOME(),
+    CALL_NATIVE(bhv_small_bully_init),
+    BEGIN_LOOP(),
+        SET_INT(oIntangibleTimer, 0),
+        CALL_NATIVE(bhv_bully_loop),
+    END_LOOP(),
+};

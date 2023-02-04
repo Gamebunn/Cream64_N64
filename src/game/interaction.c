@@ -1590,7 +1590,7 @@ u32 interact_cap(struct MarioState *m, UNUSED u32 interactType, struct Object *o
                 else {
                     capTime = 600; capMusic = SEQUENCE_ARGS(4, SEQ_EVENT_METAL_CAP  ); break;
                 }
-            case MARIO_WING_CAP: if(gCurrLevelNum == LEVEL_WMOTR)  {
+            case MARIO_WING_CAP: if(gCurrLevelNum == LEVEL_WMOTR || LEVEL_TOTWC)  {
                     capTime = 1800; break;
                 }
                 else {

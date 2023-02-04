@@ -145,7 +145,7 @@ void alon_cheat_99_rings()
 					gHudDisplay.coins = 99;
 					
 				}
-				play_sound(SOUND_MENU_BIG_RING, gMarioState->marioObj->header.gfx.cameraToObject);
+				play_sound(SOUND_MENU_CHEATCODE, gMarioState->marioObj->header.gfx.cameraToObject);
 
 				cheat_progress = 0;
 			}

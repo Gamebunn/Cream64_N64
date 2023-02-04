@@ -104,7 +104,23 @@
             "release_rate": 10,
             "envelope": "envelope0",
             "sound": "highscore_4"
+        },
+        "inst19": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "totwc_moltenmines_0"
+        },
+        "inst20": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "fileselect_windmillvillage_0"
+        },
+        "inst21": {
+            "release_rate": 10,
+            "envelope": "envelope0",
+            "sound": "cotmc_miningmelancholy_0"
         }
+        
     },
     "instrument_list": [
         "inst0",
@@ -125,6 +141,9 @@
         "inst15",
         "inst16",
         "inst17",
-        "inst18"
+        "inst18",
+        "inst19",
+        "inst20",
+        "inst21"
     ]
 }

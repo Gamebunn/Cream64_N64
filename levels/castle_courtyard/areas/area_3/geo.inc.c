@@ -16,6 +16,7 @@ const GeoLayout castle_courtyard_area_3_geo[] = {
 			GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 13, -89, -6817, castle_courtyard_dl_karaoke_banner_mesh_layer_1),
 			GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 13, -89, -6817, castle_courtyard_dl_karaoke_champs_mesh_layer_1),
 			GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -970, -461, -1803, 0, 0, -22, castle_courtyard_dl_karaoke_champs_001_mesh_layer_1),
+			GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 13, -89, -6817, castle_courtyard_dl_karaoke_champs_002_mesh_layer_1),
 			GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 13, -89, -340, castle_courtyard_dl_karaoke_props_mesh_layer_1),
 			GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 13, -89, -340, castle_courtyard_dl_karaoke_props_speakers_mesh_layer_1),
 			GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 330, -414, -1443, castle_courtyard_dl_liquorshelf_mesh_layer_1),

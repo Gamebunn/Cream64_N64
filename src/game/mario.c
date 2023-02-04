@@ -1734,7 +1734,7 @@ break;
 break;
   case 8: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_GOKU];
 break;
-  case 9: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_CINNIA];
+  case 9: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_AMY];
 break;
   case 10: gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO_CHEF];
 break;

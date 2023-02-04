@@ -23,7 +23,7 @@
 //#define MODEL_MARIO_ICHIBAN               0x1F6        // mario_ichiban_geo
 
 #define MODEL_MARIO_GOKU                  0x1F5        // mario_goku_geo
-#define MODEL_MARIO_CINNIA                0x1F4        // mario_cinnia_geo
+#define MODEL_MARIO_AMY                   0x1F4        // mario_amy_geo
 #define MODEL_MARIO_CHEF                  0x1F3        // mario_chef_geo
 #define MODEL_MARIO_VAL                   0x1F2        // mario_val_geo
 //#define MODEL_MARIO_ROGER                 0x1F1        // mario_roger_geo
@@ -354,6 +354,7 @@
 // cotmc
 
 // totwc
+#define MODEL_BULLYK                              0x36        // bullyk_geo
 
 // bowser 1
 

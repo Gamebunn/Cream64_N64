@@ -355,8 +355,6 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "mario_goku/geo_header.h"
 
-#include "mario_cinnia/geo_header.h"
-
 #include "mario_chef/geo_header.h"
 
 #include "mario_val/geo_header.h"
@@ -374,5 +372,7 @@ extern const Gfx white_particle_small_unused_dl[];
 #include "mario/collision_header.h"
 
 #include "mario_klonoa/geo_header.h"
+
+#include "mario_amy/geo_header.h"
 
 #endif

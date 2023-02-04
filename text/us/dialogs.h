@@ -4045,7 +4045,7 @@ Puzzle Bobble 2\n\
 -- Arcade"))
 
 //(former) White Wisp, Jack, KZ Nekoarc
-DEFINE_DIALOG(KZNEKO, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(EX_KZNEKO, 1, 4, 30, 200, _("\
 I just don't see the\n\
 appeal of Mario 64 anyway\n\
 because Cream the Rabbit\n\

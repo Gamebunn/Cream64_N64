@@ -599,6 +599,8 @@ extern const BehaviorScript bhvToadMessageTails3[];
 extern const BehaviorScript bhvToadMessageJohnny[];
 extern const BehaviorScript bhvToadMessageVector[];
 
+// TOTWC
+extern const BehaviorScript bhvSmallBullyK[];
 // Castle Inside
 extern const BehaviorScript bhvTankFishGroup2[];
 extern const BehaviorScript bhvTankFishGroup3[];

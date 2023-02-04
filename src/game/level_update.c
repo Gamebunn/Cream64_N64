@@ -243,14 +243,14 @@ void set_mario_initial_cap_powerup(struct MarioState *m) {
     u32 capCourseIndex = gCurrCourseNum - COURSE_CAP_COURSES;
 
     switch (capCourseIndex) {
-        case COURSE_COTMC - COURSE_CAP_COURSES:
+        case COURSE_COTMC - COURSE_CAP_COURSES: /*
             m->flags |= MARIO_METAL_CAP | MARIO_CAP_ON_HEAD;
-            m->capTimer = 600;
+            m->capTimer = 600;*/
             break;
 
-        case COURSE_TOTWC - COURSE_CAP_COURSES:
+        case COURSE_TOTWC - COURSE_CAP_COURSES: /*
             m->flags |= MARIO_WING_CAP | MARIO_CAP_ON_HEAD;
-            m->capTimer = 1200;
+            m->capTimer = 600;*/
             break;
 
         case COURSE_VCUTM - COURSE_CAP_COURSES: /*
@@ -1307,6 +1307,7 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_TOTWC) return 0;
 
     if (gCurrDemoInput != NULL || gCurrCreditsEntry != NULL || gCurrCourseNum == COURSE_NONE) {
         return FALSE;

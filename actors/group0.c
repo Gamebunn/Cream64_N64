@@ -42,7 +42,6 @@
 #include "mario_vanilla/model.inc.c"
 #include "mario_mario/model.inc.c"
 #include "mario_goku/model.inc.c"
-#include "mario_cinnia/model.inc.c"
 #include "mario_chef/model.inc.c"
 #include "mario_val/model.inc.c"
 #include "mario_creamocchia/model.inc.c"
@@ -54,3 +53,4 @@
 //#include "wisp2/anims/table.inc.c"
 #include "mario/collision.inc.c"
 #include "mario_klonoa/model.inc.c"
+#include "mario_amy/model.inc.c"

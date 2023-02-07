@@ -108,7 +108,7 @@ const LevelScript level_hmc_entry[] = {
         OBJECT_WITH_ACTS(/*model*/ MODEL_BLAZE, /*pos*/ -7526,  2241, 6835, /*angle*/ 0, 10, 0, /*behParam*/ BLAZE_02 << 24, /*beh*/ bhvToadMessageBlaze, /*acts*/ ACT_1 | ACT_2 | ACT_3),
         OBJECT_WITH_ACTS(/*model*/ MODEL_MARINE, /*pos*/ -4653,  -4505, -2997, /*angle*/ 0, 10, 0, /*behParam*/ MARINE_02 << 24, /*beh*/ bhvToadMessageMarine2, /*acts*/ ACT_1 | ACT_2 | ACT_3),
         WARP_NODE(/*id*/ 0x0A, /*destLevel*/ LEVEL_HMC, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ 0x0B, /*destLevel*/ LEVEL_COTMC, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ 0x0B, /*destLevel*/ LEVEL_COTMC, /*destArea*/ 0x02, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ 0xF0, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 0x03, /*destNode*/ 0x34, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ 0xF1, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 0x03, /*destNode*/ 0x66, /*flags*/ WARP_NO_CHECKPOINT),
         JUMP_LINK(script_func_local_1),

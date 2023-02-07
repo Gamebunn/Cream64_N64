@@ -17,7 +17,4 @@
 #include "levels/cotmc/areas/1/macro.inc.c"
 #include "levels/cotmc/movtext.inc.c"
 
-#include "levels/cotmc/areas/area_2/collision.inc.c"
-#include "levels/cotmc/areas/area_2/macro.inc.c"
-#include "levels/cotmc/areas/area_2/spline.inc.c"
-#include "levels/cotmc/areas/area_2/model.inc.c"
+#include "levels/cotmc/leveldata.inc.c"

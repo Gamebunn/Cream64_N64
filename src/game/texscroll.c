@@ -16,6 +16,7 @@
 #include "src/game/texscroll/common1_texscroll.inc.c"
 #include "src/game/texscroll/wmotr_texscroll.inc.c"
 #include "src/game/texscroll/totwc_texscroll.inc.c"
+#include "src/game/texscroll/cotmc_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x3] == (uintptr_t)_common1_mio0SegmentRomStart)) {
 		scroll_textures_common1();
@@ -27,6 +28,10 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_totwc_segment_7SegmentRomStart)) {
 		scroll_textures_totwc();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_cotmc_segment_7SegmentRomStart)) {
+		scroll_textures_cotmc();
 	}
 
 }

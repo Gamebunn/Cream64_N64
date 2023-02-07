@@ -276,7 +276,7 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -1154, 0, 2012, /*angle*/ 0, 90, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
         OBJECT(/*model*/ MODEL_YELLOW_COIN, /*pos*/ -1039, 1020, 1371, /*angle*/ 0, 90, 0, /*behParam*/ 0x00000000, /*beh*/ bhvYellowCoin),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ -1039, 1020, 1371, /*angle*/ 0,   0, 0, /*behParam*/ 0x00EE0000, /*beh*/ bhvWarp),
-        WARP_NODE(/*id*/ 0xEE, /*destLevel*/ LEVEL_COTMC, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ 0xEE, /*destLevel*/ LEVEL_COTMC, /*destArea*/ 0x02, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
         OBJECT(MODEL_SIGNPOST_ARTIST, -1857, 90, 1064, 0, 136, 0, ARTIST00 << 16, bhvMessagePanel),
         OBJECT(MODEL_SIGNPOST_ARTIST, -5079, 307, -733, 0, 90, 0, ARTIST01 << 16, bhvMessagePanel),
         OBJECT(MODEL_SIGNPOST_ARTIST, 616, -306, -4415, 0, 0, 0, ARTIST02 << 16, bhvMessagePanel),

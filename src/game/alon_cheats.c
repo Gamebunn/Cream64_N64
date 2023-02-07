@@ -136,7 +136,31 @@ void alon_cheat_99_rings()
 			}
 			break;
 
-		case 5:
+			case 5:
+			if(gPlayer1Controller->buttonPressed & A_BUTTON)
+			{
+				cheat_progress++;
+				cheat_timeout = 30;
+			}
+			else if(alon_cheat_badbuttonCheck())
+			{
+				cheat_progress = 0;
+			}
+			break;
+
+			case 6:
+			if(gPlayer1Controller->buttonPressed & Z_TRIG)
+			{
+				cheat_progress++;
+				cheat_timeout = 30;
+			}
+			else if(alon_cheat_badbuttonCheck())
+			{
+				cheat_progress = 0;
+			}
+			break;
+
+		case 7:
 			if(gPlayer1Controller->buttonPressed & A_BUTTON)
 			{
 				if(gMarioState->numCoins < 99)

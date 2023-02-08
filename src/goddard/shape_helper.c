@@ -1366,10 +1366,10 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
     faceJoint = d_use_obj("N215l");  // DYNOBJ_RIGHT_EYELID_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
-    faceJoint = d_use_obj("N31l");  // DYNOBJ_MARIO_LEFT_EYEBROW_MPART_JOINT_1
-    addto_group(grabberJoint->attachedObjsGrp, faceJoint);
-    faceJoint = d_use_obj("N65l");  // DYNOBJ_MARIO_RIGHT_EYEBROW_MPART_JOINT_1
-    addto_group(grabberJoint->attachedObjsGrp, faceJoint);
+    // faceJoint = d_use_obj("N31l");  // DYNOBJ_MARIO_LEFT_EYEBROW_MPART_JOINT_1
+    // addto_group(grabberJoint->attachedObjsGrp, faceJoint);
+    // faceJoint = d_use_obj("N65l");  // DYNOBJ_MARIO_RIGHT_EYEBROW_MPART_JOINT_1
+    // addto_group(grabberJoint->attachedObjsGrp, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 0.0f, 0.0f, 600.0f);
     faceJoint = d_use_obj("N185l");  // DYNOBJ_MARIO_NOSE_JOINT_1
@@ -1383,15 +1383,15 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
     faceJoint = d_use_obj("N158l");  // DYNOBJ_MARIO_RIGHT_LIP_CORNER_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
-    faceJoint = d_use_obj("N15l");  // DYNOBJ_MARIO_LEFT_MUSTACHE_JOINT_1
-    addto_group(grabberJoint->attachedObjsGrp, faceJoint);
+    // faceJoint = d_use_obj("N15l");  // DYNOBJ_MARIO_LEFT_MUSTACHE_JOINT_1
+    // addto_group(grabberJoint->attachedObjsGrp, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, -250.0f, -150.0f, 300.0f);
     faceJoint = d_use_obj("N149l");  // DYNOBJ_MARIO_LEFT_LIP_CORNER_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
-    faceJoint = d_use_obj("N6l");  // DYNOBJ_MARIO_RIGHT_MUSTACHE_JOINT_1
-    addto_group(grabberJoint->attachedObjsGrp, faceJoint);
+    // faceJoint = d_use_obj("N6l");  // DYNOBJ_MARIO_RIGHT_MUSTACHE_JOINT_1
+    // addto_group(grabberJoint->attachedObjsGrp, faceJoint);
 
     // make the left eye follow cursor
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 100.0f, 200.0f, 400.0f);

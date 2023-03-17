@@ -457,6 +457,7 @@ extern const BehaviorScript bhvFloombaStartup[];
 #endif
 extern const BehaviorScript bhvFloombaTripletSpawner[];
 #endif
+extern const BehaviorScript bhvGoombaCrem[];
 extern const BehaviorScript bhvChainChomp[];
 extern const BehaviorScript bhvChainChompChainPart[];
 extern const BehaviorScript bhvWoodenPost[];
@@ -546,6 +547,7 @@ extern const BehaviorScript bhvExplosionNoDmg[];
 extern const BehaviorScript bhvCheeseFollow[];
 extern const BehaviorScript bhvBobombBuddyLayla[];
 extern const BehaviorScript bhvBobombBuddyKitten[];
+extern const BehaviorScript bhvBobombBuddyKitten2[];
 extern const BehaviorScript bhvToadMessageSilver[];
 extern const BehaviorScript bhvToadMessageKatty[];
 extern const BehaviorScript bhvToadMessageAmy[];
@@ -554,6 +556,7 @@ extern const BehaviorScript bhvAmyBoo[];
 extern const BehaviorScript bhvToadMessageAmy4[];
 extern const BehaviorScript bhvToadMessageAmy5[];
 extern const BehaviorScript bhvToadMessageAmy6[];
+extern const BehaviorScript bhvToadMessageAmy7[];
 extern const BehaviorScript bhvKoopaGemerl[];
 extern const BehaviorScript bhvKoopaTails[]; 
 extern const BehaviorScript bhvToadMessageGemerl[]; 
@@ -585,6 +588,7 @@ extern const BehaviorScript bhvToadMessageBait[];
 extern const BehaviorScript bhvLurk[];
 extern const BehaviorScript bhvToadMessageBump[];
 extern const BehaviorScript bhvSage[];
+extern const BehaviorScript bhvToadMessageSageEgg[];
 
 // Vanish Cap
 extern const BehaviorScript bhvJack[];
@@ -601,9 +605,15 @@ extern const BehaviorScript bhvToadMessageVector[];
 
 // TOTWC
 extern const BehaviorScript bhvSmallBullyK[];
+extern const BehaviorScript bhvToadMessageCharmy[];
+
 // Castle Inside
 extern const BehaviorScript bhvTankFishGroup2[];
 extern const BehaviorScript bhvTankFishGroup3[];
+
+// COTMC
+extern const BehaviorScript bhvSkeeter_MM[];
+extern const BehaviorScript bhvToadMessageEspio[];
 
 // Ending
 extern const BehaviorScript bhvEndToadGemerl[];

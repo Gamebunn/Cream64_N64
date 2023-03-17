@@ -55,6 +55,8 @@
 #define MODEL_GOOMBA_MARINE               0x1B9        // goomba_marine_geo
 #define MODEL_SIGNPOST_VANILLA            0x1B8        // signpost_vanilla_geo
 #define MODEL_SIGNPOST_ARTIST             0x1B7        // signpost_artist_geo
+#define MODEL_GOOMBA_CREM                 0x1B6        // goomba_crem_geo
+#define MODEL_SIGNPOST_DEV                0x1B5        // signpost_dev_geo
 
 // Fish Models
 
@@ -352,9 +354,12 @@
 // pss
 
 // cotmc
+#define MODEL_SKEETER_MM                          0x36        // skeeter_mm_geo
+#define MODEL_ESPIO                               0x37        // espio_geo
 
 // totwc
 #define MODEL_BULLYK                              0x36        // bullyk_geo
+#define MODEL_CHARMY                              0x37        // charmy_geo
 
 // bowser 1
 
@@ -519,6 +524,7 @@
 #define MODEL_KATALINA                    0x69        // katalina_geo
 
 #define MODEL_TOAD_ANGY                   0x6A        // toad_angy_geo
+#define MODEL_SAGE_EGG                    0x6B        // sage_egg_geo
 
 
 // group 16

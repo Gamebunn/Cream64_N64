@@ -254,6 +254,7 @@ const LevelScript level_castle_inside_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_SILVER, silver_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KATALINA, katalina_geo),
     LOAD_MODEL_FROM_GEO(MODEL_SIGNPOST_ARTIST, signpost_artist_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_SAGE_EGG, sage_egg_geo),
 
 
     LOAD_MODEL_FROM_GEO(MODEL_FISH_BAIT, bait_fish_geo),
@@ -320,7 +321,8 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_CASTLE_WATER_LEVEL_PILLAR, /*pos*/  7066, -1178,  -205, /*angle*/ 0,   0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvWaterLevelPillar),
         OBJECT(/*model*/ MODEL_NONE,                      /*pos*/     0,     0,     0, /*angle*/ 0,   0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvDddWarp),
         OBJECT(/*model*/ MODEL_MIPS,                      /*pos*/ -1509, -1177, -1564, /*angle*/ 0,   0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvMips),
-        OBJECT(/*model*/ MODEL_TOAD_ANGY,                      /*pos*/  1787, -1381, -1957, /*angle*/ 0, 126, 0, /*behParam*/ DIALOG_082 << 24, /*beh*/ bhvToadMessage),
+        OBJECT(/*model*/ MODEL_SAGE_EGG,                      /*pos*/  1787, -1381, -1957, /*angle*/ 0, 126, 0, /*behParam*/ DIALOG_082 << 24, /*beh*/ bhvToadMessageSageEgg),
+        OBJECT(/*model*/ MODEL_TOAD_ANGY,                     /*pos*/  3237, -1381, -3336, /*angle*/ 0, 306, 0, /*behParam*/ DIALOG_123 << 24, /*beh*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,                      /*pos*/ -4048, -1381, -1334, /*angle*/ 0,  30, 0, /*behParam*/ DIALOG_136 << 24, /*beh*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_WISP1,    /*pos*/ -1745,    -1074,  1422, /*angle*/ 0,  83, 0, /*behParam*/ MWISP_CASTLE2 << 16, /*beh*/ bhvWisp1),
         OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -878, -1074, 1139, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),

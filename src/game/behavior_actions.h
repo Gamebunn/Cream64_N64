@@ -562,6 +562,8 @@ void bhv_hocus_explode_init(void);
 void bhv_hocus_explode_loop(void);
 void bhv_tails_explode_init(void);
 void bhv_tails_explode_loop(void);
+void bhv_amy_explode_init(void);
+void bhv_amy_explode_loop(void);
 
 void bhv_amyBoo_init(void);
 void bhv_amyBoo_loop(void);
@@ -590,11 +592,12 @@ Gfx *geo_scale_bowser_key(s32 callContext, struct GraphNode *node, UNUSED Mat4 m
 extern struct WaterDropletParams gShallowWaterSplashDropletParams;
 extern struct WaterDropletParams gShallowWaterWaveDropletParams;
 
-// Story NPCs
+// Story NPCs 
 Gfx *geo_switch_npc_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_amy_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_tails_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_blaze_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 Gfx *geo_switch_marine_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
+Gfx *geo_switch_kitten_layla_face(s32 run, struct GraphNode *node, UNUSED Mat4 *mtx);
 
 #endif // BEHAVIOR_ACTIONS_H

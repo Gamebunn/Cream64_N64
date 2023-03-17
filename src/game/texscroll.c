@@ -17,6 +17,8 @@
 #include "src/game/texscroll/wmotr_texscroll.inc.c"
 #include "src/game/texscroll/totwc_texscroll.inc.c"
 #include "src/game/texscroll/cotmc_texscroll.inc.c"
+#include "src/game/texscroll/castle_inside_texscroll.inc.c"
+#include "src/game/texscroll/castle_courtyard_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x3] == (uintptr_t)_common1_mio0SegmentRomStart)) {
 		scroll_textures_common1();
@@ -32,6 +34,14 @@ void scroll_textures() {
 
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_cotmc_segment_7SegmentRomStart)) {
 		scroll_textures_cotmc();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_castle_inside_segment_7SegmentRomStart)) {
+		scroll_textures_castle_inside();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_castle_courtyard_segment_7SegmentRomStart)) {
+		scroll_textures_castle_courtyard();
 	}
 
 }

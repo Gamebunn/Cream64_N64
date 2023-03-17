@@ -171,7 +171,12 @@
         "inst29": {
             "release_rate": 208,
             "envelope": "envelope0",
-            "sound": "1D_jeezus"
+            "sound": "1D_hellothere"
+        },
+        "inst30": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "1E_jeezus"
         }
     },
     "instrument_list": [
@@ -204,6 +209,7 @@
         "inst26",
         "inst27",
         "inst28",
-        "inst29"
+        "inst29",
+        "inst30"
     ]
 }

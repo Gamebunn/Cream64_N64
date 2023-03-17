@@ -1691,10 +1691,10 @@ void render_pause_course_options(s16 x, s16 y, s8 *index, s16 yIndex) {
 
 // Costume Code 1
 
-if (gPlayer1Controller->buttonPressed & R_CBUTTONS) {
+if (gPlayer1Controller->buttonPressed & R_JPAD) {
     gMarioState->currentCostume += 1;
 }
-if (gPlayer1Controller->buttonPressed & L_CBUTTONS) {
+if (gPlayer1Controller->buttonPressed & L_JPAD) {
     gMarioState->currentCostume -= 1;
 }
 
@@ -1889,10 +1889,10 @@ void render_pause_castle_main_strings(s16 x, s16 y) {
 
     // Costume Code 2
 
-if (gPlayer1Controller->buttonPressed & R_CBUTTONS) {
+if (gPlayer1Controller->buttonPressed & R_JPAD) {
     gMarioState->currentCostume += 1;
 }
-if (gPlayer1Controller->buttonPressed & L_CBUTTONS) {
+if (gPlayer1Controller->buttonPressed & L_JPAD) {
     gMarioState->currentCostume -= 1;
 }
 

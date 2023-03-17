@@ -22,3 +22,4 @@
 #include "levels/castle_courtyard/lurk/geo.inc.c"
 #include "levels/castle_courtyard/bump/geo.inc.c"
 #include "levels/castle_courtyard/sage/geo.inc.c"
+#include "levels/castle_courtyard/signpost_dev/geo.inc.c"

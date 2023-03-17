@@ -79,6 +79,8 @@ enum SeqId {
     SEQ_EVENT_HIGH_SCORE5,            // 0x42 NEW HI-SCORE5
     SEQ_LEVEL_NEW_TOTWC,              // 0x43 TOTWC
     SEQ_LEVEL_NEW_COTMC,              // 0x44 COTMC
+    SEQ_LEVEL_EGGMAN3FINALE_END,      // 0x45 EGGMAN3 FINALE END
+    SEQ_COLLECT_STAR_MARIO,           // 0x46
     SEQ_COUNT
 };
 

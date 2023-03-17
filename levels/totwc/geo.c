@@ -19,3 +19,4 @@
 #include "levels/totwc/geo.inc.c"
 
 #include "levels/totwc/bullyk/geo.inc.c"
+#include "levels/totwc/charmy/geo.inc.c"

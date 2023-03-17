@@ -25,4 +25,8 @@ extern const LevelScript level_totwc_entry[];
 
 #include "levels/totwc/bullyk/anim_header.h"
 
+#include "levels/totwc/charmy/geo_header.h"
+
+#include "levels/totwc/charmy/anim_header.h"
+
 #endif

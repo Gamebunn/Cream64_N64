@@ -38,6 +38,8 @@ const LevelScript level_cotmc_entry[] = {
 	JUMP_LINK(script_func_global_9), 
 	JUMP_LINK(script_func_global_18), 
 	JUMP_LINK(script_func_global_1), 
+	LOAD_MODEL_FROM_GEO(MODEL_SKEETER_MM, skeeter_mm_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_ESPIO, espio_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -57,8 +59,15 @@ const LevelScript level_cotmc_entry[] = {
 		WARP_NODE(0xF0, LEVEL_CASTLE, 0x01, 0x26, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_CASTLE, 0x01, 0x23, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF3, LEVEL_CASTLE_GROUNDS, 0x01, 0x14, WARP_NO_CHECKPOINT),
+		OBJECT(MODEL_CHEESE_FOLLOW, -1738, -3917, -2088, 0, 0, 0, 0x00000000, bhvCheeseFollow),
+		OBJECT(MODEL_ESPIO, 2507, -2197, -3826, 0, -48, 0, DIALOG_125 << 24, bhvToadMessageEspio),
+		OBJECT(MODEL_WISP1, -4089, -4016, -3036, 0, -66, 0, MWISP_COTMC << 16, bhvWisp1),
 		OBJECT(MODEL_NONE, -1385, -3825, -1472, 0, 0, 0, 0x00000000, bhvHiddenRedCoinStar),
 		OBJECT(MODEL_NONE, -1385, -4041, -1472, 0, 0, 0, 0x00000000, bhvRedCoinStarMarker),
+		OBJECT(MODEL_SKEETER_MM, -2040, -4094, -2933, 0, -37, 0, 0x00000000, bhvSkeeter_MM),
+		OBJECT(MODEL_SKEETER_MM, 49, -4094, -1470, 0, -37, 0, 0x00000000, bhvSkeeter_MM),
+		OBJECT(MODEL_SKEETER_MM, 3860, -2318, 750, 0, -37, 0, 0x00000000, bhvSkeeter_MM),
+		OBJECT(MODEL_SKEETER_MM, -2220, -4094, -553, 0, -37, 0, 0x00000000, bhvSkeeter_MM),
 		OBJECT(MODEL_NONE, 997, -4058, 2216, 0, 0, 0, 0x00000000, bhvWaterfallSoundLoop),
 		OBJECT(MODEL_NONE, -1034, -4058, -4135, 0, 0, 0, 0x00000000, bhvWaterfallSoundLoop),
 		OBJECT(MODEL_NONE, 5063, -2280, 49, 0, 0, 0, 0x00000000, bhvWaterfallSoundLoop),
@@ -67,6 +76,7 @@ const LevelScript level_cotmc_entry[] = {
 		MARIO_POS(0x01, -90, -1737, -3946, -1838),
 		TERRAIN(cotmc_area_2_collision),
 		MACRO_OBJECTS(cotmc_area_2_macro_objs),
+		SHOW_DIALOG(/*index*/ 0x00, DIALOG_130),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_NEW_COTMC),
 		TERRAIN_TYPE(TERRAIN_STONE),
 		/* Fast64 begin persistent block [area commands] */

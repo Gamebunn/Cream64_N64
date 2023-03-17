@@ -193,8 +193,8 @@ enum DialogId {
     MWISP_BITDW, 
     MWISP_BITFS, 
     MWISP_BITS, 
-    WWISP_LAYLA_KITTEN, //190
-    WWISP_KATALINA, 
+    MWISP_TOTWC, //190
+    MWISP_COTMC, 
     WWISP_MARK,
     AMY_01,
     AMY_02,

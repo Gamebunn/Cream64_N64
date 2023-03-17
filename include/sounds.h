@@ -549,6 +549,10 @@ enum SoundBank {
 #define SOUND_OBJ_TAMMIE                         /* 0x50050080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x23, 0x00, SOUND_DISCRETE)
 #define SOUND_OBJ_KITTEN                         /* 0x50050080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x24, 0x00, SOUND_DISCRETE)
 #define SOUND_OBJ_HEROCHAO                       /* 0x50050080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x25, 0x00, SOUND_DISCRETE)
+#define SOUND_OBJ_LAYLA2                         /* 0x50050080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x26, 0x00, SOUND_DISCRETE)
+#define SOUND_OBJ_KZ_SCREAM                      /* 0x5147C080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x27, 0xC0, SOUND_NO_VOLUME_LOSS | SOUND_DISCRETE)
+#define SOUND_OBJ_KATALINA                       /* 0x50050080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x28, 0x00, SOUND_DISCRETE)
+#define SOUND_OBJ_CHARMY                         /* 0x50050080 */ SOUND_ARG_LOAD(SOUND_BANK_AIR,      0x29, 0x00, SOUND_DISCRETE)
 
 /* Menu Sound Effects */
 #define SOUND_MENU_CHANGE_SELECT                 /* 0x7000F880 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x00, 0xD8, SOUND_DISCRETE)
@@ -592,6 +596,7 @@ enum SoundBank {
 #define SOUND_MENU_PIPE_SLIDE2                   /* 0x7016A080 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x26, 0xA0, SOUND_DISCRETE)
 #define SOUND_MENU_BIG_RING                      /* 0x7016A080 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x27, 0xA0, SOUND_DISCRETE)
 #define SOUND_MENU_CHEATCODE                     /* 0x7016A080 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x38, 0xA0, SOUND_DISCRETE)
+#define SOUND_MENU_THANK_YOU_PLAYING_MY_GAME2    /* 0x701FFF80 */ SOUND_ARG_LOAD(SOUND_BANK_MENU,     0x39, 0xFF, SOUND_DISCRETE)
 
 
 // US/EU only; an index between 0-7 or 0-4 is added to the sound ID before

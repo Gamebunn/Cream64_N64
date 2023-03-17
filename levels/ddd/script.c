@@ -91,7 +91,8 @@ const LevelScript level_ddd_entry[] = {
 
 
     AREA(/*index*/ 1, ddd_geo_0004C0),
-        OBJECT(/*model*/ MODEL_NONE, /*pos*/ -3071, 3000, 0, /*angle*/ 0, 7, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvSpinAirborneWarp),
+        OBJECT_WITH_ACTS(/*model*/ MODEL_NONE, /*pos*/ -3071, 3000, 0, /*angle*/ 0, 7, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvSpinAirborneWarp, /*acts*/ ACT_1 | ACT_2 | ACT_5),
+        OBJECT_WITH_ACTS(/*model*/ MODEL_NONE, /*pos*/ 3536, 960, 42, /*angle*/ 0, 90, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvSpinAirborneWarp, /*acts*/ ACT_3 | ACT_4 | ACT_6),
         OBJECT(/*model*/ MODEL_CHEESE_FOLLOW, /*pos*/ -2871, 3000, 0, /*angle*/ 0, 0, 0, /*behParam*/ 0x00000000, /*beh*/ bhvCheeseFollow),
         WARP_NODE(/*id*/ 0x0A, /*destLevel*/ LEVEL_DDD, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ 0xF0, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 0x03, /*destNode*/ 0x35, /*flags*/ WARP_NO_CHECKPOINT),

@@ -598,18 +598,25 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 } else {
                     if (gCurrLevelNum == LEVEL_BOWSER_1 || gCurrLevelNum == LEVEL_BOWSER_2) {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_KEY), 0);
-                    } else if (gCurrLevelNum == LEVEL_WMOTR) {
-                        play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_NTM_STARGET), 0);
-                    } else  {
+                    } else {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_STAR), 0);
                 }
                 }
+                if (gCurrLevelNum == LEVEL_BOWSER_1 || gCurrLevelNum == LEVEL_BOWSER_2) {
+                        play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_KEY), 0);
+                    } else if (gCurrLevelNum == LEVEL_WMOTR) {
+                        play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_NTM_STARGET), 0);
+                    } else if (gMarioState->currentCostume == 6) {
+                        play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_COLLECT_STAR_MARIO), 0);
+                    } else {
+                        play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_STAR), 0);
+                    }
                 m->marioBodyState->eyeState = MARIO_EYES_LOOK_LEFT;
                 break;
 
             case 42:
-                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
-                m->marioBodyState->eyeState = MARIO_EYES_LOOK_RIGHT;
+                    play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
+                    m->marioBodyState->eyeState = MARIO_EYES_LOOK_RIGHT;
                 break;
 
             case 80:

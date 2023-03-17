@@ -38,3 +38,4 @@
 #include "levels/castle_courtyard/sage/model.inc.c"
 #include "levels/castle_courtyard/sage/anims/data.inc.c"
 #include "levels/castle_courtyard/sage/anims/table.inc.c"
+#include "levels/castle_courtyard/signpost_dev/model.inc.c"

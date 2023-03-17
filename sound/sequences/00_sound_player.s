@@ -2041,6 +2041,7 @@ sound_ref .sound_peach_for_mario
 sound_ref .sound_peach_mario2
 sound_ref .sound_mario_buh_bye
 sound_ref .sound_mario_ground_pound_sub
+sound_ref .sound_mario_jeezus
 
 
 .sound_mario_jump_hoo:
@@ -2496,17 +2497,17 @@ chan_setlayer 0, .layer_EA0
 chan_end
 
 .layer_EA0:
-layer_note1 39, 0x55, 110
+layer_note1 39, 0x55, 0
 layer_end
 
 .sound_mario_hello:
 chan_setbank 8
-chan_setinstr 18
+chan_setinstr 29
 chan_setlayer 0, .layer_EAC
 chan_end
 
 .layer_EAC:
-layer_note1 39, 0x46, 127
+layer_note1 39, 0x56, 127
 layer_end
 
 .sound_mario_press_start_to_play:
@@ -2516,7 +2517,7 @@ chan_setlayer 0, .layer_EB8
 chan_end
 
 .layer_EB8:
-layer_note1 39, 0x12c, 127
+layer_note1 39, 0x12c, 0
 layer_end
 
 .sound_mario_twirl_bounce:
@@ -2684,6 +2685,16 @@ chan_end
 
 .layer_F8B:
 layer_note1 39, 0xc8, 110
+layer_end
+
+.sound_mario_jeezus:
+chan_setbank 8
+chan_setinstr 30
+chan_setlayer 0, .layer_F8C
+chan_end
+
+.layer_F8C:
+layer_note1 39, 0xFF, 110
 layer_end
 
 
@@ -6147,8 +6158,8 @@ layer_note1 48, 0x6, 127
 layer_end
 
 .sound_obj_eel:
-chan_setbank 6
-chan_setinstr 2
+chan_setbank 9
+chan_setinstr 6
 chan_setval 25
 chan_call .set_reverb
 chan_setlayer 0, .layer_2564
@@ -6549,15 +6560,13 @@ chan_setlayer 0, .layer_204E
 chan_end
 
 .sound_obj_boss_dialog_grunt:
-chan_setbank 7
-chan_setinstr 12
+chan_setbank 6
+chan_setinstr 21
 chan_setlayer 0, .layer_27F1
 chan_end
 
 .layer_27F1:
-layer_note1 29, 0x7, 127
-layer_note0 31, 0x18, 127, 127
-layer_note1 27, 0x26, 127
+layer_note1 39, 0xFF, 127
 layer_end
 
 .sound_obj_mips_rabbit:
@@ -6807,6 +6816,10 @@ sound_ref .sound_layla
 sound_ref .sound_tammie
 sound_ref .sound_kitten
 sound_ref .sound_herochao
+sound_ref .sound_layla2
+sound_ref .sound_kz_scream
+sound_ref .sound_katalina
+sound_ref .sound_charmy
 
 .sound_air_bowser_spit_fire:
 chan_setbank 7
@@ -7233,6 +7246,51 @@ chan_end
 layer_note1 39, 0xFF, 127
 layer_end
 
+.sound_layla2:
+chan_setbank 9
+chan_setinstr 32
+chan_setlayer 0, .layer_2B26
+chan_end
+
+.layer_2B26:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_kz_scream:
+chan_setbank 5
+chan_setinstr 7
+chan_setlayer 0, .layer_252C
+chan_setval 1
+chan_call .delay
+chan_setbank 6
+chan_setinstr 20
+chan_setlayer 1, .layer_2B27
+chan_end
+
+.layer_2B27:
+layer_note1 39, 0xaf, 127
+layer_end
+
+.sound_katalina:
+chan_setbank 9
+chan_setinstr 33
+chan_setlayer 0, .layer_2B28
+chan_end
+
+.layer_2B28:
+layer_note1 39, 0xFF, 127
+layer_end
+
+.sound_charmy:
+chan_setbank 9
+chan_setinstr 34
+chan_setlayer 0, .layer_2B29
+chan_end
+
+.layer_2B29:
+layer_note1 39, 0xFF, 127
+layer_end
+
 .channel7_table:
 sound_ref .sound_menu_change_select
 sound_ref .sound_menu_reverse_pause
@@ -7291,7 +7349,7 @@ sound_ref .sound_menu_collect_secret
 sound_ref .sound_menu_collect_secret
 sound_ref .sound_menu_collect_secret
 sound_ref .sound_menu_cheatcode
-sound_ref .sound_menu_let_go_mario_face
+sound_ref .sound_menu_thank_you_playing_my_game2
 sound_ref .sound_menu_hand_appear
 sound_ref .sound_menu_hand_disappear
 sound_ref .chan_2D18
@@ -7740,6 +7798,22 @@ chan_end
 
 .layer_2EF3:
 layer_note1 39, 0x7F, 127
+layer_end
+
+.sound_menu_thank_you_playing_my_game2:
+chan_setbank 10
+chan_setinstr 24
+chan_setlayer 0, .layer_2EF4
+chan_setlayer 1, .layer_2EF5
+chan_end
+
+.layer_2EF4:
+layer_note1 39, 0x12C, 127
+layer_end
+
+.layer_2EF5:
+layer_delay 0x9
+layer_note1 39, 0x12C, 45
 layer_end
 
 .sound_menu_bowser_laugh:

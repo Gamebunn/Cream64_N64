@@ -105,16 +105,19 @@ enum DialogSpeakers {
     GTOAD,
     KZX,
     LAYLA,
+    LAYL2,
     TAMIE,
     KITEN,
     HCHAO,
+    KATTY,
+    CHARM,
 };
 
 #define _ 0xFF
 
 u8 sDialogSpeaker[] = {
     //       0      1      2      3      4      5      6      7      8      9
-    /* 0*/ _,     KITEN, LAYLA, KITEN, LAYLA, _,     _,     _,     _,     TALS3,
+    /* 0*/ _,     KITEN, LAYL2, KITEN, LAYLA, _,     _,     _,     _,     TALS3,
     /* 1*/ _,     _,     _,     _,     _,     _,     _,     KBOMB, _,     _,
     /* 2*/ _,     BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1, BOWS1,
     /* 3*/ _,     TALS4, _,     _,     _,     _,     _,     CHAO2, _,     _,
@@ -122,24 +125,24 @@ u8 sDialogSpeaker[] = {
     /* 5*/ _,     _,     _,     _,     _,     CHAO2, CHAO2, TUXIE, TUXIE, TUXIE,
     /* 6*/ _,     _,     _,     _,     _,     _,     _,     BOWS2, _,     _,
     /* 7*/ _,     _,     _,     _,     _,     _,     SILVR, _,     _,     UKIKI,
-    /* 8*/ UKIKI, _,     RTOAD, _,     _,     BOO,   _,     _,     _,     _,
+    /* 8*/ UKIKI, _,     _,     KATTY, _,     BOO,   _,     _,     _,     _,
     /* 9*/ BOWS2, _,     BOWS2, BOWS3, _,     _,     _,     _,     BOO,   BOO,
-    /*10*/ UKIKI, UKIKI, _,     _,     _,     LAYLA,  LAYLA,  BOO,   BOOM,  _,
-    /*11*/ _,     _,     _,     _,     GRUNT, GRUNT, KBOMB, WIZE1, WIZE2, _,
-    /*12*/ _,     _,     _,     _,     _,     _,     _,     _,     KBOMB, _,
-    /*13*/ _,     _,     CHAO2,  CHAO,  CHAO,  CHAO,  CHAO,  CHAO, _,     _,
+    /*10*/ UKIKI, UKIKI, _,     _,     _,     LAYLA, LAYLA, BOO,   BOOM,  _,
+    /*11*/ _,     _,     _,     _,     _,     GRUNT, KBOMB, WIZE1, WIZE2, _,
+    /*12*/ _,     _,     _,     RTOAD, _,     _,     CHARM, _,     KBOMB, _,
+    /*13*/ _,     _,     CHAO2, CHAO,  CHAO,  CHAO,  CHAO,  CHAO,  _,     _,
     /*14*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*15*/ WIGLR, WIGLR, WIGLR, _,     RTOAD, SILVR, _,     _,     _,     _,
+    /*15*/ WIGLR, WIGLR, WIGLR, _,     _,     SILVR, KATTY, _,     _,     _,
     /*16*/ _,     YOSHI, _,     _,     CHAO2, _,     _,     _,     WIGLR, _,
     /*17*/ HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO,
     /*18*/ HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO, HCHAO,
-    /*19*/ _,     _,     _,     AMY1,  AMY2,  AMY2,  AMY3,  AMY4,  _,     AMY5, 
+    /*19*/ HCHAO, HCHAO, _,     AMY1,  AMY2,  AMY2,  AMY3,  AMY4,  _,     AMY5, 
     /*20*/ BLAZ1, _,     BLAZ2, _,     BLAZ3, BLAZ4, _,     BLAZ5, _,     GARDE, 
-    /*21*/ POCKY, TALS1, CHAO,  TAMIE, _,     _,     _,     _,     _,     _,
+    /*21*/ POCKY, TALS1, CHAO,  TAMIE, _,     _,     HCHAO, _,     _,     _,
     /*22*/ _,     _,     GTOAD, GTOAD, _,     _,     _,     _,     _,     _,
-    /*23*/ _,     _,     TALS2, _,     _,     _,     _,     _,     KZX,     _,
+    /*23*/ _,     _,     TALS2, _,     _,     _,     _,     HCHAO, KZX,   _,
     /*24*/ _,     _,     _,     _,     _,     _,     _,     _,     _,     _,
-    /*25*/ VECTR, TALS5, _,     _,     _,     _,     _, 
+    /*25*/ VECTR, TALS5, _,     _,     HCHAO, _,     _, 
 };
 #undef _
 STATIC_ASSERT(ARRAY_COUNT(sDialogSpeaker) == DIALOG_COUNT,
@@ -185,9 +188,12 @@ s32 sDialogSpeakerVoice[] = {
     SOUND_OBJ_GOODTOAD,
     SOUND_OBJ_KZNEKO,
     SOUND_OBJ_LAYLA,
+    SOUND_OBJ_LAYLA2,
     SOUND_OBJ_TAMMIE,
     SOUND_OBJ_KITTEN,
     SOUND_OBJ_HEROCHAO,
+    SOUND_OBJ_KATALINA,
+    SOUND_OBJ_CHARMY,
 
 #if defined(VERSION_JP) || defined(VERSION_US)
     NO_SOUND,
@@ -337,7 +343,7 @@ u8 sBackgroundMusicDefaultVolume[] = {
     80,  // SEQ_EVENT_CUTSCENE_COLLECT_STAR
     80,  // SEQ_MENU_TITLE_SCREEN
     127,  // SEQ_LEVEL_GRASS; NEW_BOB
-    70,  // SEQ_LEVEL_INSIDE_CASTLE
+    127,  // SEQ_LEVEL_INSIDE_CASTLE
     127,  // SEQ_LEVEL_WATER; NEW_JRB
     127,  // SEQ_LEVEL_HOT; NEW_LLL
     127,  // SEQ_LEVEL_BOSS_KOOPA; EGGMAN1
@@ -402,6 +408,8 @@ u8 sBackgroundMusicDefaultVolume[] = {
     127,  // SEQ_EVENT_HIGH_SCORE5
     127,  // NEW_TOTWC
     127,  // NEW_COTMC
+    127,  // EGGMAN3_FINALE_END
+    80,   // SEQ_OLLECT_STAR_MARIO
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

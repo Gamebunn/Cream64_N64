@@ -20,11 +20,6 @@
             "envelope": "envelope0",
             "sound": "castlemessage_0"
         },
-        "inst2": {
-            "release_rate": 10,
-            "envelope": "envelope0",
-            "sound": "boss_maniaboss_0"  
-        },
         "inst3": {
             "release_rate": 10,
             "envelope": "envelope0",
@@ -53,7 +48,7 @@
         "inst8": {
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "wp_bubblebobble2_0"  
+            "sound": "wp_ringrink2_0"  
         },
         "inst9": {
             "release_rate": 10,
@@ -73,7 +68,7 @@
         "inst12": {
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "shell_tiltthemachine_0"  
+            "sound": "shell_speedofsound_0"  
         },
         "inst13": {
             "release_rate": 10,
@@ -83,7 +78,7 @@
         "inst14": {
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "theend_0"  
+            "sound": "theend2_0"  
         },
         "inst15": {
             "release_rate": 10,
@@ -125,7 +120,7 @@
     "instrument_list": [
         "inst0",
         "inst1",
-        "inst2",
+        null,
         "inst3",
         "inst4",
         "inst5",

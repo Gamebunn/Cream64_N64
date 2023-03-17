@@ -38,10 +38,8 @@
 
 // TODO: Make these ifdefs better
 const char *credits01[] = { "1ROMHACK BY", "GAMEBUN" };
-const char *credits02[] = { "5ENDING MUSIC", "ORIGINAL MIDI BY", "SONIC ADVANCE 3", "ENDING A",
-                            "STEVEONE" };
-const char *credits03[] = { "5CREDIT MUSIC", "ORIGINAL MIDI BY", "SONIC ADVANCE 3", "STAFF ROLL",
-                            "GOLDENYOSHI" };
+const char *credits02[] = { "2ENDING MUSIC", "SONIC ADVANCE 3", "ENDING A" };
+const char *credits03[] = { "2CREDIT MUSIC", "SONIC ADVANCE 3", "STAFF ROLL" };
 const char *credits04[] = { "3ALONWOOF", "FLIGHT CODE", "NPC SWITCH STATE CODE", "MAJOR CODE ADDITIONS" };
 
 #if defined(VERSION_JP) || defined(VERSION_SH)
@@ -72,18 +70,17 @@ const char *credits08[] = { "3CODING ASSIST", "KAZE", "FAZANA", "AND MUCH MORE O
 // ...as well as sound composer, sound effects, and sound programmer, and...
 const char *credits09[] = { "5NEW PAINTING ASSETS", "ZACK ZHANG", "INFINITEBRIANS", "SKETCHMEISTER", "FLAMINGGARACO" };
 // ...3D animators and additional graphics in order to make room for screen text writer(s), Mario voice, and Peach voice
-const char *credits10[] = { "3NEW PAINTING CONT", "THENOVIKA", "FUDGERNUTTER", "GEEKOFKAWAII" };
-const char *credits11[] = { "5STREAMER THANKS TO", "FLAMINGGARACO", "VOTE4WAIFU",
-                            "SYSTEM FIVE O NINE", "JOHNNYHEDGEWOLF" };
-const char *credits12[] = { "5SHOUTOUTS TO", "CONSOLE TESTED BY", "SIMPLEFLIPS", "GAMEBUN", "DOES NOT RECOMMEND IT" };
+const char *credits10[] = { "3NEW PAINTING CONT", "THENOVIKA", "FUDGERNUTTER", "FUNKYSXDA" };
+const char *credits11[] = { "4CREAM FACE MODEL", "CREAM FACE PROGRAMMER", "GAMEBUN", "BWGLITE" };
+const char *credits12[] = { "5SHOUTOUTS TO", "CONSOLE TESTED BY", "SIMPLEFLIPS", "GAMEBUN", "SURPRISINGLY BEATABLE" };
 const char *credits13[] = { "2GO READ ONE PIECE", "", "ALL ONE THOUSAND PLUS CHAPTERS" };
 const char *credits14[] = { "4TAILS VOICE", "AMY VOICE", "CUTEYTCAT", "CINDY ROBINSON"  };
 const char *credits15[] = { "4BLAZE VOICE", "HOCUS VOICE", "ERICA LINDBECK", "FUDGERNUTTER" };
-const char *credits16[] = { "4EGGMAN VOICE", "VANILLA VOICE", "MIKE POLLOCK", "NICOLE STEPHANIE" };
+const char *credits16[] = { "4EGGMAN VOICE", "VANILLA VOICE", "MIKE POLLOCK", "NICOSTEPH" };
 
 #endif
 
-const char *credits17[] = { "3CREAM VOICE", "SARAH WULFECK", "MICHELLE RUFF", "HAYLEY SKYE" };
+const char *credits17[] = { "3CREAM VOICE", "SARAH WULFECK", "MICHELLE RUFF", "MAGICALPOPTARTS" };
 
 #if defined(VERSION_JP) || defined(VERSION_SH)
 const char *credits18[] = { "3SPECIAL THANKS TO", "JYOHO KAIHATUBU", "ALL NINTENDO", "MARIO CLUB STAFF" };
@@ -1341,6 +1338,11 @@ s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) 
 }
 
 s32 lvl_play_the_end_screen_sound2(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
+    play_sound(SOUND_MENU_THANK_YOU_PLAYING_MY_GAME2, gGlobalSoundSource);
+    return TRUE;
+}
+
+s32 lvl_play_the_end_screen_sound3(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
     stop_background_music(SEQUENCE_ARGS(4, SEQ_EVENT_CUTSCENE_CREDITS));
     play_music(SEQ_PLAYER_LEVEL, SEQUENCE_ARGS(4, SEQ_THEEND), 0);
 }

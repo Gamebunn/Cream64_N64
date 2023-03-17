@@ -38,4 +38,6 @@ extern const LevelScript level_castle_courtyard_entry[];
 
 #include "levels/castle_courtyard/sage/anim_header.h"
 
+#include "levels/castle_courtyard/signpost_dev/geo_header.h"
+
 #endif

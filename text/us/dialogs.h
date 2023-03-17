@@ -56,16 +56,16 @@ mountain, can't miss him!"))
 
 // Bob, Layla 1
 DEFINE_DIALOG(DIALOG_002, 1, 6, 95, 200, _("\
-Hi, Cream, it's been a while.\n\
-It's me, Layla, remember? We \n\
-met only a few times but I \n\
-ate a flicky once!...Oh \n\
-Marky told me not to bring that\n\
-up anymore.\n\
-Anyway, Kitten and I were just\n\
-playing here but this mean bomb\n\
-guy wanted us off his mountain\n\
-like a grumpy grandpa!\n\
+Oooooh, I can't believe the \n\
+nerve of that grumpy bomb!\n\
+This guy thinks he owns the\n\
+entire meadow and keeps trying\n\
+to attack Kitten and me!\n\
+\n\
+You've always been stronger\n\
+than the rest of us so go teach\n\
+that jerk a lesson! Show them\n\
+the power of the bun bun!\n\
 \n\
 \n\
 Just be careful, okay? He's huge\n\
@@ -320,24 +320,12 @@ awake, they are invincible.\n\
 Quickly, and quietly, kill them\n\
 before they wake up!"))
 
-//castle interior, wall sign on the 2nd floor, Sonic's letter
-DEFINE_DIALOG(DIALOG_019, 1, 4, 30, 200, _("\
-Hey, Cream! Long time no see.\n\
-If you're reading this, I've\n\
-already left the castle \n\
-sometime ago. \n\
-Would've loved to stay and\n\
-relax but something had came up\n\
-and needed to get it taken care \n\
-of. Never a dull day, huh?\n\
-Tails told me the situation\n\
-and now I'm regreting not \n\
-looking around for your mom\n\
-but I know you'll find her!\n\
-But I'm dragging on and that's\n\
-not my style so good luck,\n\
-Cream! I'll be rootin' for ya.\n\
--- Sonic T. Hedgehog"))
+//castle interior, wall sign on the 2nd floor
+DEFINE_DIALOG(DIALOG_019, 1, 2, 30, 200, _("\
+No running in the \n\
+hallways!!\n\
+Lookin' at you,\n\
+young lady."))
 
 //Opening Letter
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
@@ -611,7 +599,7 @@ the beginning of the\n\
 course.\n\
 //--The Big Bob-omb"))
 
-//ccm, signs nexts to pits
+//ccm, signs nexts to pits, unused
 DEFINE_DIALOG(DIALOG_040, 1, 3, 30, 200, _("\
 Warning!\n\
 Giant, cold pit below.\n\
@@ -883,36 +871,49 @@ looks nothing like her!\n\
 Her parents must be\n\
 worried sick!"))
 
-//jrb, start of level
-DEFINE_DIALOG(DIALOG_060, 1, 4, 30, 200, _("\
-ATTENTION!\n\
-Read Before Diving In!\n\
+//jrb, start of level, extra dev post
+DEFINE_DIALOG(DIALOG_060, 1, 6, 30, 200, _("\
+Dev Talk: The Various\n\
+Cream Outfits.\n\
 \n\
 \n\
-If you stay under the\n\
-water for too long, you'll\n\
-run out of oxygen.\n\
 \n\
-Return to the surface for\n\
-air or find an air bubble\n\
-or rings to breathe while\n\
-underwater.\n\
-Press [A] to swim. Hold [A]\n\
-to swim slow and steady.\n\
-Tap [A] with smooth timing\n\
-to gain speed.\n\
-Press Up on the\n\
-Control Stick and press [A]\n\
-to dive.\n\
 \n\
-Press Down on the Control\n\
-Stick and press [A] to\n\
-return to the surface.\n\
+The Cream Costumes were something\n\
+I just did on a whim. My specialty \n\
+is doing models and I wanted to\n\
+give the player some extra outfits\n\
+to go through Cream 64.\n\
 \n\
-Hold Down and press [A]\n\
-while on the surface near\n\
-the edge of the water to\n\
-jump out."))
+Initially started as a pack of 10,\n\
+now here we are up to a grand \n\
+total of 64 outfits. Though if \n\
+you're playing the N64 version,\n\
+there's only about a sixth of \n\
+them available.\n\
+Due to how I have them implemented,\n\
+I was only able to add so many\n\
+before I ran into the 8 MB memory\n\
+cap. There are solutions but at\n\
+this point, it'd be too much work\n\
+to get it all sorted out.\n\
+How each outfit was picked\n\
+basically came down to either\n\
+personal choice, friend suggestion,\n\
+a thank you to streamers who have\n\
+played the hack and then some.\n\
+\n\
+I could keep going with these but\n\
+I need a personal limit so 64\n\
+was fitting. Something for \n\
+everyone at least!\n\
+\n\
+\n\
+My initial plan after this was\n\
+to retire this Cream model so\n\
+at the very least, she's going\n\
+out with a bang!\n\
+Enjoy the various Creams~"))
 
 //sl
 DEFINE_DIALOG(DIALOG_061, 1, 5, 30, 200, _("\
@@ -1032,7 +1033,7 @@ Good luck, Cream!"))
 //Eggman 1 Before Defeat
 DEFINE_DIALOG(DIALOG_067, 1, 5, 30, 200, _("\
 Ohohoho, You've finally arrived!\n\
-Trying to same your precious\n\
+Trying to save your precious\n\
 mommy? Hahahaaa, good luck with\n\
 that you little brat!\n\
 \n\
@@ -1282,36 +1283,29 @@ solution lie?\n\
 The city welcomes visitors\n\
 with the depth they bring\n\
 as they enter.\n\
+\n\
 In layman's terms\n\
 that means check, hit and\n\
 push objects to find the \n\
 secrets. Have fuuun. "))
 
-//Rude toad, 1st time taking to
-DEFINE_DIALOG(DIALOG_082, 1, 6, 30, 200, _("\
-Oh...it's you. The one \n\
-who just takes over this \n\
-castle and changes it to fit \n\
-your dumb little theme.\n\
-Didn't think there would \n\
-still be a toad left but nope!\n\
-I'm still here and ain't \n\
-leaving. The Princess may rent \n\
-the castle as she wishes\n\
-but this is what I trained\n\
-for!\n\
-\n\
-I'm not giving up my spot\n\
-for some weird jiggly blue\n\
-thing or to a pair of freaky \n\
-rabbits like yourselves! Just\n\
-looking at you makes me sick!\n\
-Bleh!!\n\
-Here, take this stupid thing\n\
-I found here and get out of\n\
-my sight. You disgust me. \n\
-Go eat a carrot or something,\n\
-ugly."))
+//sage, 1st time talking to
+DEFINE_DIALOG(DIALOG_082, 1, 5, 30, 200, _("\
+Greetings, I don't believe we've\n\
+met before. My name is Sage and\n\
+I see Father is causing trouble\n\
+for you and your mother. How\n\
+unfortunate.\n\
+Unfortunately for you, your odds\n\
+of defeating Father are\n\
+12192002 to 1. But I've learned\n\
+odds aren't always correct so\n\
+anything is possible. \n\
+Maybe this Star Ring may assist\n\
+you. You just never know what\n\
+may be the key to success. I \n\
+wish you well, Cream. And don't \n\
+be too harsh on Father."))
 
 //Katalina, 1st time taking to
 DEFINE_DIALOG(DIALOG_083, 1, 6, 30, 200, _("\
@@ -1671,7 +1665,7 @@ Prepare yourself!"))
 
 //wf, big whomp after
 DEFINE_DIALOG(DIALOG_115, 1, 5, 95, 200, _("\
-Oh no...I lost. badly.\n\
+Nooooooo...I lost. badly.\n\
 Ooooooh, the doctor's not\n\
 gonna like this. Star Ring\n\
 please help m-"))
@@ -1798,10 +1792,32 @@ Right: Work Elevator\n\
 /// Cloudy Maze\n\
 Left: Underground Lake"))
 
-DEFINE_DIALOG(DIALOG_123, 1, 4, 30, 200, _("\
-Metal Cavern\n\
-Right: To Waterfall\n\
-Left: Metal Locket Switch"))
+//rude toad
+DEFINE_DIALOG(DIALOG_123, 1, 6, 30, 200, _("\
+Oh...it's you. The one \n\
+who just takes over this \n\
+castle and changes it to fit \n\
+your dumb little theme.\n\
+Didn't think there would \n\
+still be a toad left but nope!\n\
+I'm still here and ain't \n\
+leaving. The Princess may rent \n\
+the castle as she wishes\n\
+but this is what I trained\n\
+for!\n\
+\n\
+I'm not giving up my spot\n\
+for some weird jiggly blue\n\
+thing or to a pair of freaky \n\
+rabbits like yourselves! Just\n\
+looking at you makes me sick!\n\
+Bleh!!\n\
+Get lost, you weebaboo \n\
+rabbit!! I don't have\n\ 
+anything you want!\n\
+You disgust me. \n\
+Go eat a carrot or something,\n\
+ugly."))
 
 DEFINE_DIALOG(DIALOG_124, 1, 4, 30, 200, _("\
 Work Elevator\n\
@@ -1812,15 +1828,42 @@ Elevator continues in the\n\
 direction of the arrow\n\
 activated."))
 
-DEFINE_DIALOG(DIALOG_125, 1, 3, 30, 200, _("\
-Hazy Maze-Exit\n\
-Danger! Closed.\n\
-Turn back now."))
+// Espio
+DEFINE_DIALOG(DIALOG_125, 1, 4, 30, 200, _("\
+-You can't help but \n\
+wonder why Espio's all the\n\
+way out here. Maybe he's \n\
+also looking for your mom.\n\
+But he looks like he's in \n\
+a deep meditative state!\n\
+Best not to disturb him.\n\
+\n\
+\n\
+\n\
+\n\
+....wait, he is snoring??-"))
 
-DEFINE_DIALOG(DIALOG_126, 2, 3, 30, 200, _("\
-Up: Black Hole\n\
-Right: Work Elevator\n\
-/// Hazy Maze"))
+// Charmy
+DEFINE_DIALOG(DIALOG_126, 1, 5, 30, 200, _("\
+Wooow! I forgot why Vector\n\
+sent me here but can you \n\
+believe this place?? A broken \n\
+down castle on top of a volcano? \n\
+THAT'S AWESOME!!\n\
+Don't care if I burn my butt being\n\
+here, you never see anything like\n\
+this back at home. But hey, why\n\
+are YOU doing here???\n\
+\n\
+Eh, whatever, we've both been\n\
+in worse situations. Say, you\n\
+think there's stuff on the other\n\
+side of this mountain? Haven't\n\
+looked myself.\n\
+Probably just some lone ring or\n\
+two. You never know around\n\
+here. Don't burn your butt,\n\
+Cream!"))
 
 DEFINE_DIALOG(DIALOG_127, 3, 4, 30, 200, _("\
 Underground Lake\n\
@@ -1851,38 +1894,35 @@ to miss! Take your time exploring \n\
 the park, enjoy the music and \n\
 have fun!"))
 
-DEFINE_DIALOG(DIALOG_130, 1, 5, 30, 200, _("\
-Welcome to the Metal Locket\n\
-Switch Course! Once you\n\
-step on the Locket Switch,\n\
-the green capsules will\n\
-become solid.\n\
-When you turn your body\n\
-into metal with the Metal\n\
-Locket, you can walk\n\
-underwater! Try it!"))
+DEFINE_DIALOG(DIALOG_130, 1, 4, 30, 200, _("\
+An abandoned mine sits\n\
+undisturbed, the noise of\n\
+the waterfall filling the\n\
+air.\n\
+The Metal Locket Switch\n\
+can't be too far off from\n\
+here. Never hurts to go\n\
+spelunkin'!\n\
+Just watch out for the\n\
+currents below and don't\n\
+get sucked up into the\n\
+waterfall!"))
 
 DEFINE_DIALOG(DIALOG_131, 1, 5, 30, 200, _("\
-Welcome to the Wing Locket\n\
-Course! Step on the red\n\
-switch at the top of the\n\
-tower, in the center of\n\
-the rainbow ring.\n\
-When you trigger the\n\
-switch, all of the red\n\
-capsules you find will\n\
-become solid.\n\
-\n\
-Try out the Wing Locket! Do\n\
-the Triple Jump to take\n\
-off and press [Z] to land.\n\
-\n\
-\n\
-Pull back on the Control\n\
-Stick to go up and push\n\
-forward to nose down,\n\
-just as you would when\n\
-flying an airplane."))
+A lone castle sits ontop\n\
+this volcano, legends saying\n\
+it belonged to one of King\n\
+Arthur's knights. Why up here?\n\
+No one is really certain.\n\
+Whether you believe the legend\n\
+or not, treasure is bound to be\n\
+around! The Wing Locket Switch\n\
+should be near the run down\n\
+castle too.\n\
+Watch out for the lava running\n\
+down the mountain as well as\n\
+the lava pit inside the cavern.\n\
+The Star Ring and Switch awaits!"))
 
 //ccm, racing pengu
 DEFINE_DIALOG(DIALOG_132, 1, 4, 30, 200, _("\
@@ -2071,25 +2111,12 @@ here come the bun! Now, on to\n\
 the final bout!"))
 
 //when you collect 120 star rings
-DEFINE_DIALOG(DIALOG_146, 1, 6, 150, 200, _("\
+DEFINE_DIALOG(DIALOG_146, 1, 5, 150, 200, _("\
 Well I'll be damned, you\n\
 did it! You got all 120\n\
 Red Star Rings. Congrats,\n\
 little bunny, you really did\n\
 leave an impression on me.\n\
-\n\
-Your Ma's told me stories of\n\
-some of the adventures you've\n\
-done, like saving her before\n\
-from Eggman, dealing with\n\
-something called the Metal \n\
-Overlord...\n\
-...having to fight another Gizoid \n\
-like Gemerl and even going head\n\
-to head with something called\n\
-a Zeti! Man, you kind of done\n\
-a lot, haven't ya, kid?\n\
-\n\
 Better to congratulate ya in\n\
 person than through this \n\
 intercom. I'll be on the roof,\n\
@@ -2205,12 +2232,13 @@ Whatever it is, it's\n\
 bugging me! I think I'll\n\
 blow it away!"))
 
-//rude toad, second time talking to
-DEFINE_DIALOG(DIALOG_154, 1, 4, 30, 200, _("\
-Hey hey, what did I say???\n\
-Get lost, you weebaboo\n\
-rabbit!! I already gave you\n\
-that dumb thing, go bugger off."))
+//sage, second time talking to
+DEFINE_DIALOG(DIALOG_154, 1, 5, 30, 200, _("\
+Well, it seems your odds have gone\n\
+up to a respectable 3122003\n\
+to 1 with that Star Ring. \n\
+Quite impressive. Be careful\n\
+on your adventure!"))
 
 //Silver, second time talking to
 DEFINE_DIALOG(DIALOG_155, 1, 6, 30, 200, _("\
@@ -2267,8 +2295,8 @@ The dark areas are\n\
 bottomless pits."))
 
 DEFINE_DIALOG(DIALOG_158, 1, 6, 30, 200, _("\
-Dev Talk: The various Cream\n\
-Models.\n\
+Dev Talk: The Cream\n\
+Model Herself.\n\
 \n\
 \n\
 \n\
@@ -2291,16 +2319,15 @@ left the model as is. The \n\
 fixed up head is now applied\n\
 to Katalina, the bunny by \n\
 TTC.\n\
-The Alt Creams came in after\n\
-just being bored one day and\n\
-wanting to give Cream some\n\
-extra costumes for the player.\n\
-I will admit I did go\n\
-overboard with it..."))
+I do have plans on redoing the \n\
+model again at some point with\n\
+a lower poly count so this is\n\
+kind of a swan song for this \n\
+one. One final hurrah~"))
 
 DEFINE_DIALOG(DIALOG_159, 1, 6, 30, 200, _("\
-Dev Talk: The chosen set of\n\
-characters among other things.\n\
+Dev Talk: The Chosen Set of\n\
+Characters Among Other Things.\n\
 \n\
 \n\
 \n\
@@ -2338,7 +2365,7 @@ they can serve a better purpose."))
 
 DEFINE_DIALOG(DIALOG_160, 1, 6, 30, 200, _("\
 Dev Talk: Streaming Audio and\n\
-the power of self control.\n\
+the Power of Self Control.\n\
 \n\
 \n\
 \n\
@@ -2385,11 +2412,11 @@ streaming audio. The castle inside\n\
 music had a strange crackle that\n\
 I couldn't figure out. \n\
 \n\
-Endless Mines was a last minute\n\
-decision, though I did picked \n\
-a different track for later versions.\n\
-Hoping it fits better in the \n\
-long run."))
+I wound up using a midi track to\n\
+get past this problem though I\n\
+believe later builds of sm64ex\n\
+seem to have fixed the problem.\n\
+Not 100 percent sure."))
 
 #ifdef VERSION_EU
 #define KEEP_ON_PLAYING ".."
@@ -2429,14 +2456,24 @@ little skeptic.\n\
 I know you've done some stuff\n\
 with Sonic and pals but you've\n\
 never really shown it to me \n\
-while I've been here on this.\n\
+while I've been here on this\n\
 world.\n\
-Then here we are, you beating his\n\
+Like saving her before\n\
+from Eggman, dealing with\n\
+something called the Metal \n\
+Overlord...\n\
+\n\
+...having to fight another bot\n\
+like Gemerl and even going head\n\
+to head with something called\n\
+a Zeti! Man, you kind of done\n\
+a lot, haven't ya, kid?\n\
+And here we are, you beating his\n\
 mechs with ease, and not even\n\
 with Cheese, who I thought was\n\
 your main muscle. I'm proud \n\
 of ya, kid. We all are.\n\
-Don't ever change, kid. \n\
+Don't ever change, ya hear?\n\
 We need more people like\n\
 you in this crazy world.\n\
 Oh I'm just dragging on\n\
@@ -2471,23 +2508,23 @@ Sonic specific discords I'm\n\
 in for also giving me suggestions \n\
 and feedback.\n\
 \n\
-FlamingGaraco, Vote4Waifu, \n\ 
-System509, JohnnyHedgewolf and \n\ 
-more for streaming and givin'\n\ 
-feedback and suggestions for \n\
-later versions.\n\
+A huge thank you to everyone\n\ 
+whose streamed it and spread\n\ 
+the word around, along with\n\ 
+giving feedback and suggestions\n\
+for later versions.\n\
 and ANOTHER special thanks to\n\
 my good friends MagicalPoptarts,\n\
 Catti, FudgerNutter and the \n\
 Roys Boys for all the support!\n\
 And also...\n\
-Paps, Alonwolf, Sweet Sawft,\n\
-GeekofKawaii, Zack113, Blazy,\n\
-CuteyTCat, Nullify, Brin,\n\
+Paps, Alonwoof, Sweet Sawft,\n\
+Funkys0da, Zack113, Blazy,\n\
+CuteyTCat, Johnny, Nullify,\n\
 Toad900, BlueStarGal, MSP169,\n\
-BerkStorm1 (I guessssss),\n\
+BerkStorm1, Brin,\n\
 Sketch, Lali, Poodle, Wiz,\n\
-Wawaluigi99, RobBoss, Simple\n\
+Wawaluigi99, Rik, Simple\n\
 and much MUCH more holy crap.\n\
 Whoever I forgot, you know who\n\
 you are! Thaaaank yoooou.\n\
@@ -2627,7 +2664,7 @@ by Arthurtilly\n\
 Current files now thanks to \n\
 STRM64 by ArcticJaguar725\n\
 \n\
-Cheese Follow ori. code possible\n\
+Original Cheese Follow code \n\
 thanks to Cheezepin and Wiseguy\n\
 \n\
 Updated Cheese Follow code by:\n\
@@ -2657,16 +2694,34 @@ Gigaboots\n\
 \n\
 Cream Wanted Poster\n\
 by: Nim\n\
+Sonic graffiti in Mission \n\
+Street by:\n\
+Funkys0da\n\
+\n\
+(PC Only) Pocky and Sorbet\n\
+DDR Poster by: FudgerNutter\n\
+The Tikal (The Echidna) &\n\
+Chaos Hour art by:\n\
+GadgetTR\n\
+Vend-a-Tails from 'Uncle\n\
+Knuckles' by:\n\
+Doobus Goobus\n\
+Parent's Day Out poster\n\
+in Karaoke Bar by:\n\
+FudgerNutter\n\
+\n\
+\n\
+\n\
 New Paintings by: InfiniteBrians,\n\
 SketchMeister, FlamingGaraco, \n\
 FudgerNutter, TheNovika, \n\
-GeekofKawaii And Zack113\n\
+Funkys0da And Zack113\n\
 \n\
 \n\
-End cake pic by:\n\
+End cake pics by (in order):\n\
 MagicalPoptarts\n\
-(Magipoptarts on Twitter)\n\
-\n\
+and\n\
+FudgerNutter\n\
 \n\
 \n\
 \n\
@@ -2675,7 +2730,7 @@ Character Thanks:\n\
 \n\
 \n\
 \n\
-Layla the Fox is by:\n\
+Layla the Fox by:\n\
 MagicalPoptarts\n\
 \n\
 Kitten Lynn and Jack the\n\
@@ -2683,10 +2738,16 @@ Hedgehog by: \n\
 FudgerNutter\n\
 Pocky the Deer and Sorbet\n\
 the Chao by:\n\
-GeekofKawaii\n\
+Funkys0da\n\
 \n\
 Sweet the Frog by:\n\
 Sweet Sawft\n\
+Morgan the Cat by:\n\
+Simple\n\
+\n\
+KZ-NekoArc is just:\n\
+KZXcellent\n\
+\n\
 Hocus the Hedgehog by:\n\
 BadComicDork\n\
 \n\
@@ -2742,364 +2803,235 @@ leave then return. He should\n\
 be gone'"))
 
 DEFINE_DIALOG(MWISP_CASTLE, 1, 4, 30, 200, _("\
-Hello there, Miss. I'm a\n\
-Magenta Wisp sent here as\n\
+(Hello there, Miss. I'm a\n\
+Hero Chao sent here as\n\
 a guide for the ones above.\n\
 \n\
-My fellow brethren are all\n\
+All my friends are all\n\
 located in all the main \n\
 stages of this castle. \n\
 \n\
 We will give you the names\n\
 of the song in the level \n\
 as well as creator credits\n\
-if it's certain midis. \n\
-There's also the few \n\
-White Wisp next to certain\n\
-individuals.\n\
-\n\
-They'll help to explain\n\
-the strange fellows they're\n\
-next to and why they're\n\
+if it's certain midis. n\
 here.\n\
-There's another Magenta \n\
-Wisp in the basement that\n\
+There's another Hero \n\
+Chao in the basement that\n\
 will actually give you the\n\
 song info of the castle.\n\
 I'm just here to give you \n\
 an idea. Keep an eye out,\n\
-Miss!"))
+Miss!)"))
 
 //Music Credits, Castle
-DEFINE_DIALOG(MWISP_CASTLE2, 1, 6, 30, 200, _("\
+DEFINE_DIALOG(MWISP_CASTLE2, 1, 5, 30, 200, _("\
 File Select:\n\
--Sonic Jam-\n\
-Museum Theme\n\
--- Saturn\n\
-Ori. Midi by: \n\
--Name Unknown-\n\
+-Sonic Rush Adventure-\n\
+Windmill Village 3\n\
+\n\
+\n\
 Castle Hub:\n\
--One Piece-\n\
-Treasure Room\n\
--- Gameboy Advance\n\
+-Sonic Unleashed-\n\
+Apotos - Day\n\
 \n\
 \n\
 Boss Battle: \n\
 -Sonic Mania-\n\
 Eggman 1 ~ Ruby Delusions\n\
--- Various Platforms\n\
 \n\
 \n\
 Endless Stairs: \n\
 -Sonic 2-\n\
 Death Egg Zone\n\
--- Genesis-Megadrive\n\
 Ori. Midi by: \n\
 Hunt 'Sage' Bridges\n\
 Wing Locket:\n\
--Sonic 3 and Knuckles-\n\
+-Sonic 3 & Knuckles-\n\
 Unused Song\n\
-Ori. Midi from:\n\
-Sonic and Knuckles \n\
-Collection (PC)\n\
+\n\
+\n\
 Vanish Locket:\n\
 -Sonic Drift 2-\n\
 Rainy Savannah\n\
 Ori. Midi by:\n\
 -Name Unknown-\n\
-\n\
 Metal Locket:\n\
--Sonic 3 and Knuckles-\n\
+-Sonic 3 & Knuckles-\n\
 Chrome Gadget Zone\n\
-Ori. Midi from:\n\
-Sonic and Knuckles \n\
-Collection (PC)\n\
+\n\
+\n\
+Shell Shredding Music:\n\
+-Knuckles' Chaotix-\n\
+Speed of Sound\n\
+\n\
+\n\
 Star Spawn:\n\
 -Sonic Advance-\n\
 Chaos Emerald\n\
---Gameboy Advance\n\
 Ori. Midi by: Steve1\n\
 \n\
 Star Get:\n\
 -Sonic Advance-\n\
 Act 1 Complete\n\
 --Gameboy Advance\n\
-Ori. Midi by: MaliceX\n\
-\n\
-Ending Theme:\n\
--Sonic Advance 3-\n\
-Ending A\n\
---Gameboy Advance\n\
-Ori. Midi by:\n\
--Name Unknown-"))
+Ori. Midi by: MaliceX"))
 
 //Music Credits, Bob
-DEFINE_DIALOG(MWISP_BOB, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_BOB, 1, 3, 30, 200, _("\
 Music used:\n\
 -NiGHTS Journey of Dreams-\n\
-Eloquent Echo: Fluffy Catch\n\
--- Wii"))
+Eloquent Echo"))
 
 //Music Credits, Wf
-DEFINE_DIALOG(MWISP_WF, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_WF, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Adventure-\n\
-The Air - Windy Valley 3\n\
--- Dreamcast"))
+Windy Hill - Windy Valley"))
 
 //Music Credits, Jrb
-DEFINE_DIALOG(MWISP_JRB, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_JRB, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic CD (EU-JP)-\n\
-Tidal Tempest - Present\n\
--- SEGA CD"))
+Tidal Tempest - Present"))
 
 //Music Credits, Ccm
-DEFINE_DIALOG(MWISP_CCM, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_CCM, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Lost World-\n\
-Snowball Waltz\n\
--- Wii U"))
+Snowball Waltz"))
 
 //Music Credits, bbh
-DEFINE_DIALOG(MWISP_BBH, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_BBH, 1, 4, 30, 200, _("\
 Music used:\n\
 Main Area: \n\
 -Sonic Heroes-\n\
-Mystic Mansion\n\
--- Various Platforms\n\
+Hang Castle (Normal)\n\
 Merry-Go-Round:\n\
--Knuckles' Chaotix-\n\
-Child's Song\n\
--- 32X"))
+-Sonic Heroes-\n\
+Hang Castle (Inverted)"))
 
 //Music Credits, hmc
-DEFINE_DIALOG(MWISP_HMC, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_HMC, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Adventure-\n\
-Dilapidated Way - Casinopolis\n\
--- Dreamcast"))
+Dilapidated Way - Casinopolis"))
 
 //Music Credits, lll
-DEFINE_DIALOG(MWISP_LLL, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_LLL, 1, 4, 30, 200, _("\
 Music used:\n\
 Main Area: \n\
--Sonic 3D Blast-\n\
+-Sonic 3D Blast (Gen)-\n\
 Volcano Valley Act 1\n\
--- Genesis\n\
 Volcano:\n\
 -Sonic Adventure-\n\
-Red Hot Skull - Red Mountain\n\
--- Dreamcast"))
+Red Hot Skull - Red Mountain"))
 
 //Music Credits, ssl
-DEFINE_DIALOG(MWISP_SSL, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_SSL, 1, 4, 30, 200, _("\
 Music used:\n\
 Main Area: \n\
 -Sonic Lost World-\n\
 Desert Ruins - Zone 4\n\
--- Wii U\n\
 Pyramid:\n\
 -Sonic Adventure 2-\n\
-Keys the Ruins - Pyramid Cave\n\
--- Dreamcast"))
+Keys the Ruins - Pyramid Cave"))
 
 //Music Credits, ddd
-DEFINE_DIALOG(MWISP_DDD, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_DDD, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Lost World-\n\
-Sea Bottom Segue\n\
--- Wii U"))
+Sea Bottom Segue"))
 
 //Music Credits, sl
-DEFINE_DIALOG(MWISP_SL, 1, 6, 30, 200, _("\
+DEFINE_DIALOG(MWISP_SL, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Advance 2-\n\
 Ice Paradise Act 2\n\
--- Gameboy Advance\n\
-Remastered by:\n\
-SuperChaosControl\n\
 Igloo:\n\
 -Sonic Adventure-\n\
-Limestone Cave - Icecap\n\
--- Dreamcast"))
+Limestone Cave - Icecap"))
 
 //Music Credits, wdw
-DEFINE_DIALOG(MWISP_WDW, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_WDW, 1, 3, 30, 200, _("\
 Music used:\n\
--Sonic 3D Blast-\n\
-Rusty Ruins Act 2\n\
--- SEGA Saturn"))
+-Sonic 3D Blast (Sat)-\n\
+Rusty Ruins Act 2"))
 
 //Music Credits, ttm
-DEFINE_DIALOG(MWISP_TTM, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_TTM, 1, 4, 30, 200, _("\
 Music used:\n\
 Main Area: \n\
 -Sonic Adventure-\n\
 Symbol of Thrill - Red Mountain\n\
--- Dreamcast\n\
 Secret Slide:\n\
 -Sonic Generations-\n\
-Challenge- Mission 2\n\
--- 360-PS3"))
+Challenge- Mission 2"))
 
 //Music Credits, thi
-DEFINE_DIALOG(MWISP_THI, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_THI, 1, 3, 30, 200, _("\
 Music used:\n\
-Main Area: \n\
--Sonic 06-\n\
-Wave Ocean\n\
--- Various Platforms"))
+-Sonic the Hedgehog (2006)-\n\
+Wave Ocean ~The Water's Edge~"))
 
 //Music Credits, ttc
-DEFINE_DIALOG(MWISP_TTC, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_TTC, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Unleashed-\n\
-Rooftop Run - Night\n\
--- 360-PS3"))
+Rooftop Run - Night"))
 
 //Music Credits, rr
-DEFINE_DIALOG(MWISP_RR, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_RR, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Runners-\n\
-End of the Summer\n\
--- Mobile"))
+End of the Summer"))
 
 //Music Credits, bowser 1
-DEFINE_DIALOG(MWISP_BITDW, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_BITDW, 1, 4, 30, 200, _("\
 Music used:\n\
 Stage: \n\
 -Shadow the Hedgehog-\n\
 The Ark\n\
--- Various Systems\n\
 Fight:\n\
 -Sonic Adventure-\n\
-Theme of Dr.EGGMAN\n\
--- Dreamcast"))
+Theme of Dr.EGGMAN"))
 
 //Music Credits, bowser 2
-DEFINE_DIALOG(MWISP_BITFS, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_BITFS, 1, 4, 30, 200, _("\
 Music used:\n\
 Stage: \n\
--Sonic 3D Blast\n\
+-Sonic 3D Blast (Sat)-\n\
 Volcano Valley Act 1\n\
--- Saturn\n\
 Fight:\n\
 -Sonic Heroes-\n\
-Egg Emperor\n\
--- Various Platforms"))
+Egg Emperor"))
 
 //Music Credits, bowser 3
-DEFINE_DIALOG(MWISP_BITS, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_BITS, 1, 4, 30, 200, _("\
 Music used:\n\
 Stage: \n\
--M & S London 2012-\n\
+-Mario & Sonic London 2012-\n\
 Koopa Road\n\
--- Wii U\n\
 Fight:\n\
--Sonic Mania-\n\
-Final Boss ~ Ruby Illusions\n\
--- Various Platforms\n\
+-Sonic Generations (3DS)-\n\
+Vs: Big Arms\n\
 \n\
-Well, you made it to the\n\
+(Well, you made it to the\n\
 end. It's been nice helping\n\
 you out, Miss! Go bash that\n\
-Eggman!"))
+Eggman!)"))
 
-//Character Credits, Bob
-DEFINE_DIALOG(WWISP_LAYLA_KITTEN, 1, 6, 30, 200, _("\
-Get ready cause this \n\
-is a long two-fer!\n\
-Here we goooooo\n\
-\n\
-\n\
-\n\
--Kitten Lynn-\n\
-By: FudgerNutter\n\
-Age: 10\n\
-~A small wiley cat who\n\
-causes trouble but means\n\
-well~\n\
-An orphan wanting to have\n\
-fun, even if it means the\n\
-expense of her foster\n\
-father, Jack, and father-\n\
-in-spirit, Mark. \n\
-\n\
-She, alongside Layla, Katalina\n\
-and Cream (on occasion) get \n\
-along like long lost sisters\n\
-and hang out when they can.\n\
-She also has the tedency to\n\
-follow Tails around too.\n\
-While still a pain, she\n\
-does start to develop\n\
-some skills thanks to her\n\
-new 'family' and learns \n\
-to settle down...barely.\n\
-Again, she does mean well.\n\
--Layla the Fox-\n\
-By: MagicalPoptarts\n\
-Age: 8\n\
-~A Chao turned Fox who wanted\n\
-to live like a person. Still\n\
-acts very Chao-ish~\n\
-Originally a Chao, she wished\n\
-upon a falling star to be\n\
-like the people she would see\n\
-come to the Chao Garden. Her\n\
-wish transformed her into the\n\
-purple fox you see before you.\n\
-She did end up keeping her \n\
-wings, hidden by her hoodie, and\n\
-emote ball which only appears\n\
-under high emotions. Her friends\n\
-help her get by and understand\n\
-this new world opened to her.\n\
-While her guardians are two dark\n\
-chao, she also sees Mark as her\n\
-adopted father, clinging to him\n\
-when he's around, much to his\n\
-annoyance. They get along \n\
-pretty well beyond that. "))
+//Music Credits, totwc
+DEFINE_DIALOG(MWISP_TOTWC, 1, 3, 30, 200, _("\
+Music used:\n\
+-Sonic and the Black Knight-\n\
+Molten Mines"))
 
-//castle, katalina
-DEFINE_DIALOG(WWISP_KATALINA, 1, 6, 30, 200, _("\
--Katalina Tannon-\n\
-By: Gamebun\n\
-Age: 7\n\
-~And orphan from the cold \n\
-north found by Mark, ever so\n\
-sweet and helpful~\n\
-A scared snow rabbit who\n\
-only wants to be loved.\n\
-And while she does feel\n\
-at home at the orphanage,\n\
-she still yanders for a\n\
-real family.\n\
-After being found by Mark\n\
-alone in the orphanage, \n\
-they travel to find out \n\
-what's happen in this part\n\
-of the world and fix the \n\
-situation.\n\
-After the situation has \n\
-been cleared, Mark adopts\n\
-her and takes her along \n\
-back to Vanilla and co to\n\
-live in peace with her\n\
-new family and friends.\n\
-Happy with her new life,\n\
-she oftens called Vanilla \n\
-'Mama' and Cream 'Lil Sis'\n\
-like she was always part\n\
-of her family.\n\
-\n\
-A part of her still unknown\n\
-to everyone, she too can \n\
-use fire magic just like \n\
-Mark. How she obtain this\n\
-power, is still a mystery."))
+//Music Credits, cotmc
+DEFINE_DIALOG(MWISP_COTMC, 1, 3, 30, 200, _("\
+Music used:\n\
+-Donkey Kong Country 2-\n\
+Mining Meloncholy"))
 
 //castle, mark
 DEFINE_DIALOG(WWISP_MARK, 1, 6, 30, 200, _("\
@@ -3202,13 +3134,12 @@ I think something happened\n\
 to me but I can't remember\n\
 anything...\n\
 \n\
-Please say yes....you\n\
-haven't?!?! Ok, that's\n\
+Please say yes....YOU\n\
+HAVEN'T?! Ok, that's\n\
 good enough for me, I'm\n\
 getting out of here!\n\
 Have fun in this spook\n\
-hole, Cream...as soon\n\
-as I do one last check."))
+hole, Cream!"))
 
 //Amy Dialogue in ssl
 DEFINE_DIALOG(AMY_04, 1, 5, 30, 200, _("\
@@ -3530,7 +3461,11 @@ soggy bread...\n\
 I don't get paid enough to\n\
 deal with this. Come back\n\
 tomorrow and please take \n\
-the wonder bread fan."))
+the wonder bread fan...\n\
+...and watch out for the\n\
+Alomomolas lurking around\n\
+the store. Nasty little\n\
+gremlins."))
 
 // Pocky
 DEFINE_DIALOG(MS_003, 1, 5, 30, 200, _("\
@@ -3645,11 +3580,10 @@ reflective number rings. So if\n\
 they're nearby, so is a ring!"))
 
 //Music Credits, Mission Street
-DEFINE_DIALOG(MWISP_MS, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(MWISP_MS, 1, 3, 30, 200, _("\
 Music used:\n\
 -Sonic Adventure 2-\n\
-Mission Street\n\
--- Dreamcast"))
+Mission Street"))
 
 //Lurk
 DEFINE_DIALOG(KB_000, 1, 6, 30, 200, _("\
@@ -3958,12 +3892,11 @@ though. Maybe cause I'm just bad \n\
 at it. Stupid cute kitties...~"))
 
 //Wisp, Karaoke Bar
-DEFINE_DIALOG(MWISP_KB, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_KB, 1, 4, 30, 200, _("\
 Music used:\n\
 -Dudley's Theme-\n\
 Street Fighter 3:\n\
-A New Generation\n\
--- Arcade"))
+A New Generation"))
 
 //Tails Part 2
 DEFINE_DIALOG(WP_000, 1, 4, 30, 200, _("\
@@ -4032,17 +3965,17 @@ DEFINE_DIALOG(WP_004, 1, 3, 30, 200, _("\
 Seems the silly frog in the\n\
 dunk tank left a sign here for\n\
 anyone willing to try. Let's see:\n\
-'Wus poppin? Try 'n dunk me, \n\
-brother. Good luck, it's frozen\n\
-lol.'\n\
+'Wus poppin? Name's Sweet. Try\n\
+'n dunk me, brother. Good luck, \n\
+it's frozen lol.'\n\
 Such a strange silly frog..."))
 
 //Magenta Wisp, White Park
 DEFINE_DIALOG(MWISP_WP, 1, 4, 30, 200, _("\
 Music used:\n\
--Woolen's Theme-\n\
-Puzzle Bobble 2\n\
--- Arcade"))
+-Ristar-\n\
+Round 5-1 - Ring Rink\n\
+~Planet Freon~"))
 
 //(former) White Wisp, Jack, KZ Nekoarc
 DEFINE_DIALOG(EX_KZNEKO, 1, 4, 30, 200, _("\
@@ -4224,12 +4157,11 @@ charge me for 'destroying \n\
 company equipment'..."))
 
 //Magenta Wisp, Fujiyama
-DEFINE_DIALOG(MWISP_NTM, 1, 5, 30, 200, _("\
+DEFINE_DIALOG(MWISP_NTM, 1, 4, 30, 200, _("\
 Music used:\n\
 -Fujiyama Oriental\n\ 
 Golf Club (Japan)-\n\
-Neo Turf Masters\n\
--- Neo Geo"))
+Neo Turf Masters"))
 
 //Gemerl at THI
 DEFINE_DIALOG(EX_001, 1, 6, 30, 200, _("\
@@ -4244,14 +4176,3 @@ hint for the last section:\n\
 Your flying is unaffected\n\
 by the wind. Take advantage\n\
 of that!"))
-
-//Kat's Painting in Bar 
-DEFINE_DIALOG(KB_009, 1, 4, 30, 200, _("\
-'Parent's Night Out'\n\
-This painting was done by\n\
-FudgerNutter\n\
-\n\
-~So this is where Mama goes\n\
-with Mr. Mark and Jack. Why\n\
-can't they invite me? They're \n\
-having lots of fun!~"))

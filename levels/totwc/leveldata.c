@@ -22,3 +22,6 @@
 #include "levels/totwc/bullyk/model.inc.c"
 #include "levels/totwc/bullyk/anims/data.inc.c"
 #include "levels/totwc/bullyk/anims/table.inc.c"
+#include "levels/totwc/charmy/model.inc.c"
+#include "levels/totwc/charmy/anims/data.inc.c"
+#include "levels/totwc/charmy/anims/table.inc.c"

@@ -1309,13 +1309,13 @@ be too harsh on Father."))
 
 //Katalina, 1st time taking to
 DEFINE_DIALOG(DIALOG_083, 1, 6, 30, 200, _("\
-Lil' Sis!! You're finally \n\
+Cream!! You're finally \n\
 here!! I was worried something\n\
 had happened to you! I'm glad\n\
 you and Cheese are doing \n\
 alright.\n\
 \n\
-I didn't see Mama anywhere\n\
+I didn't see your Mama here\n\
 but I saw this strange door\n\
 up the stairs. She may be in\n\
 there, but I think you may\n\
@@ -1325,7 +1325,7 @@ need a lot of Star Rings.\n\
 Papa! I think he said he was\n\
 on the roof. I'm not sure \n\
 why but maybe he thought\n\
-Mama would be up there.\n\
+she would be up there.\n\
 \n\
 Well I did hear somethings\n\
 from the nice Toads:\n\
@@ -1339,8 +1339,8 @@ nearest quarter hour!\n\
 crazy,\n\
 and 9 goes quickly.\n\
 Time your jump!\n\
-Good luck, Lil' Sis! I\n\
-know you can save Mama!\n\
+Good luck, Cream! I\n\
+know you can save her!\n\
 Here, I found this Star\n\
 Ring up here. I know you'll\n\
 find a good use for it!"))
@@ -2115,13 +2115,13 @@ DEFINE_DIALOG(DIALOG_146, 1, 5, 150, 200, _("\
 Well I'll be damned, you\n\
 did it! You got all 120\n\
 Red Star Rings. Congrats,\n\
-little bunny, you really did\n\
-leave an impression on me.\n\
+little bunny, I didn't think\n\
+you had it in ya.\n\
 Better to congratulate ya in\n\
 person than through this \n\
 intercom. I'll be on the roof,\n\
 waiting for ya. Cya then, \n\
-Cream~"))
+kid~"))
 
 DEFINE_DIALOG(DIALOG_147, 1, 5, 30, 200, _("\
 Are you using the Locket\n\
@@ -2261,10 +2261,10 @@ the painting.\n\
 Keep at it, Cream. You'll\n\
 find your mom in no time!"))
 
-//katalina, second time talk to
+//Katalina, second time talk to
 DEFINE_DIALOG(DIALOG_156, 1, 5, 30, 200, _("\
-I know you'll find Mama, \n\
-Lil' Sis!! Papa, me and \n\
+I know you'll find her,\n\
+Cream!! Papa, me and \n\
 everyone else believe in you!!\n\
 But I can at least try to\n\
 help you with that giant clock.\n\
@@ -2722,6 +2722,30 @@ End cake pics by (in order):\n\
 MagicalPoptarts\n\
 and\n\
 FudgerNutter\n\
+\n\
+\n\
+\n\
+Cream and Vanilla \n\
+Design Credits:\n\
+\n\
+\n\
+\n\
+Young Vanilla deisgn by:\n\
+Zack113\n\
+\n\
+Dr. Eggman Cream design\n\
+by: TheNovika\n\
+\n\
+Hatsune Miku Cream by:\n\
+(underscore)motobug\n\
+\n\
+Grandma Rabbit design\n\
+by: StellarSpin\n\
+\n\
+Creamocchia Cream design\n\
+by: MSPNova\n\
+\n\
+\n\
 \n\
 \n\
 \n\

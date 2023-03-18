@@ -606,7 +606,7 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_KEY), 0);
                     } else if (gCurrLevelNum == LEVEL_WMOTR) {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_NTM_STARGET), 0);
-                    } else if (gMarioState->currentCostume == 6) {
+                    } else if (gMarioState->currentCostume == 10) {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_COLLECT_STAR_MARIO), 0);
                     } else {
                         play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_EVENT_CUTSCENE_COLLECT_STAR), 0);

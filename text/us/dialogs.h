@@ -2769,7 +2769,7 @@ Sweet Sawft\n\
 Morgan the Cat by:\n\
 Simple\n\
 \n\
-KZ-NekoArc is just:\n\
+KZ-Neco Arc is just:\n\
 KZXcellent\n\
 \n\
 Hocus the Hedgehog by:\n\

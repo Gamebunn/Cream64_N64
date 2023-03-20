@@ -410,6 +410,8 @@ u8 sBackgroundMusicDefaultVolume[] = {
     127,  // NEW_COTMC
     127,  // EGGMAN3_FINALE_END
     80,   // SEQ_OLLECT_STAR_MARIO
+    127,   // SEQ_OLLECT_STAR_KLONOA
+    127,   // SEQ_OLLECT_STAR_CREAMOCCHIA
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sBackgroundMusicDefaultVolume) == SEQ_COUNT,

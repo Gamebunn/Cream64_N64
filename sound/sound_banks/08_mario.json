@@ -177,6 +177,11 @@
             "release_rate": 208,
             "envelope": "envelope0",
             "sound": "1E_jeezus"
+        },
+        "inst31": {
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "1F_wahoo"
         }
     },
     "instrument_list": [
@@ -210,6 +215,7 @@
         "inst27",
         "inst28",
         "inst29",
-        "inst30"
+        "inst30",
+        "inst31"
     ]
 }

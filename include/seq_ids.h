@@ -81,6 +81,8 @@ enum SeqId {
     SEQ_LEVEL_NEW_COTMC,              // 0x44 COTMC
     SEQ_LEVEL_EGGMAN3FINALE_END,      // 0x45 EGGMAN3 FINALE END
     SEQ_COLLECT_STAR_MARIO,           // 0x46
+    SEQ_COLLECT_STAR_KLONOA,          // 0x47
+    SEQ_COLLECT_STAR_CREAMOCCHIA,     // 0x48
     SEQ_COUNT
 };
 

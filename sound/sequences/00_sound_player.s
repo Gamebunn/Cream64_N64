@@ -2042,6 +2042,7 @@ sound_ref .sound_peach_mario2
 sound_ref .sound_mario_buh_bye
 sound_ref .sound_mario_ground_pound_sub
 sound_ref .sound_mario_jeezus
+sound_ref .sound_mario_here_we_go_klonoa
 
 
 .sound_mario_jump_hoo:
@@ -2697,6 +2698,15 @@ chan_end
 layer_note1 39, 0xFF, 110
 layer_end
 
+.sound_mario_here_we_go_klonoa:
+chan_setbank 8
+chan_setinstr 31
+chan_setlayer 0, .layer_F8D
+chan_end
+
+.layer_F8D:
+layer_note1 39, 0xFF, 110
+layer_end
 
 
 #if defined(VERSION_EU) || defined(VERSION_SH)

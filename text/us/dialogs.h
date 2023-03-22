@@ -2688,6 +2688,12 @@ CowQuack\n\
 \n\
 \n\
 \n\
+Cream Head Model done\n\
+by: Gamebun\n\
+\n\
+Cream Head Coded In\n\
+by: BWGLite\n\
+\n\
 Various Pokemon pics seen in the\n\
 castle and Mission Street from:\n\
 Gigaboots\n\
@@ -4074,7 +4080,7 @@ TheNovika"))
 DEFINE_DIALOG(ARTIST08, 1, 3, 30, 200, _("\
 'Motobuds'\n\
 This painting was done by\n\
-GeekofKawaii"))
+Funkys0da"))
 
 //Artist, Vanilla and Eggman
 DEFINE_DIALOG(ARTIST09, 1, 3, 30, 200, _("\

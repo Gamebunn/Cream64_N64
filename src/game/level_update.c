@@ -89,7 +89,7 @@ const char *credits18[] = { "3VERY SPECIAL THANKS", "MAGICALPOPTARTS", "CATTI", 
 #endif
 
 const char *credits19[] = { "3VERY SPECIAL THANKS", "BRINTY BRIN", "RAINBOW FISSION", "NICOSTEPH" };
-const char *credits20[] = { "5CAKE END PIC BY", "VERY SPECIAL THANKS", "MAGICALPOPTARTS", "TO YOU", "THANKS FOR PLAYING" };
+const char *credits20[] = { "3CAKE END PICS", "MAGICALPOPTARTS", "FUDGERNUTTER", "THANK YOU FOR PLAYING"  };
 
 
 struct CreditsEntry sCreditsSequence[] = {

@@ -333,33 +333,11 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "mario/geo_header.h"
 
-#include "mario_winter/geo_header.h"
-
 #include "cheese_follow/geo_header.h"
 
 #include "cheese_follow_chocola/geo_header.h"
 
 #include "cheese_follow/anim_header.h"
-
-#include "mario_riders/geo_header.h"
-
-#include "mario_spring/geo_header.h"
-
-#include "mario_unicorn/geo_header.h"
-
-#include "mario_yukata/geo_header.h"
-
-#include "mario_vanilla/geo_header.h"
-
-#include "mario_mario/geo_header.h"
-
-#include "mario_goku/geo_header.h"
-
-#include "mario_chef/geo_header.h"
-
-#include "mario_val/geo_header.h"
-
-#include "mario_creamocchia/geo_header.h"
 
 #include "wisp1/geo_header.h"
 
@@ -371,8 +349,28 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "mario/collision_header.h"
 
-#include "mario_klonoa/geo_header.h"
+#include "mario_riders/geo_header.h"
 
-#include "mario_amy/geo_header.h"
+#include "mario_winter/geo_header.h"
+
+#include "mario_spring/geo_header.h"
+
+#include "mario_unicorn/geo_header.h"
+
+#include "mario_yukata/geo_header.h"
+
+#include "mario_swimsuit/geo_header.h"
+
+#include "mario_halloween/geo_header.h"
+
+#include "mario_detective/geo_header.h"
+
+#include "mario_drummer/geo_header.h"
+
+#include "mario_princess/geo_header.h"
+
+#include "mario_mario/geo_header.h"
+
+#include "mario_lunar/geo_header.h"
 
 #endif

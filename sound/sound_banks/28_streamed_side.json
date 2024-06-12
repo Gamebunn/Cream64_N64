@@ -118,12 +118,7 @@
         "inst22": {
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "starget_klonoa_0"
-        },
-        "inst23": {
-            "release_rate": 10,
-            "envelope": "envelope0",
-            "sound": "starget_creamocchia_0"
+            "sound": "starget_drummer_0"
         }
         
     },
@@ -150,7 +145,6 @@
         "inst19",
         "inst20",
         "inst21",
-        "inst22",
-        "inst23"
+        "inst22"
     ]
 }

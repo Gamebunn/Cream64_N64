@@ -15,18 +15,18 @@
 #define MODEL_MARIO_SPRING                0x1FD        // mario_spring_geo
 #define MODEL_MARIO_UNICORN               0x1FC        // mario_unicorn_geo
 #define MODEL_MARIO_YUKATA                0x1FB        // mario_yukata_geo
-#define MODEL_MARIO_VANILLA               0x1FA        // mario_vanilla_geo
-//#define MODEL_MARIO_BEAN                  0x1F9        // mario_bean_geo
+#define MODEL_MARIO_SWIMSUIT              0x1FA        // mario_vanilla_geo
+#define MODEL_MARIO_DRUMMER               0x1F9        // mario_drummer_geo
 #define MODEL_MARIO_MARIO                 0x1F8        // mario_mario_geo
-#define MODEL_MARIO_KLONOA                0x1F7        // mario_mario_geo
-//#define MODEL_MARIO_LUFFY                 0x1F7        // mario_luffy_geo
-//#define MODEL_MARIO_ICHIBAN               0x1F6        // mario_ichiban_geo
+#define MODEL_MARIO_HALLOWEEN             0x1F7        // mario_halloween_geo
+#define MODEL_MARIO_DETECTIVE             0x1F1        // mario_detective_geo
+#define MODEL_MARIO_PRINCESS              0x1EE        // mario_princess_geo
 
 #define MODEL_MARIO_GOKU                  0x1F5        // mario_goku_geo
 #define MODEL_MARIO_AMY                   0x1F4        // mario_amy_geo
 #define MODEL_MARIO_CHEF                  0x1F3        // mario_chef_geo
 #define MODEL_MARIO_VAL                   0x1F2        // mario_val_geo
-//#define MODEL_MARIO_ROGER                 0x1F1        // mario_roger_geo
+#define MODEL_MARIO_LUNAR                 0x1F0        // mario_lunar_geo
 
 //#define MODEL_MARIO_KATALINA              0x1F0        // mario_katalina_geo
 //#define MODEL_MARIO_KITTEN                0x1EF        // mario_kitten_geo

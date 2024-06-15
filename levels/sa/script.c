@@ -71,7 +71,7 @@ const LevelScript level_sa_entry[] = {
 		WARP_NODE(0xF0, LEVEL_CASTLE, 0x01, 0x27, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_CASTLE, 0x01, 0x28, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_GARDEVOIR, -5761, 131, 2180, 0, 0, 0, MS_002 << 16, bhvBobombBuddyGardevoir),
-		OBJECT(MODEL_KZ_NEKOARC, -764, 131, -2225, 0, -180, 0, EX_KZNEKO << 16, bhvKZNekoarc),
+		OBJECT(MODEL_KZ_NEKOARC, -876, 131, -2225, 0, -180, 0, EX_KZNEKO << 16, bhvKZNekoarc),
 		OBJECT(MODEL_POCKY, 3056, 131, 1412, 0, 25, 0, MS_003 << 24, bhvToadMessagePocky),
 		OBJECT(MODEL_SORBET, 2559, 366, 1207, 0, 0, 0, MS_005 << 24, bhvToadMessageSorbet),
 		OBJECT(MODEL_TAILS_C1, 1678, 131, 2374, 0, 90, 0, MS_004 << 24, bhvToadMessageTails1),

@@ -16,7 +16,7 @@
 DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
 Holy crud, you're right in \n\
 the middle of a battlefield!\n\
-Wait, where's the bob-ombs?  \n\
+Wait, where's the bob-ombs?\n\
 Eh, whatever, check around \n\
 for the Star Rings Eggman \n\
 stole inside the paintings.\n\
@@ -27,11 +27,11 @@ happening, and so will her\n\
 friend right next to her. \n\
 \n\
 To read signs: stop, face them\n\
-and press [B]. Press [A] or [B]\n\
-to scroll ahead. \n\
+and press [B] or [A]. Press \n\
+[A] or [B] to scroll ahead. \n\
 You can talk to some other\n\
-characaters by facing them and\n\
-pressing [B]"))
+characters by walking toward \n\
+them and pressing [B]"))
 
 DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
 Cream, look out! Layla and I\n\
@@ -40,35 +40,33 @@ but those nasty bombs keeps\n\
 on shooting water bombs at us!\n\
 And their king is a total jerk!\n\
 This whole meadow doesn't belong \n\
-to him! Think he owns the whole\n\
+to him! Thinks he owns the whole\n\
 dang place...\n\
-This meadow's all muddy now\n\
+This meadow's all muddy now,\n\
 ever since he got his grubby\n\
 hands on that Star Ring.\n\
 \n\
 Bleh, might need another shower\n\
 after today. Can you PLEEEEASE\n\
 take care of that grumpy bomb?\n\
-We'd really apprecaite it!\n\
+We'd really appreciate it!\n\
 Just be careful crossing that\n\
 bridge. He's on top of the\n\
 mountain, can't miss him!"))
 
 // Bob, Layla 1
-DEFINE_DIALOG(DIALOG_002, 1, 6, 95, 200, _("\
+DEFINE_DIALOG(DIALOG_002, 1, 5, 95, 200, _("\
 Oooooh, I can't believe the \n\
 nerve of that grumpy bomb!\n\
 This guy thinks he owns the\n\
 entire meadow and keeps trying\n\
 to attack Kitten and me!\n\
-\n\
 You've always been stronger\n\
-than the rest of us so go teach\n\
+than the rest of us, so go teach\n\
 that jerk a lesson! Show them\n\
 the power of the bun bun!\n\
 \n\
-\n\
-Just be careful, okay? He's huge\n\
+Just be careful, okay? He's huge,\n\
 and his bomb army can be just \n\
 as nasty. I got hit by one of \n\
 those water bombs and it still\n\
@@ -113,21 +111,21 @@ it'll be fine!"))
 
 //Bob, Gemerl before race
 DEFINE_DIALOG(DIALOG_005, 1, 5, 30, 200, _("\
-Well well, nice to see you're\n\
-doing good, Cream and Cheese.\n\
-Heard you defeated the King\n\
-Bob-omb with ease, nicely \n\
-done!\n\
-I figure I check out this place\n\
+Well well. Nice to see you two\n\
+are doing well. Heard you \n\
+defeated the King Bob-omb\n\
+with ease, nicely done!\n\
+\n\
+I figure I'd check around here\n\
 to see if I can find a lead on\n\
 Eggman but it got me thinking:\n\
 How about we have a little \n\
 race to the top of the mountain?\n\
 Think of it as a little test.\n\
-I know you two are good but\n\
+I know you two are good, but\n\
 if you can't beat me in a simple\n\
 race, how good are you against\n\
-Eggman?\n\
+him?\n\
 When I say go, the race begins.\n\
 What do you say?\n\
 \n\
@@ -151,7 +149,7 @@ I'll keep scouting around the\n\
 other levels. I'm sure we'll \n\
 bump into each other down the\n\
 line, so don't worry.\n\
-In the meantime, Take this \n\
+In the meantime, take this \n\
 Star Ring I found for besting\n\
 me. You've earned it!!"))
 
@@ -162,7 +160,7 @@ MY MOON MECH!! Get \n\
 a better gaze by pressing \n\
 [C]^ at a distance.\n\
 Yeah, beautiful ain't he?\n\
-My pride and joy but \n\
+My pride and joy, but \n\
 even my baby needs a \n\
 time out! \n\
 Biting me in the bum like\n\
@@ -172,7 +170,7 @@ HUH??!?! \n\
 Whoever reads this: think\n\
 you can grab that number\n\
 ring on the stake? Haha...\n\
-good luck there buddy. \n\
+Good luck there buddy. \n\
 Have fuuun...\n\
 \n\
 \n\
@@ -180,7 +178,7 @@ Have fuuun...\n\
 
 //thi, Tails Part 3, before race 2
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
-Haha, didn't expect me did\n\
+Haha, didn't expect me, did\n\
 ya, Cream? I asked Gemerl if\n\
 I could take his place for this\n\
 race! Think you can beat me?\n\
@@ -255,15 +253,15 @@ Do you want to Save?\n\
 //You Bet//Not Now"))
 
 //bob, Wooden Signpost #1
-DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
+DEFINE_DIALOG(DIALOG_015, 1, 6, 30, 200, _("\
 I know you're not one\n\
 for violence, but they\n\
 will try to hurt you. \n\
 Show them your strength!\n\
 \n\
 \n\
-[A] to jump, [B] to punch,\n\
-[A] then [B] to kick but \n\
+[A] to jump and [B] to \n\
+punch. Simple as that!\n\
 Also remember to hold back \n\
 while in the air to kick, \n\
 otherwise you'll go into \n\
@@ -272,14 +270,16 @@ To pick stuff up, press [B]\n\
 when next to it. To throw, \n\
 simply press [B] again. \n\
 \n\
+\n\
+\n\
 Show them that strength that\n\
 let you carry a chonky \n\
 purple cat!"))
 
 //ssl, lll, sl, by the turtle shell
 DEFINE_DIALOG(DIALOG_016, 1, 3, 30, 200, _("\
-Tell that turtle to shove it,\n\
-steal their shell and go\n\
+Tell that turtle to shove it!\n\
+Steal their shell and go\n\
 shredding on these poor fools!"))
 
 //bob, bob-omb king before fight
@@ -301,12 +301,12 @@ birthday party...) \n\
 \n\
 \n\
 Still, this mountain and Star  \n\
-Ring are mine to claim as king  \n\
+Ring are mine to claim as king, \n\
 and no child will tell me\n\
 otherwise.\n\
 To earn these, you must best \n\
 me in battle. Do know that I \n\
-will not hold back and I hope \n\
+will not hold back, and I hope\n\
 you won't either. \n\
 Can you pick me up from\n\
 the back and hurl me to\n\
@@ -406,10 +406,10 @@ to find her missing mother!\n\
 Time for a reminder of\n\
 Cream's core mechanic: Flying!\n\
 You're able to go into flight \n\
-out of the single, double and\n\
-triple jump as well as a wall\n\
-kick, the sideflip and long jump.\n\
-Just press [A] excpet after a \n\
+out of a single, double or\n\
+triple jump, as well as a wall\n\
+kick, a sideflip, or a long jump.\n\
+Just press [A], except after a \n\
 long jump, in which you press [B].\n\
 Also remember you can access\n\
 your alternate outfits while\n\
@@ -455,7 +455,7 @@ press [Z] to land."))
 
 //opening message on new file
 DEFINE_DIALOG(DIALOG_033, 1, 6, 30, 200, _("\
-Chao!..err Ciao! You've reached\n\
+Chao!..err, Ciao! You've reached\n\
 Princess Peach's castle\n\
 via a warp ring. Looks like\n\
 it got a bit of a makeover.\n\
@@ -464,14 +464,14 @@ it got a bit of a makeover.\n\
 On the eve of your birthday,\n\
 your mom went through all the\n\
 effort to organize this whole \n\
-event and here you are\n\
+event, and here you are,\n\
 blissfully unaware of everything \n\
 going on.\n\
 Your friends in the castle are\n\
-aware and trying to keep the \n\
-facade, as best as they can at\n\
-least. Still, be wary of the \n\
-dangers that lay in front of you.\n\
+trying their best to keep the \n\
+facade, though a few will slip up!\n\
+Still, be wary of the dangers\n\
+that lay in front of you.\n\
 \n\
 The sign in front of you\n\
 also has a list of credits\n\
@@ -479,10 +479,10 @@ for this hack if you wish\n\
 to check it out!\n\
 \n\
 \n\
-Head toward the bridge and\n\
-talk to Omochao. Your\n\
-adventure in the Mushroom\n\
-Kingdom finally begins!"))
+Cross the bridge and enter\n\
+the castle. Your adventure\n\
+in the Mushroom Kingdom\n\
+finally begins!"))
 
 //Omochao at the bridge
 DEFINE_DIALOG(DIALOG_034, 1, 6, 30, 200, _("\
@@ -494,17 +494,17 @@ Just use the [C] buttons to guide\n\
 me around!\n\
 You can fly like you usually\n\
 can. Just press [A] after any\n\
-of the three jumps, the long\n\
-jump and wall kick. Be careful\n\
+of the three jumps, a long\n\
+jump, or a wall kick. Be careful\n\
 on how far you can go.\n\
 \n\
 You also have a lot of neat\n\
 outfits you can pick from. You\n\
 need to come to a complete stop\n\
-to swap outfits. Follows the \n\
+to swap outfits. Follow the \n\
 instructions in the pause menu.\n\
 \n\
-Most enemies, music, objects \n\
+Most enemies, music, objects,\n\
 and of course, dialog have been  \n\
 updated to fit the theme.\n\
 You'll find out more as you\n\
@@ -515,7 +515,7 @@ objects to speak to that will \n\
 inform you of the music used in \n\
 levels. All signposts have also\n\
 been updated to be more helpful\n\
-...hopefully\n\
+...hopefully.\n\
 Your friends are waiting inside\n\
 to assist you as they can. But\n\
 for the most part, this is\n\
@@ -536,7 +536,7 @@ worst enemy in this entire\n\
 game. Not even Eggman is \n\
 this strong.\n\
 You can press [R] to center\n\
-it behind Cream then press\n\
+it behind Cream, then press\n\
 [C]| to get a wider view. \n\
 It's not the best method but\n\
 may prove a bit helpful.\n\
@@ -572,7 +572,7 @@ a better sledder!\n\
 Better luck next time!)"))
 
 DEFINE_DIALOG(DIALOG_038, 1, 3, 95, 200, _("\
-Reacting to the Star Rings\n\
+Reacting to the Star Rings'\n\
 power, the door slowly\n\
 opens."))
 
@@ -645,16 +645,16 @@ DEFINE_DIALOG(DIALOG_044, 1, 5, 95, 200, _("\
 Whooooo...hey Sonic,\n\
 long time no see!\n\
 You're looking a bit\n\
-creamed colored and smaller\n\
+creamed-colored and smaller\n\
 than I last saw you!\n\
-I've changed too and I\n\
+I've changed too, and I\n\
 can even help you fly\n\
-up high! Just Press and \n\
+up high! Just press and \n\
 hold [A] to grab on! \n\
 \n\
-Just release [A] when you\n\
+Then release [A] when you\n\
 wanna drop! I'll take you\n\
-wherever you need to go\n\
+wherever you need to go,\n\
 so long as I can hang\n\
 in there. \n\
 Watch my shadow! and \n\
@@ -670,15 +670,15 @@ me the first time."))
 
 //inside castle #1
 DEFINE_DIALOG(DIALOG_046, 1, 5, 30, 200, _("\
-Alright listen up: in this \n\
-game there's three types of\n\
+Alright, listen up: in this \n\
+game, there's three types of\n\
 jumps that you wanna figure\n\
 out. First being: the\n\
 Triple Jump.\n\
 Run, then jump three times in\n\
 a row. Time your jumps. \n\
-Think of it like a \n\
-hop, skip and then whooooo. \n\
+Think of it like a hop,\n\
+skip and then whooooo. \n\
 \n\
 Also note that you don't have \n\
 to have your jump hit the \n\
@@ -690,30 +690,30 @@ for traversing long distances.\n\
 Get a good run and press [Z]\n\
 to crouch then [A] to jump\n\
 really far. \n\
-People have done some big\n\
+People have done some funny\n\
 shenanigans with this \n\
-technique. The mightly BLJ\n\
+technique. The mighty BLJ\n\
 as they call it. \n\
 \n\
-Requires long jumping backwards\n\
+Requires long-jumping backwards\n\
 against a specific slope while\n\
 mashing [A]. Your velocity will\n\
-sky rocket and let you clip \n\
-through once solid walls. \n\
+sky-rocket and let you clip \n\
+through once-solid walls. \n\
 Finally: the Wall Kick. Jump\n\
-toward a wall then jump again\n\
+toward a wall, then jump again\n\
 when you hit said wall. Will \n\
-take some practice so don't fret\n\
+take some practice, so don't fret\n\
 if you can't get it right away.\n\
 Remember: Practice these as you\n\
-explore the castle otherwise the\n\
+explore the castle, otherwise the\n\
 later half is gonna kick your\n\
-ass...No really!!"))
+ass...No, really!!"))
 
 //layla, preparing cannon
 DEFINE_DIALOG(DIALOG_047, 1, 3, 95, 200, _("\
 Hey, you want a turn?\n\
-Okay I'll set up the \n\
+Okay, I'll set up the \n\
 cannon for you!"))
 
 //ccm, opening stage dialog
@@ -729,7 +729,7 @@ the bottom of the mountain."))
 //ccm, by the wall kick star
 DEFINE_DIALOG(DIALOG_049, 1, 5, 30, 200, _("\
 Remember that tricky Wall\n\
-Kick jump? Well it's finally\n\
+Kick jump? Well, it's finally\n\
 time to try it out. Hope \n\
 you're ready, otherwise there's \n\
 a handy heart pretty close. \n\
@@ -745,7 +745,7 @@ The [Z] button does a lot\n\
 of special things. Hold [Z]\n\
 while on a slope to slide. \n\
 \n\
-Pressing [Z] while jumping\n\
+Press [Z] while jumping\n\
 to perform a ground pound!\n\
 Useful to come to a complete\n\
 stop.\n\
@@ -758,7 +758,7 @@ then [A] will let you\n\
 perform a Long Jump!\n\
 \n\
 See? It's pretty great!\n\
-There's also crawling I \n\
+There's also crawling, I \n\
 guess. Crouch [Z] and then\n\
 just walk. Have fun!"))
 
@@ -768,7 +768,7 @@ Climbing's easy! When you\n\
 jump at trees, poles or\n\
 pillars, you'll grab them\n\
 automatically. Press [A] to\n\
-jump off backward.\n\
+jump off of them.\n\
 \n\
 To rotate around the\n\
 object, press Right or\n\
@@ -783,12 +783,12 @@ stylin' dismount."))
 DEFINE_DIALOG(DIALOG_052, 1, 5, 30, 200, _("\
 Stop and press [Z] to\n\
 crouch, then press [A]\n\
-to do a high, Backward\n\
+to do a high Backward\n\
 Somersault!\n\
 \n\
 To perform a Side\n\
 Somersault, run, do a\n\
-sharp U-turn and jump.\n\
+sharp U-turn, and jump.\n\
 You can catch lots of\n\
 air with both jumps."))
 
@@ -879,17 +879,17 @@ Cream Outfits.\n\
 \n\
 \n\
 \n\
-The Cream Costumes were something\n\
+The Cream costumes were something\n\
 I just did on a whim. My specialty \n\
-is doing models and I wanted to\n\
+is doing models, and I wanted to\n\
 give the player some extra outfits\n\
 to go through Cream 64.\n\
 \n\
-Initially started as a pack of 10,\n\
+Initially started as a set of 10,\n\
 now here we are up to a grand \n\
-total of 64 outfits. Though if \n\
+total of 104 outfits. Though if \n\
 you're playing the N64 version,\n\
-there's only about a sixth of \n\
+there's only about a 10th of \n\
 them available.\n\
 Due to how I have them implemented,\n\
 I was only able to add so many\n\
@@ -904,13 +904,13 @@ a thank you to streamers who have\n\
 played the hack and then some.\n\
 \n\
 I could keep going with these but\n\
-I need a personal limit so 64\n\
-was fitting. Something for \n\
-everyone at least!\n\
+I ended up doing over 100 of\n\
+these! Something for \n\
+everyone, at least!\n\
 \n\
 \n\
 My initial plan after this was\n\
-to retire this Cream model so\n\
+to retire this Cream model, so\n\
 at the very least, she's going\n\
 out with a bang!\n\
 Enjoy the various Creams~"))
@@ -919,7 +919,7 @@ Enjoy the various Creams~"))
 DEFINE_DIALOG(DIALOG_061, 1, 5, 30, 200, _("\
 Hey, this water is really\n\
 REALLY cold! You don't get\n\
-health back and you lose\n\
+health back, and you lose\n\
 health twice as fast. \n\
 Careful!!"))
 
@@ -929,15 +929,15 @@ The Green Capsule contains an\n\
 incredible item called the \n\
 Metal Locket.\n\
 Holding it, you become immune \n\
-to fire, enemy attacks and\n\
+to fire, enemy attacks, and\n\
 then some. \n\
-Plus you'll be immune to\n\
+Plus, you'll be immune to\n\
 the poison gas right in \n\
 that pit.\n\
 You're still not 100 percent\n\
 invincible, as you'll still\n\
 take fall damage.\n\
-Then There's just\n\
+Then there's just\n\
 one last problem:\n\
 YOU CAN'T SWIM IN IT!!"))
 
@@ -945,7 +945,7 @@ YOU CAN'T SWIM IN IT!!"))
 DEFINE_DIALOG(DIALOG_063, 1, 5, 30, 200, _("\
 Blue Capsules contain the\n\
 Vanish Locket, making you\n\
-temporary invisible. Use\n\
+temporarily invisible. Use\n\
 this to surprise the mean\n\
 ol' Red Eye!\n\
 Even King Boom Boo will be\n\
@@ -975,7 +975,7 @@ to land."))
 //castle grounds
 DEFINE_DIALOG(DIALOG_065, 1, 6, 30, 200, _("\
 Swimming Lessons!\n\
-Tap [A] to do the breast\n\
+Tap [A] to do a breast\n\
 stroke. If you time the\n\
 taps right, you'll swim\n\
 fast.\n\
@@ -1004,7 +1004,7 @@ are underwater."))
 
 //bowser stage 1: before pipe
 DEFINE_DIALOG(DIALOG_066, 1, 5, 30, 200, _("\
-Well, well you've made it\n\
+Well, well. You've made it\n\
 this far, kiddo. In front of \n\
 you leads to your first bout\n\
 against Eggman. Can't simply \n\
@@ -1035,11 +1035,11 @@ DEFINE_DIALOG(DIALOG_067, 1, 5, 30, 200, _("\
 Ohohoho, You've finally arrived!\n\
 Trying to save your precious\n\
 mommy? Hahahaaa, good luck with\n\
-that you little brat!\n\
+that, you little brat!\n\
 \n\
 (Hmm, should I add more energy\n\
 to that? She told me to ham it\n\
-up if neccessary, and I DO love\n\
+up if necessary, and I DO love\n\
 doing that...)\n\
 \n\
 Meet my latest invention: \n\
@@ -1067,7 +1067,7 @@ calm..."))
 
 //castle inside
 DEFINE_DIALOG(DIALOG_069, 1, 6, 30, 200, _("\
-Yo this game is an N64\n\
+Yo, this game is an N64\n\
 game. Can only handle so \n\
 much land. So yeah, expect\n\
 weird invisible walls. \n\
@@ -1110,7 +1110,7 @@ described by the hint."))
 //hmc, before the pit
 DEFINE_DIALOG(DIALOG_071, 1, 3, 30, 200, _("\
 A foul gas fills the dark\n\
-chambers belows. Be \n\
+chambers below. Be \n\
 careful when navigating.\n\
 If you're losing health,\n\
 heed for higher ground\n\
@@ -1197,7 +1197,7 @@ help us!\n\
 Retrieve all of the\n\
 Red Star Rings in the castle\n\
 and free us from this\n\
-awful termoil!\n\
+awful turmoil!\n\
 Please!"))
 
 //Silver, first time talking to
@@ -1205,19 +1205,19 @@ DEFINE_DIALOG(DIALOG_076, 1, 6, 30, 200, _("\
 Aha, there you are!\n\
 I was wondering when you\n\
 would come running by. It's\n\
-been a long while hasn't it,\n\
+been a long while, hasn't it,\n\
 Cream? Glad to see you're \n\
 doing great!\n\
 The others have already told\n\
-me what's going on and no, I\n\
+me what's going on, and no, I\n\
 haven't seen your Mom. But\n\
 knowing Eggman, he may have\n\
 her at the very top. You're\n\
 very close!\n\
-Man, I'd love to help but\n\
+Man, I'd love to help, but\n\
 I wouldn't even know where \n\
 to look in this place. It's\n\
-huge and I bet you've already \n\
+huge, and I bet you've already \n\
 done your fair share of\n\
 snooping around.\n\
 I can at least give you these\n\
@@ -1285,21 +1285,21 @@ with the depth they bring\n\
 as they enter.\n\
 \n\
 In layman's terms\n\
-that means check, hit and\n\
+that means check, hit, and\n\
 push objects to find the \n\
 secrets. Have fuuun. "))
 
 //sage, 1st time talking to
 DEFINE_DIALOG(DIALOG_082, 1, 5, 30, 200, _("\
 Greetings, I don't believe we've\n\
-met before. My name is Sage and\n\
+met before. My name is Sage, and\n\
 I see Father is causing trouble\n\
 for you and your mother. How\n\
 unfortunate.\n\
 Unfortunately for you, your odds\n\
 of defeating Father are\n\
 12192002 to 1. But I've learned\n\
-odds aren't always correct so\n\
+odds aren't always correct, so\n\
 anything is possible. \n\
 Maybe this Star Ring may assist\n\
 you. You just never know what\n\
@@ -1315,7 +1315,7 @@ had happened to you! I'm glad\n\
 you and Cheese are doing \n\
 alright.\n\
 \n\
-I didn't see your Mama here\n\
+I didn't see your Mama here,\n\
 but I saw this strange door\n\
 up the stairs. She may be in\n\
 there, but I think you may\n\
@@ -1324,10 +1324,10 @@ need a lot of Star Rings.\n\
 ...Mr. Mark? OH, you mean \n\
 Papa! I think he said he was\n\
 on the roof. I'm not sure \n\
-why but maybe he thought\n\
+why, but maybe he thought\n\
 she would be up there.\n\
 \n\
-Well I did hear somethings\n\
+Well I did hear some things\n\
 from the nice Toads:\n\
 The minute hand on the\n\
 big clock changes the\n\
@@ -1423,7 +1423,7 @@ comfy ride."))
 //Eggman 2, before fight
 DEFINE_DIALOG(DIALOG_092, 1, 6, 30, 200, _("\
 Persistent, aren't you??\n\
-No matter, I've made more \n\
+No matter. I've made more \n\
 improvements to the Egg Koopa.\n\
 It's gonna take more than one\n\
 bomb to get rid of me!\n\
@@ -1443,7 +1443,7 @@ the real power of my \n\
 genius! And your little blue \n\
 friend is not here to help \n\
 you this time, either! \n\
-I've made final modifications\n\
+I've made final modifications,\n\
 and can withstand four strikes\n\
 before going down.\n\
 O ho ho ho ho!! Better hope your\n\
@@ -1470,8 +1470,8 @@ you have the power to fly!\n\
 Can get you out of most \n\
 situations!\n\
 Though be careful if you slip\n\
-or jump off slippery surfaces,\n\
-you won't be able to fly from\n\
+or jump off slippery surfaces.\n\
+You won't be able to fly from\n\
 that. "))
 
 //wf
@@ -1492,7 +1492,7 @@ DEFINE_DIALOG(DIALOG_097, 1, 6, 30, 200, _("\
 Crawls are all over the\n\
 place, shoving any poor\n\
 sap in their path. Show \n\
-no mercy, punch back and\n\
+no mercy, punch back, and\n\
 try not to burn your butt\n\
 in the process!"))
 
@@ -1534,7 +1534,7 @@ You can't hurt them when\n\
 they're invisible, so sneak\n\
 behind them and give them a \n\
 good punch! Ground pound works\n\
-really well against them, too!."))
+really well against them, too!"))
 
 //ssl
 DEFINE_DIALOG(DIALOG_103, 1, 4, 95, 200, _("\
@@ -1557,10 +1557,10 @@ on, hop into the cannon!\n\
 \n\
 \n\
 Oh! I saw a shiny red thing\n\
-somewhere high up, you can aim \n\
+somewhere high up! You can aim \n\
 with the control stick and then\n\
 press [A] to nyoom to go get it!\n\
-If you're grabby you can\n\
+If you're grabby, you can\n\
 grab on to trees or poles\n\
 to land.\n\
 Good luck!!\n\
@@ -1591,7 +1591,7 @@ here...-"))
 
 //ccm, snowman's head at bottom of mountain
 DEFINE_DIALOG(DIALOG_109, 1, 4, 95, 200, _("\
-Ooooo Nooooo!\n\
+Oooooh nooooo!\n\
 Talk about out-of-body\n\
 experiences--my body\n\
 has melted away!\n\
@@ -1637,7 +1637,7 @@ recover. "))
 
 DEFINE_DIALOG(DIALOG_113, 1, 6, 30, 200, _("\
 There are special Lockets in\n\
-the red, green and blue\n\
+the red, green, and blue\n\
 capsules. Step on the\n\
 switches in the hidden\n\
 courses to activate the\n\
@@ -1726,7 +1726,7 @@ hand in this as well? No\n\
 matter. \n\
 \n\
 You've piqued my\n\
-interest on both this world\n\
+interest in both this world\n\
 and yourself.\n\
 Mark my words, child, I \n\
 will return. And next time,\n\
@@ -1740,7 +1740,7 @@ encounter. Never the less, I\n\
 still have the princess\n\
 and the Star Rings!!\n\
 \n\
-Next time, you won't be as\n\
+Next time, you won't be so\n\
 lucky. I'll make the needed\n\
 improvements and return \n\
 stronger! Until then, \n\
@@ -1767,7 +1767,7 @@ Gwa ha ha ha!"))
 DEFINE_DIALOG(DIALOG_121, 1, 5, 30, 200, _("\
 No, I can't believe it!\n\
 How could I be defeated like\n\
-this?. Bah, no matter.\n\
+this? Bah, no matter.\n\
 Don't think this is the\n\
 end, little rabbit!\n\
 My badniks...defeated yet\n\
@@ -1776,8 +1776,8 @@ thwarted once more...\n\
 I can't stand it!\n\
 Hmm...\n\
 It's not over yet....\n\
-I still have some Rings,\n\
-the battle is never truly \n\
+I still have some Rings.\n\
+The battle is never truly \n\
 over. Till next time, \n\
 bwa ha ha ha!!!\n\
 \n\
@@ -1802,7 +1802,7 @@ Didn't think there would \n\
 still be a toad left but nope!\n\
 I'm still here and ain't \n\
 leaving. The Princess may rent \n\
-the castle as she wishes\n\
+the castle as she wishes,\n\
 but this is what I trained\n\
 for!\n\
 \n\
@@ -1841,18 +1841,18 @@ Best not to disturb him.\n\
 \n\
 \n\
 \n\
-....wait, he is snoring??-"))
+....Wait, he is snoring??-"))
 
 // Charmy
 DEFINE_DIALOG(DIALOG_126, 1, 5, 30, 200, _("\
-Wooow! I forgot why Vector\n\
+Wooow! I forget why Vector\n\
 sent me here but can you \n\
 believe this place?? A broken \n\
 down castle on top of a volcano? \n\
 THAT'S AWESOME!!\n\
 Don't care if I burn my butt being\n\
 here, you never see anything like\n\
-this back at home. But hey, why\n\
+this back at home. But hey, what\n\
 are YOU doing here???\n\
 \n\
 Eh, whatever, we've both been\n\
@@ -1880,7 +1880,7 @@ My dear child, surely you\n\
 have some honor! It is against\n\
 the royal rules to toss the \n\
 king out of the ring! Now\n\
-then, En garde!!"))
+then, en garde!!"))
 
 DEFINE_DIALOG(DIALOG_129, 1, 5, 30, 200, _("\
 Welcome to White Park Zone,\n\
@@ -1891,7 +1891,7 @@ Chateau!\n\
 Don't worry, the Vanish Switch\n\
 is still here and hard \n\
 to miss! Take your time exploring \n\
-the park, enjoy the music and \n\
+the park, enjoy the music, and \n\
 have fun!"))
 
 DEFINE_DIALOG(DIALOG_130, 1, 4, 30, 200, _("\
@@ -1904,12 +1904,12 @@ can't be too far off from\n\
 here. Never hurts to go\n\
 spelunkin'!\n\
 Just watch out for the\n\
-currents below and don't\n\
+currents below, and don't\n\
 get sucked up into the\n\
 waterfall!"))
 
 DEFINE_DIALOG(DIALOG_131, 1, 5, 30, 200, _("\
-A lone castle sits ontop\n\
+A lone castle sits atop\n\
 this volcano, legends saying\n\
 it belonged to one of King\n\
 Arthur's knights. Why up here?\n\
@@ -1917,7 +1917,7 @@ No one is really certain.\n\
 Whether you believe the legend\n\
 or not, treasure is bound to be\n\
 around! The Wing Locket Switch\n\
-should be near the run down\n\
+should be near the run-down\n\
 castle too.\n\
 Watch out for the lava running\n\
 down the mountain as well as\n\
@@ -1940,12 +1940,12 @@ DEFINE_DIALOG(DIALOG_133, 1, 6, 30, 200, _("\
 (Cream, you're finally here!!\n\
 Mama's been locked up by\n\
 Eggman somewhere in the castle.\n\
-Everyone is kind of scattered\n\
+Everyone is kind of scattered,\n\
 but we're all doing fine.\n\
 \n\
 Please recover the Star Rings!\n\
 Eggman has most of the castle\n\
-sealed but you can use them\n\
+sealed, but you can use them\n\
 to open up doors and passages.\n\
 \n\
 \n\
@@ -1977,8 +1977,8 @@ till you travel a certain\n\
 amount, then you'll gently \n\
 float back down.\n\
 You can also fly out of a \n\
-wall kick and long jump, though\n\
-you must press [B] first then\n\
+wall kick or long jump, though\n\
+you must press [B] first, then\n\
 [A] after a long jump.\n\
 It's done so you can still\n\
 perform the BLJ whenever you\n\
@@ -2015,7 +2015,7 @@ Star Rings appear when you\n\
 collect 100 rings in each\n\
 of the 15 courses!\n\
 \n\
-Also remember! The strange\n\
+Also, remember! The strange\n\
 rabbit in the basement has two\n\
 stars, so make sure to catch it\n\
 if you see it again!)"))
@@ -2046,19 +2046,19 @@ DEFINE_DIALOG(DIALOG_141, 1, 5, 150, 200, _("\
 Congratulations, you found\n\
 your first set of Star Rings!\n\
 Not too bad for a start, kiddo.\n\
-This leave the entire lobby\n\
+This leaves the entire lobby\n\
 opened up to ya.\n\
 You still have that large door\n\
-that's inaccessable, but keep\n\
+that's inaccessible, but keep\n\
 at it! The world is your \n\
-oyster, take whichever path\n\
+oyster! Take whichever path\n\
 that feels comfortable with you."))
 
 //when you collect 8 star rings
 DEFINE_DIALOG(DIALOG_142, 1, 6, 150, 200, _("\
 Good job, Creamio, you found\n\
 eight Star Rings! The big \n\
-door is finally accessable!\n\
+door is finally accessible!\n\
 Eggman's waiting for ya...\n\
 hold on, do your hear your\n\
 mother calling?"))
@@ -2087,12 +2087,12 @@ cornered him?"))
 DEFINE_DIALOG(DIALOG_144, 1, 6, 150, 200, _("\
 Very nice, that's fifty Star\n\
 Rings! The top floor is finally\n\
-accessable! One final step\n\
+accessible! One final step\n\
 before reaching the Egghead\n\
 himself.\n\
 \n\
 Now then, you did find all\n\
-the switches for the lockets\n\
+the switches for the lockets,\n\
 did you? They'll come in \n\
 handy for those few remaining\n\
 Rings.\n\
@@ -2179,7 +2179,7 @@ DEFINE_DIALOG(DIALOG_150, 1, 5, 30, 200, _("\
 Whoa, hey hey what are\n\
 you doing!? Can't a former \n\
 Eggman goon get some peace?\n\
-Just a simple catakiller with\n\
+Just a simple caterkiller with\n\
 legs now. No spikes!\n\
 Ugh, the ceiling's ruined,\n\
 the floor is wet, what to do,\n\
@@ -2211,7 +2211,7 @@ trouble, honest! It's just\n\
 hard to break old habits.\n\
 But man, I feel so much better.\n\
 Something about that Ring...\n\
-ugh, just keep it away from me.\n\
+Ugh, just keep it away from me.\n\
 Ya know. Maybe the new hole \n\
 in the roof isn't such a bad\n\
 idea.\n\
@@ -2243,9 +2243,9 @@ on your adventure!"))
 //Silver, second time talking to
 DEFINE_DIALOG(DIALOG_155, 1, 6, 30, 200, _("\
 Well, it's been a bit quiet\n\
-around here but that probably\n\
+around here, but that probably\n\
 means you've been kicking \n\
-butt, has it? Yeah that's \n\
+butt, right? Yeah, that's \n\
 probably it!\n\
 \n\
 Here's a little refresher\n\
@@ -2264,7 +2264,7 @@ find your mom in no time!"))
 //Katalina, second time talk to
 DEFINE_DIALOG(DIALOG_156, 1, 5, 30, 200, _("\
 I know you'll find her,\n\
-Cream!! Papa, me and \n\
+Cream!! Papa, me, and \n\
 everyone else believe in you!!\n\
 But I can at least try to\n\
 help you with that giant clock.\n\
@@ -2312,16 +2312,16 @@ a ref image of the current model\n\
 used nowadays. Funny enough,\n\
 the head model is taken from \n\
 her Chronicles model, just\n\
-retexured.\n\
+retextured.\n\
 Later on, there was talk of\n\
-using Marine's rush head but\n\
-left the model as is. The \n\
-fixed up head is now applied\n\
+using Marine's Rush head, but\n\
+left the model as-is. The \n\
+fixed-up head is now applied\n\
 to Katalina, the bunny by \n\
 TTC.\n\
 I do have plans on redoing the \n\
 model again at some point with\n\
-a lower poly count so this is\n\
+a lower poly count, so this is\n\
 kind of a swan song for this \n\
 one. One final hurrah~"))
 
@@ -2345,7 +2345,7 @@ and Gemerl) and anyone else was\n\
 just extra.\n\
 \n\
 Blaze and Marine for the Rush\n\
-connections as well as Mark and \n\
+connections, as well as Mark and\n\
 Katalina cause of AU stuff.\n\
 The design of the Egg Koopa was \n\
 a 'what-if' that I'm glad \n\
@@ -2357,15 +2357,15 @@ from friends. Since they're just\n\
 visiting, no need to add a White\n\
 Wisp for them.\n\
 There's a lot of ideas I'd love\n\
-to add but don't wanna go too\n\
+to add, but don't wanna go too\n\
 crazy right now.\n\
 I'm hoping to fix up and carry\n\
 those into a custom hack where\n\
 they can serve a better purpose."))
 
 DEFINE_DIALOG(DIALOG_160, 1, 6, 30, 200, _("\
-Dev Talk: Streaming Audio and\n\
-the Power of Self Control.\n\
+Dev Talk: Streaming Audio, \n\
+Self Control, and the paaains.\n\
 \n\
 \n\
 \n\
@@ -2377,31 +2377,31 @@ audio-manager v0.1. I did kind of \n\
 go a bit crazy with the new \n\
 addition, so there were problems.\n\
 There was plans to have more \n\
-streaming audio but I had appear\n\
-to hit the vanilla hard cap so I\n\
-had to stop otherwise the game\n\
+streaming audio, but I had appear\n\
+to hit the vanilla hard cap, so I\n\
+had to stop, otherwise the game\n\
 would crash on start. \n\
 \n\
 This particular build can now \n\
 handle much more .m64 (sequence\n\
-files) without it crashing so\n\
+files) without it crashing, so\n\
 there's a bit more variety in\n\
 places now. Still a few repeats\n\
 as an emergency.\n\
 Then there was the other problem\n\
 of it being too large. It wouldn't\n\
-run on certain emulators and that\n\
+run on certain emulators, and that\n\
 needed fixing, hence going back \n\
 and changing some songs back to\n\
 midis.\n\
 The goal was getting it back \n\
-under 64 MBs, so that it would \n\
-run on retroarch. PJ64 had no\n\
-issue but I wanted it running on.\n\
-Parallel The end result was what \n\
+under 64 MB, so that it would \n\
+run on RetroArch. PJ64 had no\n\
+issue, but I wanted it running on\n\
+Parallel. The end result was what \n\
 we have now.\n\
 Later turns out that I could\n\
-avoid this with not using the\n\
+avoid this by not using the\n\
 highest possible compression\n\
 for each new track. This version,\n\
 with more songs, should be smaller\n\
@@ -2413,10 +2413,22 @@ music had a strange crackle that\n\
 I couldn't figure out. \n\
 \n\
 I wound up using a midi track to\n\
-get past this problem though I\n\
+get past this problem, though I\n\
 believe later builds of sm64ex\n\
 seem to have fixed the problem.\n\
-Not 100 percent sure."))
+Not 100 percent sure.\n\
+\n\
+And don't get me started on the \n\
+hassles of trying to port this\n\
+to the 3DS. All the streaming just\n\
+made things worse, hence why it has\n\
+a completely different soundtrack.\n\
+\n\
+At the end of the day, this has been\n\
+a lifesaver but also a huge burden.\n\
+But I can't lie in that it's made\n\
+things much easier for me in the\n\
+long run."))
 
 #ifdef VERSION_EU
 #define KEEP_ON_PLAYING ".."
@@ -2438,9 +2450,9 @@ If you made it up here, that\n\
 means the party is just about \n\
 to start!\n\
 \n\
-Well since you're at the end,\n\
+Well, since you're at the end,\n\
 I'm sure you realized this\n\
-whole thing has been setup just\n\
+whole thing has been set up just\n\
 for you. \n\
 \n\
 Though I have a feeling that\n\
@@ -2450,11 +2462,11 @@ didn't stop you, did it??\n\
 \n\
 The stuff your Mom told\n\
 me about you made me a\n\
-little skeptic.\n\
+little skeptical.\n\
 \n\
 \n\
 I know you've done some stuff\n\
-with Sonic and pals but you've\n\
+with Sonic and pals, but you've\n\
 never really shown it to me \n\
 while I've been here on this\n\
 world.\n\
@@ -2493,48 +2505,34 @@ thanks to all I can name and\n\
 fit in this dialog box so \n\
 prepare yourself:\n\
 \n\
-Wanna give a special thanks to\n\
-rom-hack-discussion on the\n\
-Simpleflips discord specifically\n\
-to the following: \n\
-\n\
-Cheezepin, Wiseguy, furyiousfight,\n\
-anonymousmoose, PablosCorner, \n\
-kurethedead, The Sour OG, Rovert,\n\
-Arthurtilly, Thodds, CowQuack,\n\
-Kaze, Mishu and so much more!!\n\
-Also special thanks to the \n\
-Sonic specific discords I'm\n\
-in for also giving me suggestions \n\
-and feedback.\n\
+Wanna do a quick shoutout to those\n\
+who've been there over the years.\n\
+First a big thanks to rom-hack\n\
+-dicussion on the Simpleflips\n\
+discord!\n\
+Another to the various\n\
+Sonic-specific discords for help\n\
+and suggestions for various\n\
+enemies and music. Thank you\n\
+so much!\n\
 \n\
 A huge thank you to everyone\n\ 
 whose streamed it and spread\n\ 
 the word around, along with\n\ 
 giving feedback and suggestions\n\
 for later versions.\n\
-and ANOTHER special thanks to\n\
-my good friends MagicalPoptarts,\n\
-Catti, FudgerNutter and the \n\
-Roys Boys for all the support!\n\
-And also...\n\
-Paps, Alonwoof, Sweet Sawft,\n\
-Funkys0da, Zack113, Blazy,\n\
-CuteyTCat, Johnny, Nullify,\n\
-Toad900, BlueStarGal, MSPNova,\n\
-BerkStorm1, Brin,\n\
-Sketch, Lali, Poodle, Wiz,\n\
-JinoDaPuppet, Rik, Simple\n\
-and much MUCH more holy crap.\n\
-Whoever I forgot, you know who\n\
-you are! Thaaaank yoooou.\n\
+And one last shoutout to my BFFs,\n\
+friends, and mutuals who have been\n\
+there since the start giving \n\
+their support.\n\
+\n\
 It's been a crazy ride and\n\
 I'm glad to have this finally\n\
 completed, especially with the\n\
-additional changes, for real this\n\
-time.\n\
+additional changes, for real-real \n\
+this time.\n\
 I'm gonna take a well needed\n\
-break and, hopefully at some\n\
+break, and hopefully, at some\n\
 point, I'll use these new assets\n\
 to create that custom hack."\
 KEEP_ON_PLAYING "』\n\
@@ -2560,11 +2558,11 @@ I need to get out of this\n\
 basement...\n\
 I'll make sure to see you\n\
 later, Cream! I won't forget \n\
-your generousity!! "))
+your generosity!! "))
 
 //bowser 3, with 120 stars and defeated
 DEFINE_DIALOG(DIALOG_163, 1, 5, 30, 200, _("\
-No! Noooo I can't believe \n\
+No! Noooo, I can't believe \n\
 it! Gah, stupid piece of\n\
 junk. Ugh, defeated by a \n\
 child. And a small one to\n\
@@ -2680,14 +2678,14 @@ External Data for PC port help \n\
 by: PeachyPeach\n\
 (though this will definitely go\n\
 unused, still wanna say thanks)\n\
-\n\
-\n\
+Script Editing done by:\n\
+Saralene\n\
 Costume Switch Code only possible\n\
 thanks to:\n\
 CowQuack\n\
 \n\
-\n\
-\n\
+Playtesting post launch:\n\
+TheCrescentFox\n\
 Cream Head Model done\n\
 by: Gamebun\n\
 \n\
@@ -2696,7 +2694,7 @@ by: BWGLite\n\
 \n\
 Various Pokemon pics seen in the\n\
 castle and Mission Street from:\n\
-Gigaboots\n\
+GigaBoots\n\
 \n\
 Cream Wanted Poster\n\
 by: Nim\n\
@@ -2722,6 +2720,12 @@ New Paintings by: InfiniteBrians,\n\
 SketchMeister, FlamingGaraco, \n\
 FudgerNutter, TheNovika, \n\
 Funkys0da And Zack113\n\
+\n\
+\n\
+Vanilla drawing in intro\n\
+letter by:\n\
+FunkyS0da\n\
+\n\
 \n\
 \n\
 End cake pics by (in order):\n\
@@ -2769,11 +2773,11 @@ FudgerNutter\n\
 Pocky the Deer and Sorbet\n\
 the Chao by:\n\
 Funkys0da\n\
+Morgan the Cat by:\n\
+Rhombagon\n\
 \n\
 Sweet the Frog by:\n\
-Sweet Sawft\n\
-Morgan the Cat by:\n\
-Simple\n\
+Vesper\n\
 \n\
 KZ-Neco Arc is just:\n\
 KZXcellent\n\
@@ -2799,11 +2803,11 @@ FlamingGaraco\n\
 I like to thank everyone\n\
 whose supported me these \n\
 last few years that I've been\n\
-on this as well as the other\n\
+on this, as well as the other\n\
 stuff I've worked on in between.\n\
 \n\
 Seriously, this means a lot to\n\
-me and I'm glad you've enjoyed\n\
+me, and I'm glad you've enjoyed\n\
 this little project of mine. \n\
 Enjoy~\n\
 \n\
@@ -2829,7 +2833,7 @@ on this sign-\n\
 \n\
 'To get the Eel out of the \n\
 ship, swim in front of him,\n\
-leave then return. He should\n\
+leave, then return. He should\n\
 be gone'"))
 
 DEFINE_DIALOG(MWISP_CASTLE, 1, 4, 30, 200, _("\
@@ -2842,9 +2846,9 @@ located in all the main \n\
 stages of this castle. \n\
 \n\
 We will give you the names\n\
-of the song in the level \n\
+of the song in the level,\n\
 as well as creator credits\n\
-if it's certain midis. n\
+if it's certain midis n\
 here.\n\
 There's another Hero \n\
 Chao in the basement that\n\
@@ -2858,7 +2862,7 @@ Miss!)"))
 DEFINE_DIALOG(MWISP_CASTLE2, 1, 5, 30, 200, _("\
 File Select:\n\
 -Sonic Rush Adventure-\n\
-Windmill Village 3\n\
+Windmill Village 2\n\
 \n\
 \n\
 Castle Hub:\n\
@@ -3058,49 +3062,16 @@ Music used:\n\
 Molten Mines"))
 
 //Music Credits, cotmc
-DEFINE_DIALOG(MWISP_COTMC, 1, 3, 30, 200, _("\
+DEFINE_DIALOG(MWISP_COTMC, 1, 5, 30, 200, _("\
 Music used:\n\
 -Donkey Kong Country 2-\n\
-Mining Meloncholy"))
+Mining Melancholy\n\
+Remix by:\n\
+Burning Idol"))
 
 //castle, mark
-DEFINE_DIALOG(WWISP_MARK, 1, 6, 30, 200, _("\
--Mark Tannon-\n\
-By: Gamebun\n\
-Age: 26\n\
-~A human from another world, \n\
-turned into a fox when arriving\n\
-here. Now searching for stars~\n\
-A pyromancer who ended up\n\
-in this world after chasing a \n\
-crook who stole a powerful\n\
-set of stars, activating a \n\
-portal here and dumping \n\
-him into a Chao Garden lake.\n\
-He would eventually be saved \n\
-by Vanilla and out of her\n\
-generousity, is currently \n\
-living with her family till \n\
-he feels ready to go out \n\
-and find those stars.\n\
-His eventual travels would\n\
-lead him down many roads,\n\
-meeting new friends and \n\
-discovering what he wants \n\
-to do with his life.\n\
-\n\
-For what felt like a freak\n\
-accident, ending up on this\n\
-world would end up doing\n\
-wonders for him.\n\
-\n\
-\n\
-If you however don't see anyone\n\
-up here, then that means you\n\
-got up here without finding\n\
-all the Star Rings. In his\n\
-own words, 'nice job learning\n\
-how to fly, lil' rabbit!' "))
+DEFINE_DIALOG(WWISP_MARK, 1, 1, 30, 200, _("\
+textbox goin' unused y'all"))
 
 // Amy Dialogue in wf
 DEFINE_DIALOG(AMY_01, 1, 5, 30, 200, _("\
@@ -3119,9 +3090,9 @@ around here! And wherever he\n\
 goes, I'm right behind him!\n\
 You haven't seen him, \n\
 have you?\n\
-I've kind of ran into \n\
-everyone else but not him. \n\
-He's always one to showboat \n\
+I've kind of run into \n\
+everyone else, but not him.\n\
+He's always one to showboat,\n\
 so it's a bit unusual. \n\
 \n\
 But I'll find him in no time!\n\
@@ -3130,9 +3101,9 @@ somewhere. You take care \n\
 little creamy and I'll \n\
 see ya later!\n\
 (Amy is set to appear only\n\
-in certains acts on certain\n\
+in certain acts on certain\n\
 levels. There is a \n\
-pattern so keep an eye \n\
+pattern, so keep an eye\n\
 out!)"))
 
 //Amy Dialogue in bbh pt 1
@@ -3142,10 +3113,10 @@ of all places?! Heck, why\n\
 am I even here!?!\n\
 \n\
 Ooooh, curse you Sonic for\n\
-dragging me to this place\n\
+dragging me to a place\n\
 like this!\n\
 \n\
-I dunno about you but I get\n\
+I dunno about you, but I get\n\
 this awful feeling of \n\
 deja vu and I don't know\n\
 why...\n\
@@ -3157,15 +3128,15 @@ me soon..."))
 //Amy Dialogue in bbh pt 2
 DEFINE_DIALOG(AMY_03, 1, 4, 30, 200, _("\
 ...Cream, please tell me\n\
-you found Sonic cause I \n\
+you found Sonic, cause I\n\
 want out of here pronto! \n\
 \n\
 I think something happened\n\
-to me but I can't remember\n\
+to me, but I can't remember\n\
 anything...\n\
 \n\
 Please say yes....YOU\n\
-HAVEN'T?! Ok, that's\n\
+HAVEN'T?! Okay, that's\n\
 good enough for me, I'm\n\
 getting out of here!\n\
 Have fun in this spook\n\
@@ -3175,13 +3146,13 @@ hole, Cream!"))
 DEFINE_DIALOG(AMY_04, 1, 5, 30, 200, _("\
 Wew, it's hot here. I'd hide\n\
 under the shade of this\n\
-building but have you seen\n\
+building, but have you seen\n\
 what's around here? Not \n\
 taking any chances.\n\
 My never ending search\n\
-continues but with no luck\n\
+continues, but with no luck\n\
 here either. I assume it's\n\
-the same with you huh? Yea,\n\
+the same with you, huh? Yea,\n\
 I'd figured. \n\
 He's a crafty hog, that \n\
 Sonic, but even he needs to\n\
@@ -3207,9 +3178,9 @@ here.\n\
 I...honestly wonder why I'm \n\
 here considering Sonic hates\n\
 water...\n\
-I didn't think this through \n\
+I didn't think this through,\n\
 didn't I?\n\
-It is some weird ruins so\n\
+It is some weird ruins, so\n\
 it seemed like a good idea\n\
 at the time. Sonic does tend\n\
 to go for those places.\n\
@@ -3218,9 +3189,9 @@ From the looks of things, \n\
 you still haven't seen him \n\
 either, huh? You saw something\n\
 like Sonic? That doesn't \n\
-count, Cream and you know it.\n\
+count, Cream, and you know it.\n\
 Next spot has to be it, I'm\n\
-sure of it! You go on ahead,\n\
+sure of it! You go on ahead.\n\
 I need to figure out where\n\
 to go next..."))
 
@@ -3242,7 +3213,7 @@ And now I feel like a dumb\n\
 stupid moron. \n\
 \n\
 Cream, I'm so sorry for\n\
-getting you invovled in my\n\
+getting you involved in my\n\
 wild goose chase. When I\n\
 heard about a blue guy \n\
 here, I just figured...\n\
@@ -3290,8 +3261,8 @@ and clocks ticking kind of \n\
 helps. That and that blue  \n\
 bunny. Such a good listener.\n\
 I'm just gonna chill here for  \n\
-the moment but I'll be there  \n\
-for your big moment later, ok? \n\
+the moment, but I'll be there \n\
+for your big moment later, okay?\n\
 Do what you gotta do, ya big \n\
 ol' hero you!"))
 
@@ -3299,10 +3270,10 @@ ol' hero you!"))
 DEFINE_DIALOG(BLAZE_01, 1, 4, 30, 200, _("\
 Cream, how good it is to\n\
 you see again. I'm sorry\n\
-to ask so suddenly but have\n\
+to ask so suddenly, but have\n\
 you seen Marine?\n\
 ...Now that I think about it,\n\
-you two have never met have\n\
+you two have never met, have\n\
 you? She's a lil' raccoon\n\
 about your age and height.\n\
 More of a troublemaker than\n\
@@ -3314,7 +3285,7 @@ and has been gone for a long\n\
 while. \n\
 \n\
 I've noticed the paintings\n\
-act like portals so that makes\n\
+act like portals, so that makes\n\
 finding her harder than it needs\n\
 to be.\n\
 If you do see her, please let\n\
@@ -3347,17 +3318,17 @@ see her, tell her I'm fine!"))
 //Blaze, HMC
 DEFINE_DIALOG(BLAZE_02, 1, 5, 30, 200, _("\
 Oh, Cream, I didn't think\n\
-I see you so soon. You saw \n\
+I'd see you so soon. You saw\n\
 Marine?? She says she's doing\n\
 okay then. Well, that's good\n\
 to hear.\n\
 I've heard weird stories \n\
 about a beast lurking in an\n\
-underground lake so I figure \n\
+underground lake, so I figured\n\
 she would be around here\n\
 searching for it.\n\
 Even if I head down, chances\n\
-are she already move onto\n\
+are she already moved onto\n\
 something else. Never the one\n\
 to just sit idly by.\n\
 \n\
@@ -3375,9 +3346,9 @@ I knew that weird goomba\n\
 with the hat was telling\n\
 the truth!\n\
 So strange that it looks like\n\
-Sonic but it doesn't matter,\n\
+Sonic, but it doesn't matter,\n\
 she's a beaut! I should try\n\
-and ride it but I don't \n\
+and ride it, but I don't\n\
 trust those quills.\n\
 ...Blaze still lookin' for\n\
 me? Such a worry wart! I\n\
@@ -3396,8 +3367,8 @@ did it. You saw her right?\n\
 In the previous area riding\n\
 a SHARK????\n\
 I don't know what to do\n\
-with her but at the same\n\
-time maybe she's right. \n\
+with her, but at the same\n\
+time, maybe she's right.\n\
 I do tend to be on her more\n\
 than I probably should.\n\
 Is it wrong to be too\n\
@@ -3409,7 +3380,7 @@ Hopefully the next time I\n\
 find her, we'll have a \n\
 little chat and go from \n\
 there. Thank you for letting\n\
-me know she's ok, Cream."))
+me know she's okay, Cream."))
 
 //Blaze, RR
 DEFINE_DIALOG(BLAZE_04, 1, 5, 30, 200, _("\
@@ -3430,13 +3401,13 @@ I'll talk to you in a bit."))
 
 //Marine, RR
 DEFINE_DIALOG(MARINE_03, 1, 5, 30, 200, _("\
-Oi, I knew she would do this\n\
+Oi, I knew she would do this,\n\
 but what's the fun without\n\
 a little danger?? Ha ha...\n\
-but yeah I get what she\n\
+but yeah, I get what she\n\
 means.\n\
 Honestly, I'm glad she found\n\
-me here cause I have noooo\n\
+me here, cause I have noooo\n\
 idea how to get out of here!\n\
 Well, Creamy, it's been fun\n\
 to get to know you!\n\
@@ -3448,12 +3419,12 @@ the adventure thing!"))
 //Blaze, RR 2
 DEFINE_DIALOG(BLAZE_05, 1, 6, 30, 200, _("\
 Cream, glad to see you!\n\
-Well I've gone ahead and\n\
+Well, I've gone ahead and\n\
 taken Marine back to the\n\
 castle. Looks like this\n\
-whole thing just worn her\n\
+whole thing just wore her\n\
 out.\n\
-And honestly I should do\n\
+And honestly, I should do\n\
 the same. The worlds in\n\
 these paintings can be\n\
 a bit much all at once. \n\
@@ -3481,10 +3452,10 @@ while we fix the situation."))
 // Gardevoir
 DEFINE_DIALOG(MS_002, 1, 4, 30, 200, _("\
 Welcome to the adoption\n\
-center but unfortunately,\n\
+center, but unfortunately,\n\
 we're temporary closed while\n\
 we do some cleaning up.\n\
-The vaporeon in the window\n\
+The Vaporeon in the window\n\
 escaped and left a mess\n\
 all over the place. So much\n\
 soggy bread...\n\
@@ -3502,17 +3473,17 @@ DEFINE_DIALOG(MS_003, 1, 5, 30, 200, _("\
 Hey! Welcome to the Emerald\n\
 Theater! I bet you're here\n\
 to watch the re-release of\n\
-Chao in Space huh?\n\
+Chao in Space, huh?\n\
 \n\
 Sadly, the last ticket just\n\
 got bought by that cute lil'\n\
-fox over there. Aww he was so\n\
+fox over there. Aww, he was so\n\
 red getting them. Probably\n\
 for a playdate. How cute!\n\
 Well, there's always my\n\
 favorite movie, the Sonic OVA!\n\
 Still a few tickets left if\n\
-you're interested or even\n\
+you're interested, or even\n\
 The Bani!\n\
 Sorbet, my chao over there,\n\
 can help ya out. Have fun\n\
@@ -3520,9 +3491,9 @@ and enjoy the AC!"))
 
 // Tails Part 1
 DEFINE_DIALOG(MS_004, 1, 5, 30, 200, _("\
-Alright I got the tickets,\n\
-just have to go as-WHOA\n\
-hey Cream! Why are you\n\
+Alright, I got the tickets,\n\
+just have to go as-WHOA!\n\
+Hey Cream! Why are you\n\
 all the way out here? Is\n\
 Amy here with you??\n\
 I wanted to go find you to\n\
@@ -3547,24 +3518,24 @@ one...)\n\
 \n\
 (Oh, poor Tails, does he try.\n\
 Tails is usually seen at the\n\
-start of new areas so you'll\n\
+start of new areas, so you'll\n\
 see him right away!"))
 
 // Sorbet
 DEFINE_DIALOG(MS_005, 1, 4, 30, 200, _("\
 (Welcome to the Emerald\n\
-Theather, I'll be handling\n\
+Theater. I'll be handling\n\
 ticket sales today. Anything\n\
 you like in particular?\n\
 Hmm, sayin' you need to save\n\
 your Mama from that Eggman\n\
-fella? Hmm, we love to help\n\
+fella? Hmm, we love to help,\n\
 but it's just us here today.\n\
-Actually kind of busy today\n\
+Actually kind of busy today,\n\
 so we gotta keep things\n\
 together. You look tough, kiddo.\n\
 Don't think you'll need our help.\n\
-You know I think those number rings\n\
+You know, I think those number rings\n\
 may help ya on your adventure.\n\
 Go bash that egghead, little \n\
 bunny. We're rootin' for ya.)"))
@@ -3624,7 +3595,7 @@ How'd you manage to get in?\n\
 Are you lost? ... \n\
 \n\
 You say you're unsure how\n\
-you exactly got here but you \n\
+you exactly got here, but you\n\
 really need to get back to \n\
 the castle to save your mom?\n\
 \n\
@@ -3638,7 +3609,7 @@ station at Central Square.\n\
 Next you're gonna tell me you \n\
 'warped' here or something like \n\
 those two over there... You did?\n\
-Well franky, hun, it's not the\n\
+Well frankly, hun, it's not the\n\
 strangest thing I've heard since\n\
 taking over the bar.\n\
 Hmm, you look oddly similar to\n\
@@ -3672,7 +3643,7 @@ stronger than you think and\n\
 you should be proud of that.\n\
 \n\
 Make sure you behave yourself \n\
-and don't go wondering off. \n\
+and don't go wandering off. \n\
 Check around some objects to\n\
 learn a few things!\n\
 See ya around honeybun~"))
@@ -3723,8 +3694,8 @@ all that really matters.- "))
 
 //Marine Goomba - Bar
 DEFINE_DIALOG(KB_003, 1, 4, 30, 200, _("\
-C'mon, c'mon just a set of\n\ 
-sevens pleaaaaase.\n\
+C'mon, c'mon, just a set of\n\ 
+sevens, pleaaaaase.\n\
 ...Oh hey, it's you. How \n\
 did you even get here?\n\
 Ya know, funny story. HQ\n\
@@ -3752,7 +3723,7 @@ little bunny. "))
 DEFINE_DIALOG(KB_004, 1, 4, 30, 200, _("\
 Aye, child. Have you by\n\
 chance heard the tale of\n\
-the loch ness beast? \n\
+the Loch Ness beast? \n\
 \n\
 Only a few have ever seen\n\
 it in person, a creature\n\
@@ -3763,14 +3734,14 @@ picture of the beast to\n\
 go by. They said it lurks\n\
 in underwater lakes.\n\
 I've told another child\n\
-like yourself earlier but\n\
+like yourself earlier, but\n\
 maybe you'll be able to find\n\
 it just as well!"))
 
 //Bup 1 - Bar
 DEFINE_DIALOG(KB_005, 1, 4, 30, 200, _("\
-Oh hello there! Strange to see\n\
-a kid here but tonight looks\n\
+Oh, hello there! Strange to see\n\
+a kid here, but tonight looks\n\
 to be a slow one, so the more\n\
 the merrier!\n\
 It's funny. We were given the\n\
@@ -3783,15 +3754,15 @@ this guy and I found a weird\n\
 ring in the courtyard.\n\
 We got near it and suddenly, we\n\
 were in front of this place. \n\
-Sure, it's no Isle Defino but\n\
+Sure, it's no Isle Defino, but\n\
 this place is something else.\n\
 The barista is nice, the drinks\n\
 are great, the locals are \n\
-friendly folk and the \n\
+friendly folk, and the \n\
 atmosphere is incredible!\n\
 This deer gal on stage right\n\
 now is wonderful!\n\
-Sure, her singing is iffy but\n\
+Sure, her singing is iffy, but\n\
 man, she's so friendly and cute.\n\
 I do wish her sloth pal here \n\
 wasn't so ...what's the word for \n\
@@ -3802,10 +3773,10 @@ and enjoy your time here!"))
 
 //Bup 2 - Bar
 DEFINE_DIALOG(KB_006, 1, 5, 30, 200, _("\
-Oh hello! Bet you got here\n\
-through some warp ring too huh?\n\
-Yeah, no idea when it showed up \n\
-but what cha gonna do.\n\
+Oh, hello! Bet you got here\n\
+through some warp ring too, huh?\n\
+Yeah, no idea when it showed up,\n\
+but whatcha gonna do.\n\
 \n\
 Oh, did you by chance run into\n\
 a Toad with bushy brows in the\n\
@@ -3835,7 +3806,7 @@ all back! Hopefully..."))
 
 //Bait - Bar
 DEFINE_DIALOG(KB_007, 1, 5, 30, 200, _("\
-Hehe, gotchya! Instead of\n\
+Hehe, gotcha! Instead of\n\
 a secret item, all you got \n\
 was me, Bait the Betta Fish!\n\
 I bet you feel pretty silly \n\
@@ -3894,7 +3865,7 @@ sounds so cool!~"))
 
 //Arcade Flvaortext, SF3 Cab
 DEFINE_DIALOG(KB_SF3, 1, 5, 30, 200, _("\
-~Mr. Mark talks about this a lot\n\
+~Mr. Mark talks about this a lot,\n\
 oddly enough. Says he 'borrows' a\n\
 lot of moves from a character in \n\
 this game. Mr. Dudley was his \n\
@@ -3938,12 +3909,12 @@ Sonic either, which is strange.\n\
 calling Sonic. Maybe we can still\n\
 have fun but keep the charade.)\n\
 \n\
-I dunno how you got here but look\n\
+I dunno how you got here, but look\n\
 at this place! I didn't think they\n\
-would be open but we can go ride \n\
+would be open, but we can go ride\n\
 some rides and have some sweets!\n\
 Maybe even just have a snowball\n\
-fight! ...now's not the time? \n\
+fight! ...Now's not the time? \n\
 Right, I understand. I'll go\n\
 see what I can do to help you.\n\
 (Maybe I can actually help her\n\
@@ -3952,11 +3923,11 @@ way. Need to go find Gemerl...)"))
 
 //Jack
 DEFINE_DIALOG(WP_001, 1, 4, 30, 200, _("\
-Cream? It's nice to see you\n\
+Cream? It's nice to see you,\n\
 but strange to see you all by\n\
 yourself. Is your Mom around?\n\
 Kidnapped? Really??\n\
-(Ahh right...the party...)\n\
+(Ahh, right...the party...)\n\
 \n\
 \n\
 \n\
@@ -3966,7 +3937,7 @@ you've done it before. I have no\n\
 doubt you'll save her in no time.\n\
 As for me, I wanted to take the \n\
 girls to have some fun at the park,\n\
-see the Chao races and just relax\n\
+see the chao races, and just relax\n\
 in the snowy weather.\n\
 When this whole mess is over, \n\
 why don't you and Katalina join\n\
@@ -3977,12 +3948,12 @@ after this whole journey."))
 DEFINE_DIALOG(WP_002, 1, 4, 30, 200, _("\
 -Your friends are having so much\n\
 fun in the snow. You wish you could\n\
-join them but Mama is still at the\n\
+join them, but Mama is still at the\n\
 castle!-"))
 
 //Hocus
 DEFINE_DIALOG(WP_003, 1, 4, 30, 200, _("\
-Man, I had the perfect act planned\n\
+Man, I had the perfect act planned,\n\
 but this switch beat me to the \n\
 whole disappearing act! Don't \n\
 worry, I got a backup plan.\n\
@@ -4010,7 +3981,7 @@ Round 5-1 - Ring Rink\n\
 //(former) White Wisp, Jack, KZ Nekoarc
 DEFINE_DIALOG(EX_KZNEKO, 1, 4, 30, 200, _("\
 I just don't see the\n\
-appeal of Mario 64 anyway\n\
+appeal of Mario 64 anyway,\n\
 because Cream the Rabbit\n\
 isn't there."))
 
@@ -4091,7 +4062,7 @@ FudgerNutter"))
 //Vector
 DEFINE_DIALOG(NTM_000, 1, 6, 30, 200, _("\
 Hey, hey! I didn't think\n\
-I see you around here!\n\
+I'd see you around here!\n\
 Would you believe I'm a \n\
 trainer at this joint?\n\
 I get free snacks at the\n\
@@ -4114,9 +4085,9 @@ over there to ride the \n\
 cannons. And don't forget your\n\
 Wing Locket!\n\
 \n\
-It's a long way down ya hear?\n\
+It's a long way down, ya hear?\n\
 But don't worry, the death warps\n\
-are set that you just land back\n\
+are set so you just land back\n\
 in the castle rather than outside\n\
 like before, whatever that means!"))
 
@@ -4128,16 +4099,16 @@ glad Gemerl gave me a chance\n\
 to race you.\n\
 \n\
 \n\
-The past day has been really fun\n\
+The past day has been really fun,\n\
 though I do feel a bit bad for\n\
 taking time away from your huge\n\
-adventure, but I bet you're right\n\
+adventure. But I bet you're right\n\
 at the very end, aren't you?\n\
 \n\
 I'll be rooting for you while\n\
 you take care of Eggman. I still\n\
 don't know why Sonic didn't show \n\
-up after I called him but I know\n\
+up after I called him, but I know\n\
 he would've slowed ya down\n\
 anyway, hahahaha.\n\
 -You're happy that's he's happy, \n\
@@ -4161,9 +4132,9 @@ right now.-"))
 //Floomba NTM
 DEFINE_DIALOG(NTM_002, 1, 5, 30, 200, _("\
 Oh gosh, I was supposed to\n\
-go follow that new guy up there\n\
+go follow that new guy up there,\n\
 but he got there when I\n\
-went to the bathroom and I\n\
+went to the bathroom, and I\n\
 don't know what to do!\n\
 Are motobugs super dangerous?\n\
 I've never ran into one myself,\n\
@@ -4177,12 +4148,12 @@ Oh gosh..."))
 DEFINE_DIALOG(NTM_003, 1, 5, 30, 200, _("\
 Man I should've waited for\n\
 that yellow goomba. Lost my \n\
-ball, don't have extras and\n\
+ball, don't have extras, and\n\
 no idea how to get down. Those\n\
 'lockets' don't work for me!\n\
-Even worse these motobugs just\n\
+Even worse, these motobugs just\n\
 showed up! I could try and take \n\
-them but I wonder if they'll \n\
+them, but I wonder if they'll\n\
 charge me for 'destroying \n\
 company equipment'..."))
 
@@ -4195,11 +4166,11 @@ Neo Turf Masters"))
 
 //Gemerl at THI
 DEFINE_DIALOG(EX_001, 1, 6, 30, 200, _("\
-He really wanted to race ya,\n\
+He really wanted to race ya.\n\
 I couldn't say no to the\n\
 guy. It's fine, you've made\n\
 it this far without any\n\
-trouble so why test you\n\
+trouble, so why test you\n\
 again.\n\
 I can give you a small\n\
 hint for the last section:\n\

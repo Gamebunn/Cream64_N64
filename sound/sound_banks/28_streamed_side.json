@@ -78,7 +78,7 @@
         "inst14": {
             "release_rate": 10,
             "envelope": "envelope0",
-            "sound": "theend2_0"  
+            "sound": "theend_0"  
         },
         "inst15": {
             "release_rate": 10,

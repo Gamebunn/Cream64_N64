@@ -12,8 +12,8 @@ extern const GeoLayout intro_geo_debug_level_select[];
 // leveldata
 extern Lights1 title_cream64_colors_f3d_lights;
 extern u8 title_cream64_titlescreen_ci8_ci8[];
-extern u8 title_cream64_titlescreen_ci8_ci8_pal_rgba16[];
-extern Vtx title_cream64_title_cream64_mesh_vtx_0[3998];
+extern u8 title_cream64_titlescreen_ci8_pal_rgba16[];
+extern Vtx title_cream64_title_cream64_mesh_vtx_0[4884];
 extern Gfx title_cream64_title_cream64_mesh_tri_0[];
 extern Gfx mat_title_cream64_colors_f3d[];
 extern Gfx mat_revert_title_cream64_colors_f3d[];

@@ -1752,6 +1752,7 @@ static void intro_cutscene_jump_out_of_pipe(struct MarioState *m) {
         play_sound_if_no_flag(m, SOUND_MARIO_YAHOO, MARIO_MARIO_SOUND_PLAYED);
 
         set_mario_animation(m, MARIO_ANIM_SINGLE_JUMP);
+        gCheeseObject->unused2 = 0;
         mario_set_forward_vel(m, 10.0f);
         if (perform_air_step(m, AIR_STEP_CHECK_NONE) == AIR_STEP_LANDED) {
             sound_banks_enable(SEQ_PLAYER_SFX, SOUND_BANKS_DISABLED_DURING_INTRO_CUTSCENE);
@@ -1813,6 +1814,7 @@ static s32 act_intro_cutscene(struct MarioState *m) {
             break;
         case INTRO_CUTSCENE_PEACH_LAKITU_SCENE:
             intro_cutscene_peach_lakitu_scene(m);
+            gCheeseObject->unused2 = 1;
             break;
         case INTRO_CUTSCENE_RAISE_PIPE:
             intro_cutscene_raise_pipe(m);
@@ -2020,6 +2022,7 @@ static void end_peach_cutscene_mario_falling(struct MarioState *m) {
         m->statusForCamera->cameraEvent = CAM_EVENT_START_ENDING;
     }
 
+    gCheeseObject->unused2 = 1;
     m->input |= INPUT_A_DOWN;
     m->flags |= (MARIO_WING_CAP | MARIO_CAP_ON_HEAD);
 
@@ -2792,6 +2795,8 @@ break;
 
         m->actionState = ACT_STATE_END_WAVING_CUTSCENE_WAVING;
     }
+
+    gCheeseObject->unused2 = 1;
 
     set_mario_animation(m, MARIO_ANIM_CREDITS_WAVING);
     stop_and_set_height_to_floor(m);

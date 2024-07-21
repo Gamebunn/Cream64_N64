@@ -1984,14 +1984,10 @@ It's done so you can still\n\
 perform the BLJ whenever you\n\
 like.\n\
 \n\
-Also important: flying might\n\
-break the set camera in certain\n\
-rooms, but triggering a new \n\
-camera zone will fix it.\n\
-You'll find out exactly what I\n\
-mean by flying in this room.\n\
-Anyway, have fun messing around\n\
-with that, Miss Cream!)"))
+Remember, this is a feature!\n\
+Explore how much flying can\n\
+benefit you. Don't be afraid to\n\
+break levels, Miss Cream!)"))
 
 DEFINE_DIALOG(DIALOG_135, 1, 2, 30, 200, _("\
 (I showed you my Emote \n\
@@ -2704,18 +2700,12 @@ Funkys0da\n\
 \n\
 (PC Only) Pocky and Sorbet\n\
 DDR Poster by: FudgerNutter\n\
-The Tikal (The Echidna) &\n\
-Chaos Hour art by:\n\
-GadgetTR\n\
 Vend-a-Tails from 'Uncle\n\
 Knuckles' by:\n\
-Doobus Goobus\n\
+DoobusGoobus\n\
 Parent's Day Out poster\n\
 in Karaoke Bar by:\n\
 FudgerNutter\n\
-\n\
-\n\
-\n\
 New Paintings by: InfiniteBrians,\n\
 SketchMeister, FlamingGaraco, \n\
 FudgerNutter, TheNovika, \n\

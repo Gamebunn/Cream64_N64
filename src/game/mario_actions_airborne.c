@@ -421,8 +421,8 @@ u32 common_air_action_step(struct MarioState *m, u32 landAction, s32 animation, 
 
     stepResult = perform_air_step(m, stepArg);
 
-    if(stepResult != AIR_STEP_NONE && m->action == ACT_HOVERING)
-    	set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
+    // if(stepResult != AIR_STEP_NONE && m->action == ACT_HOVERING)
+    //	set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
 
     switch (stepResult) {
         case AIR_STEP_NONE:
